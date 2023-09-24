@@ -2,6 +2,7 @@ package deuli.spookyjam2023.init;
 
 import deuli.spookyjam2023.SpookyJam2023;
 import deuli.spookyjam2023.items.JackOSlicer;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,7 +12,10 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SpookyJam2023.MOD_ID);
 
-    // Creates a new food item with the id "examplemod:example_id", nutrition 1 and saturation 2
     public static final RegistryObject<Item> JACK_O_SLICER = ITEMS.register("jack_o_slicer", () -> new JackOSlicer());
 
+    public static final RegistryObject<Item> SINISTER_PUMPKIN = ITEMS.register("sinister_pumpkin",
+            () -> new BlockItem(ModBlocks.SINISTER_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LIT_SINISTER_PUMPKIN = ITEMS.register("lit_sinister_pumpkin",
+            () -> new BlockItem(ModBlocks.LIT_SINISTER_PUMPKIN.get(), new Item.Properties()));
 }

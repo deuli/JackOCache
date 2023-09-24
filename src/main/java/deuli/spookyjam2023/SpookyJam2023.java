@@ -1,6 +1,7 @@
 package deuli.spookyjam2023;
 
 import com.mojang.logging.LogUtils;
+import deuli.spookyjam2023.init.ModBlocks;
 import deuli.spookyjam2023.init.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class SpookyJam2023 {
 
         modEventBus.addListener(this::commonSetup);
 
+        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

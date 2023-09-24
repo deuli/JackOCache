@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "front": "spookyjam2023:block/sinister_pumpkin",
+        "side": "minecraft:block/pumpkin_side",
+        "top": "minecraft:block/pumpkin_top"
+    }
+}
