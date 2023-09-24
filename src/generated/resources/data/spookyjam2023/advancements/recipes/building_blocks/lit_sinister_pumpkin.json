@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sinister_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spookyjam2023:sinister_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "spookyjam2023:lit_sinister_pumpkin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sinister_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "spookyjam2023:lit_sinister_pumpkin"
+    ]
+  },
+  "sends_telemetry_event": false
+}
