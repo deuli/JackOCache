@@ -18,4 +18,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.SINISTER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> LIT_SINISTER_PUMPKIN = ITEMS.register("lit_sinister_pumpkin",
             () -> new BlockItem(ModBlocks.LIT_SINISTER_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GENERIC_PUMPKIN = ITEMS.register("generic_pumpkin",
+            () -> new BlockItem(ModBlocks.GENERIC_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LIT_GENERIC_PUMPKIN = ITEMS.register("lit_generic_pumpkin",
+            () -> new BlockItem(ModBlocks.LIT_GENERIC_PUMPKIN.get(), new Item.Properties()));
 }

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "spookyjam2023:block/generic_pumpkin",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "spookyjam2023:block/generic_pumpkin"
+        },
+        "facing=south": {
+            "model": "spookyjam2023:block/generic_pumpkin",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spookyjam2023:block/generic_pumpkin",
+            "y": 270
+        }
+    }
+}
