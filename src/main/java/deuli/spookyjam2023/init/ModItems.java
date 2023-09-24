@@ -1,5 +1,6 @@
-package deuli.spookyjam2023;
+package deuli.spookyjam2023.init;
 
+import deuli.spookyjam2023.SpookyJam2023;
 import deuli.spookyjam2023.items.JackOSlicer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;

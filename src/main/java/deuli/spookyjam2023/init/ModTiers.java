@@ -1,4 +1,4 @@
-package deuli.spookyjam2023;
+package deuli.spookyjam2023.init;
 
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
