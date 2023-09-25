@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "jackocache:lit_generic_pumpkin"
+        "recipe": "jackocache:generic_jack_o_lantern"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "jackocache:lit_generic_pumpkin"
+      "jackocache:generic_jack_o_lantern"
     ]
   },
   "sends_telemetry_event": false

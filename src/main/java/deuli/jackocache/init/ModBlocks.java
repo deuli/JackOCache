@@ -14,11 +14,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SINISTER_PUMPKIN = BLOCKS.register("sinister_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
-    public static final RegistryObject<Block> LIT_SINISTER_PUMPKIN = BLOCKS.register("lit_sinister_pumpkin",
+    public static final RegistryObject<Block> SINISTER_JACK_O_LANTERN = BLOCKS.register("sinister_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> GENERIC_PUMPKIN = BLOCKS.register("generic_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
-    public static final RegistryObject<Block> LIT_GENERIC_PUMPKIN = BLOCKS.register("lit_generic_pumpkin",
+    public static final RegistryObject<Block> GENERIC_JACK_O_LANTERN = BLOCKS.register("generic_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }

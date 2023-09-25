@@ -20,8 +20,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        jackOLantern(ModBlocks.SINISTER_PUMPKIN.get(), ModBlocks.LIT_SINISTER_PUMPKIN.get(), pWriter);
-        jackOLantern(ModBlocks.GENERIC_PUMPKIN.get(), ModBlocks.LIT_GENERIC_PUMPKIN.get(), pWriter);
+        jackOLantern(ModBlocks.SINISTER_PUMPKIN.get(), ModBlocks.SINISTER_JACK_O_LANTERN.get(), pWriter);
+        jackOLantern(ModBlocks.GENERIC_PUMPKIN.get(), ModBlocks.GENERIC_JACK_O_LANTERN.get(), pWriter);
     }
 
     private void jackOLantern(Block pumpkin, Block jackOLantern, Consumer<FinishedRecipe> pWriter)
