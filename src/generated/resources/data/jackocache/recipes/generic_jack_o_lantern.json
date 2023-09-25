@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "jackolanterns",
   "key": {
     "A": {
       "item": "jackocache:generic_pumpkin"

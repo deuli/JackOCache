@@ -32,6 +32,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', pumpkin)
                 .define('B', Items.TORCH)
                 .unlockedBy(getHasName(pumpkin), has(pumpkin))
+                .group("jackolanterns")
                 .save(pWriter);
     }
 }
