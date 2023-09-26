@@ -3,7 +3,6 @@ package deuli.jackocache.items;
 import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
-import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;

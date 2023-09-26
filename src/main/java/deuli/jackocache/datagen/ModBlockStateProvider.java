@@ -3,6 +3,7 @@ package deuli.jackocache.datagen;
 import deuli.jackocache.JackOCache;
 import deuli.jackocache.init.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -42,31 +43,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void registerPumpkin(RegistryObject<Block> pumpkin)
     {
         String pumpkinID = pumpkin.getId().getPath();
-        BlockModelBuilder orientable = models().orientable(pumpkinID,
+        registerHorizontalBlock(pumpkin,
                 mcLoc("block/pumpkin_side"),
                 modLoc("block/" + pumpkinID),
                 mcLoc("block/pumpkin_top"));
-        horizontalBlock(pumpkin.get(), orientable);
+    }
+
+    private void registerEntirePumpkin(RegistryObject<Block> pumpkin)
+    {
+        String pumpkinID = pumpkin.getId().getPath();
+        registerHorizontalBlock(pumpkin,
+                modLoc("block/" + pumpkinID + "_side"),
+                modLoc("block/" + pumpkinID),
+                modLoc("block/" + pumpkinID + "_top"));
     }
 
     private void registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin)
     {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
-        BlockModelBuilder orientable = models().orientable(jackolanternID,
+        registerHorizontalBlock(pumpkin,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + jackolanternID),
                 modLoc("block/" + pumpkinID + "_top"));
-        horizontalBlock(jackolantern.get(), orientable);
     }
 
-    private void registerEntirePumpkin(RegistryObject<Block> pumpkin)
+    private void registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top)
     {
-        String pumpkinID = pumpkin.getId().getPath();
-        BlockModelBuilder orientable = models().orientable(pumpkinID,
-                modLoc("block/" + pumpkinID + "_side"),
-                modLoc("block/" + pumpkinID),
-                modLoc("block/" + pumpkinID + "_top"));
-        horizontalBlock(pumpkin.get(), orientable);
+        BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
+        horizontalBlock(block.get(), orientable);
     }
 }
