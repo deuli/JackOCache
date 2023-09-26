@@ -1,7 +1,17 @@
 {
     "item.jackocache.jack_o_slicer": "Jack o'Slicer",
+
     "block.jackocache.sinister_pumpkin": "Sinister Pumpkin",
     "block.jackocache.sinister_jack_o_lantern": "Lit Sinister Pumpkin",
+
     "block.jackocache.generic_pumpkin": "Generic Pumpkin",
-    "block.jackocache.generic_jack_o_lantern": "Lit Generic Pumpkin"
+    "block.jackocache.generic_jack_o_lantern": "Lit Generic Pumpkin",
+
+    "block.jackocache.creeper_pumpkin": "Creeper Pumpkin",
+
+    "block.jackocache.enderman_pumpkin": "Enderman Pumpkin",
+
+    "block.jackocache.skeleton_pumpkin": "Skeleton Pumpkin",
+
+    "block.jackocache.rotten_pumpkin": "Rotten Pumpkin"
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "jackocache:block/enderman_pumpkin",
+    "side": "jackocache:block/enderman_pumpkin_side",
+    "top": "jackocache:block/enderman_pumpkin_top"
+  }
+}

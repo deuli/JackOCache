@@ -24,17 +24,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         registerPumpkinStatesAndModels(ModBlocks.SINISTER_PUMPKIN);
         registerPumpkinStatesAndModels(ModBlocks.SINISTER_JACK_O_LANTERN);
+
         registerPumpkinStatesAndModels(ModBlocks.GENERIC_PUMPKIN);
         registerPumpkinStatesAndModels(ModBlocks.GENERIC_JACK_O_LANTERN);
+
+        registerPumpkinStatesAndModels(ModBlocks.CREEPER_PUMPKIN);
+
+        registerCompletePumpkinStatesAndModels(ModBlocks.ENDERMAN_PUMPKIN);
+
+        registerPumpkinStatesAndModels(ModBlocks.SKELETON_PUMPKIN);
+
+        registerCompletePumpkinStatesAndModels(ModBlocks.ROTTEN_PUMPKIN);
     }
 
     private void registerPumpkinStatesAndModels(RegistryObject<Block> pumpkin)
     {
         String pumpkinID = pumpkin.getId().getPath();
         BlockModelBuilder orientable = models().orientable(pumpkinID,
-                new ResourceLocation("block/pumpkin_side"),
-                new ResourceLocation(JackOCache.MOD_ID, "block/" + pumpkinID),
-                new ResourceLocation("block/pumpkin_top"));
+                mcLoc("block/pumpkin_side"),
+                modLoc("block/" + pumpkinID),
+                mcLoc("block/pumpkin_top"));
+        horizontalBlock(pumpkin.get(), orientable);
+    }
+
+    private void registerCompletePumpkinStatesAndModels(RegistryObject<Block> pumpkin)
+    {
+        String pumpkinID = pumpkin.getId().getPath();
+        BlockModelBuilder orientable = models().orientable(pumpkinID,
+                modLoc("block/" + pumpkinID + "_side"),
+                modLoc("block/" + pumpkinID),
+                modLoc("block/" + pumpkinID + "_top"));
         horizontalBlock(pumpkin.get(), orientable);
     }
 }

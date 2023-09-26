@@ -1,6 +1,10 @@
 {
   "values": [
     "jackocache:sinister_pumpkin",
-    "jackocache:generic_pumpkin"
+    "jackocache:generic_pumpkin",
+    "jackocache:creeper_pumpkin",
+    "jackocache:enderman_pumpkin",
+    "jackocache:skeleton_pumpkin",
+    "jackocache:rotten_pumpkin"
   ]
 }

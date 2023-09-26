@@ -22,17 +22,42 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.SINISTER_PUMPKIN.get(),
                         ModBlocks.SINISTER_JACK_O_LANTERN.get(),
+
                         ModBlocks.GENERIC_PUMPKIN.get(),
-                        ModBlocks.GENERIC_JACK_O_LANTERN.get());
+                        ModBlocks.GENERIC_JACK_O_LANTERN.get(),
+
+                        ModBlocks.CREEPER_PUMPKIN.get(),
+
+                        ModBlocks.ENDERMAN_PUMPKIN.get(),
+
+                        ModBlocks.SKELETON_PUMPKIN.get(),
+
+                        ModBlocks.ROTTEN_PUMPKIN.get()
+                );
 
         this.tag(BlockTags.SWORD_EFFICIENT)
                 .add(ModBlocks.SINISTER_PUMPKIN.get(),
                         ModBlocks.SINISTER_JACK_O_LANTERN.get(),
+
                         ModBlocks.GENERIC_PUMPKIN.get(),
-                        ModBlocks.GENERIC_JACK_O_LANTERN.get());
+                        ModBlocks.GENERIC_JACK_O_LANTERN.get(),
+
+                        ModBlocks.CREEPER_PUMPKIN.get(),
+
+                        ModBlocks.ENDERMAN_PUMPKIN.get(),
+
+                        ModBlocks.SKELETON_PUMPKIN.get(),
+
+                        ModBlocks.ROTTEN_PUMPKIN.get()
+                );
 
         this.tag(BlockTags.ENDERMAN_HOLDABLE)
                 .add(ModBlocks.SINISTER_PUMPKIN.get(),
-                        ModBlocks.GENERIC_PUMPKIN.get());
+                        ModBlocks.GENERIC_PUMPKIN.get(),
+                        ModBlocks.CREEPER_PUMPKIN.get(),
+                        ModBlocks.ENDERMAN_PUMPKIN.get(),
+                        ModBlocks.SKELETON_PUMPKIN.get(),
+                        ModBlocks.ROTTEN_PUMPKIN.get()
+                );
     }
 }

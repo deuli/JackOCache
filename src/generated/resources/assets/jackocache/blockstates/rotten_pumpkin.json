@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jackocache:block/rotten_pumpkin",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "jackocache:block/rotten_pumpkin"
+    },
+    "facing=south": {
+      "model": "jackocache:block/rotten_pumpkin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jackocache:block/rotten_pumpkin",
+      "y": 270
+    }
+  }
+}
