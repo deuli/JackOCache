@@ -27,11 +27,15 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.GENERIC_JACK_O_LANTERN.get());
 
                 output.accept(ModBlocks.CREEPER_PUMPKIN.get());
+                output.accept(ModBlocks.CREEP_O_LANTERN.get());
 
                 output.accept(ModBlocks.ENDERMAN_PUMPKIN.get());
+                output.accept(ModBlocks.END_O_LANTERN.get());
 
                 output.accept(ModBlocks.SKELETON_PUMPKIN.get());
+                output.accept(ModBlocks.BONE_O_LANTERN.get());
 
                 output.accept(ModBlocks.ROTTEN_PUMPKIN.get());
+                output.accept(ModBlocks.ROT_O_LANTERN.get());
             }).build());
 }

@@ -5,8 +5,12 @@
     "jackocache:generic_pumpkin",
     "jackocache:generic_jack_o_lantern",
     "jackocache:creeper_pumpkin",
+    "jackocache:creep_o_lantern",
     "jackocache:enderman_pumpkin",
+    "jackocache:end_o_lantern",
     "jackocache:skeleton_pumpkin",
-    "jackocache:rotten_pumpkin"
+    "jackocache:bone_o_lantern",
+    "jackocache:rotten_pumpkin",
+    "jackocache:rot_o_lantern"
   ]
 }

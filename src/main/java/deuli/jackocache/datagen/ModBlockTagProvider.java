@@ -27,12 +27,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.GENERIC_JACK_O_LANTERN.get(),
 
                         ModBlocks.CREEPER_PUMPKIN.get(),
+                        ModBlocks.CREEP_O_LANTERN.get(),
 
                         ModBlocks.ENDERMAN_PUMPKIN.get(),
+                        ModBlocks.END_O_LANTERN.get(),
 
                         ModBlocks.SKELETON_PUMPKIN.get(),
+                        ModBlocks.BONE_O_LANTERN.get(),
 
-                        ModBlocks.ROTTEN_PUMPKIN.get()
+                        ModBlocks.ROTTEN_PUMPKIN.get(),
+                        ModBlocks.ROT_O_LANTERN.get()
                 );
 
         this.tag(BlockTags.SWORD_EFFICIENT)
@@ -43,12 +47,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.GENERIC_JACK_O_LANTERN.get(),
 
                         ModBlocks.CREEPER_PUMPKIN.get(),
+                        ModBlocks.CREEP_O_LANTERN.get(),
 
                         ModBlocks.ENDERMAN_PUMPKIN.get(),
+                        ModBlocks.END_O_LANTERN.get(),
 
                         ModBlocks.SKELETON_PUMPKIN.get(),
+                        ModBlocks.BONE_O_LANTERN.get(),
 
-                        ModBlocks.ROTTEN_PUMPKIN.get()
+                        ModBlocks.ROTTEN_PUMPKIN.get(),
+                        ModBlocks.ROT_O_LANTERN.get()
                 );
 
         this.tag(BlockTags.ENDERMAN_HOLDABLE)

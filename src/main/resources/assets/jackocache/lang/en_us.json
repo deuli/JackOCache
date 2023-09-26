@@ -2,16 +2,20 @@
     "item.jackocache.jack_o_slicer": "Jack o'Slicer",
 
     "block.jackocache.sinister_pumpkin": "Sinister Pumpkin",
-    "block.jackocache.sinister_jack_o_lantern": "Lit Sinister Pumpkin",
+    "block.jackocache.sinister_jack_o_lantern": "Sinister Jack o'Lantern",
 
     "block.jackocache.generic_pumpkin": "Generic Pumpkin",
-    "block.jackocache.generic_jack_o_lantern": "Lit Generic Pumpkin",
+    "block.jackocache.generic_jack_o_lantern": "Generic Jack o'Lantern",
 
     "block.jackocache.creeper_pumpkin": "Creeper Pumpkin",
+    "block.jackocache.creep_o_lantern": "Creep o'Lantern",
 
     "block.jackocache.enderman_pumpkin": "Enderman Pumpkin",
+    "block.jackocache.end_o_lantern": "End o'Lantern",
 
     "block.jackocache.skeleton_pumpkin": "Skeleton Pumpkin",
+    "block.jackocache.bone_o_lantern": "Bone o'Lantern",
 
-    "block.jackocache.rotten_pumpkin": "Rotten Pumpkin"
+    "block.jackocache.rotten_pumpkin": "Rotten Pumpkin",
+    "block.jackocache.rot_o_lantern": "Rot o'Lantern"
 }

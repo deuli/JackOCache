@@ -23,12 +23,16 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GENERIC_JACK_O_LANTERN.get());
 
         this.dropSelf(ModBlocks.CREEPER_PUMPKIN.get());
+        this.dropSelf(ModBlocks.CREEP_O_LANTERN.get());
 
         this.dropSelf(ModBlocks.ENDERMAN_PUMPKIN.get());
+        this.dropSelf(ModBlocks.END_O_LANTERN.get());
 
         this.dropSelf(ModBlocks.SKELETON_PUMPKIN.get());
+        this.dropSelf(ModBlocks.BONE_O_LANTERN.get());
 
         this.dropSelf(ModBlocks.ROTTEN_PUMPKIN.get());
+        this.dropSelf(ModBlocks.ROT_O_LANTERN.get());
     }
 
     @Override

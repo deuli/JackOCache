@@ -24,13 +24,21 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CREEPER_PUMPKIN = BLOCKS.register("creeper_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> CREEP_O_LANTERN = BLOCKS.register("creep_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> ENDERMAN_PUMPKIN = BLOCKS.register("enderman_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> END_O_LANTERN = BLOCKS.register("end_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SKELETON_PUMPKIN = BLOCKS.register("skeleton_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> BONE_O_LANTERN = BLOCKS.register("bone_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> ROTTEN_PUMPKIN = BLOCKS.register("rotten_pumpkin",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> ROT_O_LANTERN = BLOCKS.register("rot_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }

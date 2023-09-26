@@ -30,13 +30,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> CREEPER_PUMPKIN = ITEMS.register("creeper_pumpkin",
             () -> new BlockItem(ModBlocks.CREEPER_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CREEP_O_LANTERN = ITEMS.register("creep_o_lantern",
+            () -> new BlockItem(ModBlocks.CREEP_O_LANTERN.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> ENDERMAN_PUMPKIN = ITEMS.register("enderman_pumpkin",
             () -> new BlockItem(ModBlocks.ENDERMAN_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> END_O_LANTERN = ITEMS.register("end_o_lantern",
+            () -> new BlockItem(ModBlocks.END_O_LANTERN.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> SKELETON_PUMPKIN = ITEMS.register("skeleton_pumpkin",
             () -> new BlockItem(ModBlocks.SKELETON_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BONE_O_LANTERN = ITEMS.register("bone_o_lantern",
+            () -> new BlockItem(ModBlocks.BONE_O_LANTERN.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> ROTTEN_PUMPKIN = ITEMS.register("rotten_pumpkin",
             () -> new BlockItem(ModBlocks.ROTTEN_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ROT_O_LANTERN = ITEMS.register("rot_o_lantern",
+            () -> new BlockItem(ModBlocks.ROT_O_LANTERN.get(), new Item.Properties()));
 }
