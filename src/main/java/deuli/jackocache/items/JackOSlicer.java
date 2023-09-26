@@ -1,7 +1,9 @@
 package deuli.jackocache.items;
 
+import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -17,7 +19,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
+import java.util.HashMap;
+
 public class JackOSlicer extends SwordItem {
+
+    private HashMap<String, PumpkinDrop> pumpkinDrops = new HashMap<>(){{
+        put("minecraft:creeper", new PumpkinDrop(ModBlocks.CREEPER_PUMPKIN.get()));
+        put("minecraft:enderman", new PumpkinDrop(ModBlocks.ENDERMAN_PUMPKIN.get()));
+        put("minecraft:skeleton", new PumpkinDrop(ModBlocks.SKELETON_PUMPKIN.get()));
+        put("minecraft:zombie", new PumpkinDrop(ModBlocks.ROTTEN_PUMPKIN.get()));
+    }};
 
     public JackOSlicer() {
         super(ModTiers.PUMPKIN, 3, -2.4F, new Item.Properties());
@@ -26,18 +37,24 @@ public class JackOSlicer extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker)
     {
+//        if(pAttacker instanceof Player player)
+//            player.displayClientMessage(Component.literal(pTarget.getEncodeId()), true);
+
         ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
 
-        if(pAttacker instanceof Player player &&
-                player.getInventory().contains(pumpkin) &&
-                pTarget.getHealth() <= 0)
+        if(pAttacker instanceof Player player && player.getInventory().contains(pumpkin) && pTarget.getHealth() <= 0)
         {
-            pTarget.spawnAtLocation(ModItems.SINISTER_PUMPKIN.get());
+            PumpkinDrop pumpkinDrop = pumpkinDrops.getOrDefault(pTarget.getEncodeId(), new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
 
-            int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
-            player.getInventory().removeItem(pumpkinSlot, 1);
+            if(player.getRandom().nextFloat() <= pumpkinDrop.chance)
+            {
+                pTarget.spawnAtLocation(pumpkinDrop.pumpkin);
 
-            player.level().playSound(null, pTarget.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+                int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
+                player.getInventory().removeItem(pumpkinSlot, 1);
+
+                player.level().playSound(null, pTarget.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+            }
         }
 
         return super.hurtEnemy(pStack, pTarget, pAttacker);
@@ -58,5 +75,20 @@ public class JackOSlicer extends SwordItem {
         }
 
         return super.useOn(pContext);
+    }
+
+    private class PumpkinDrop {
+
+        private Block pumpkin;
+        private float chance = 0.5F;
+
+        public PumpkinDrop(Block pumpkin, float chance) {
+            this.pumpkin = pumpkin;
+            this.chance = chance;
+        }
+
+        public PumpkinDrop(Block pumpkin) {
+            this.pumpkin = pumpkin;
+        }
     }
 }
