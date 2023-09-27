@@ -37,7 +37,7 @@ public class TagCondition extends TransformConditions {
             boolean result = checkNext(level, blockPos);
 
             if(result && destroyBlock)
-                level.destroyBlock(blockPos.offset(offset), false);
+                level.destroyBlock(blockPos.offset(offset), false); //Block isn't updated!
 
             return result;
         }
