@@ -43,7 +43,7 @@ public class JackOSlicer extends SwordItem {
     }};
 
     private ArrayList<PumpkinTransformation> pumpkinTransformations = new ArrayList<>() {{
-        add(new PumpkinTransformation(Blocks.DIAMOND_BLOCK, TransformConditions.link(
+        add(new PumpkinTransformation(ModBlocks.UWU_PUMPKIN.get(), TransformConditions.link(
                 new DimensionCondition(Level.NETHER),
                 new HeightCondition(-64, 35)
         )));

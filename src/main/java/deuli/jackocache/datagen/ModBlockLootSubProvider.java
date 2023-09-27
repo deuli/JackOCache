@@ -36,6 +36,9 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.VILLAGER_PUMPKIN.get());
         this.dropSelf(ModBlocks.HMM_O_LANTERN.get());
+
+        this.dropSelf(ModBlocks.UWU_PUMPKIN.get());
+        this.dropSelf(ModBlocks.UWU_O_LANTERN.get());
     }
 
     @Override

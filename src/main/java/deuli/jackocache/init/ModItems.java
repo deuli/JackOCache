@@ -52,4 +52,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.VILLAGER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> HMM_O_LANTERN = ITEMS.register("hmm_o_lantern",
             () -> new BlockItem(ModBlocks.HMM_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> UWU_PUMPKIN = ITEMS.register("uwu_pumpkin",
+            () -> new BlockItem(ModBlocks.UWU_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> UWU_O_LANTERN = ITEMS.register("uwu_o_lantern",
+            () -> new BlockItem(ModBlocks.UWU_O_LANTERN.get(), new Item.Properties()));
 }

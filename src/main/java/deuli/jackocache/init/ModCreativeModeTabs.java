@@ -40,5 +40,8 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModBlocks.VILLAGER_PUMPKIN.get());
                 output.accept(ModBlocks.HMM_O_LANTERN.get());
+
+                output.accept(ModBlocks.UWU_PUMPKIN.get());
+                output.accept(ModBlocks.UWU_O_LANTERN.get());
             }).build());
 }
