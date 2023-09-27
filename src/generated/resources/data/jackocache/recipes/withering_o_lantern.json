@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jackolanterns",
+  "key": {
+    "A": {
+      "item": "jackocache:wither_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "jackocache:withering_o_lantern"
+  },
+  "show_notification": true
+}

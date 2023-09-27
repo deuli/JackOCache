@@ -51,7 +51,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.WEB_O_LANTERN.get(),
 
                         ModBlocks.GHAST_PUMPKIN.get(),
-                        ModBlocks.SCREAM_O_LANTERN.get()
+                        ModBlocks.SCREAM_O_LANTERN.get(),
+
+                        ModBlocks.WITHER_PUMPKIN.get(),
+                        ModBlocks.WITHERING_O_LANTERN.get()
                 );
 
         this.tag(BlockTags.SWORD_EFFICIENT)
@@ -86,7 +89,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.WEB_O_LANTERN.get(),
 
                         ModBlocks.GHAST_PUMPKIN.get(),
-                        ModBlocks.SCREAM_O_LANTERN.get()
+                        ModBlocks.SCREAM_O_LANTERN.get(),
+
+                        ModBlocks.WITHER_PUMPKIN.get(),
+                        ModBlocks.WITHERING_O_LANTERN.get()
                 );
 
         this.tag(BlockTags.ENDERMAN_HOLDABLE)
@@ -100,7 +106,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.UWU_PUMPKIN.get(),
                         ModBlocks.PIG_PUMPKIN.get(),
                         ModBlocks.SPIDER_PUMPKIN.get(),
-                        ModBlocks.GHAST_PUMPKIN.get()
+                        ModBlocks.GHAST_PUMPKIN.get(),
+                        ModBlocks.WITHER_PUMPKIN.get()
                 );
     }
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jackocache:withering_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wither_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:wither_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wither_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jackocache:withering_o_lantern"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -72,4 +72,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.GHAST_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> SCREAM_O_LANTERN = ITEMS.register("scream_o_lantern",
             () -> new BlockItem(ModBlocks.SCREAM_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> WITHER_PUMPKIN = ITEMS.register("wither_pumpkin",
+            () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",
+            () -> new BlockItem(ModBlocks.WITHERING_O_LANTERN.get(), new Item.Properties()));
 }

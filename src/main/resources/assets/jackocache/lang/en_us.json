@@ -32,5 +32,8 @@
     "block.jackocache.web_o_lantern": "Web o'Lantern",
 
     "block.jackocache.ghast_pumpkin": "Ghast Pumpkin",
-    "block.jackocache.scream_o_lantern": "Scream o'Lantern"
+    "block.jackocache.scream_o_lantern": "Scream o'Lantern",
+
+    "block.jackocache.wither_pumpkin": "Wither Pumpkin",
+    "block.jackocache.withering_o_lantern": "Withering o'Lantern"
 }

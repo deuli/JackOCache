@@ -55,6 +55,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.GHAST_PUMPKIN);
         blockItem(ModBlocks.SCREAM_O_LANTERN);
+
+        blockItem(ModBlocks.WITHER_PUMPKIN);
+        blockItem(ModBlocks.WITHERING_O_LANTERN);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

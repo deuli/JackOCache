@@ -21,6 +21,8 @@
     "jackocache:spider_pumpkin",
     "jackocache:web_o_lantern",
     "jackocache:ghast_pumpkin",
-    "jackocache:scream_o_lantern"
+    "jackocache:scream_o_lantern",
+    "jackocache:wither_pumpkin",
+    "jackocache:withering_o_lantern"
   ]
 }
