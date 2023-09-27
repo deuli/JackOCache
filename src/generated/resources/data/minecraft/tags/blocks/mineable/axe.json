@@ -11,6 +11,8 @@
     "jackocache:skeleton_pumpkin",
     "jackocache:bone_o_lantern",
     "jackocache:rotten_pumpkin",
-    "jackocache:rot_o_lantern"
+    "jackocache:rot_o_lantern",
+    "jackocache:villager_pumpkin",
+    "jackocache:hmm_o_lantern"
   ]
 }

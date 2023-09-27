@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jackocache:hmm_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_villager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:villager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_villager_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jackocache:hmm_o_lantern"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -38,6 +38,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerEntirePumpkin(ModBlocks.ROTTEN_PUMPKIN);
         registerJackOLantern(ModBlocks.ROT_O_LANTERN, ModBlocks.ROTTEN_PUMPKIN);
+
+        registerHorizontalBlockWithModel(ModBlocks.VILLAGER_PUMPKIN);
+        registerHorizontalBlockWithModel(ModBlocks.HMM_O_LANTERN);
     }
 
     private void registerPumpkin(RegistryObject<Block> pumpkin)
@@ -72,5 +75,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     {
         BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
         horizontalBlock(block.get(), orientable);
+    }
+
+    private void registerHorizontalBlockWithModel(RegistryObject<Block> block)
+    {
+        horizontalBlock(block.get(), models().getExistingFile(modLoc("block/" + block.getId().getPath())));
     }
 }

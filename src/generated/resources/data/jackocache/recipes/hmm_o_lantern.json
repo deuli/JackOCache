@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jackolanterns",
+  "key": {
+    "A": {
+      "item": "jackocache:villager_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "jackocache:hmm_o_lantern"
+  },
+  "show_notification": true
+}

@@ -41,4 +41,9 @@ public class ModBlocks {
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
     public static final RegistryObject<Block> ROT_O_LANTERN = BLOCKS.register("rot_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> VILLAGER_PUMPKIN = BLOCKS.register("villager_pumpkin",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> HMM_O_LANTERN = BLOCKS.register("hmm_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }
