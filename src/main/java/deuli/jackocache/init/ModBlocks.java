@@ -52,4 +52,19 @@ public class ModBlocks {
             () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
     public static final RegistryObject<Block> UWU_O_LANTERN = BLOCKS.register("uwu_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> PIG_PUMPKIN = BLOCKS.register("pig_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> OINK_O_LANTERN = BLOCKS.register("oink_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> SPIDER_PUMPKIN = BLOCKS.register("spider_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> WEB_O_LANTERN = BLOCKS.register("web_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> GHAST_PUMPKIN = BLOCKS.register("ghast_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> SCREAM_O_LANTERN = BLOCKS.register("scream_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }

@@ -44,6 +44,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerPumpkin(ModBlocks.UWU_PUMPKIN);
         registerPumpkin(ModBlocks.UWU_O_LANTERN);
+
+        registerHorizontalBlockWithModel(ModBlocks.PIG_PUMPKIN);
+        registerHorizontalBlockWithModel(ModBlocks.OINK_O_LANTERN);
+
+        registerPumpkin(ModBlocks.SPIDER_PUMPKIN);
+        registerPumpkin(ModBlocks.WEB_O_LANTERN);
+
+        registerPumpkin(ModBlocks.GHAST_PUMPKIN);
+        registerPumpkin(ModBlocks.SCREAM_O_LANTERN);
     }
 
     private void registerPumpkin(RegistryObject<Block> pumpkin)

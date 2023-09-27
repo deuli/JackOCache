@@ -23,5 +23,14 @@
     "block.jackocache.hmm_o_lantern": "Hmm o'Lantern",
 
     "block.jackocache.uwu_pumpkin": "uwu Pumpkin",
-    "block.jackocache.uwu_o_lantern": "uwu o'Lantern"
+    "block.jackocache.uwu_o_lantern": "uwu o'Lantern",
+
+    "block.jackocache.pig_pumpkin": "Pig Pumpkin",
+    "block.jackocache.oink_o_lantern": "Oink o'Lantern",
+
+    "block.jackocache.spider_pumpkin": "Spider Pumpkin",
+    "block.jackocache.web_o_lantern": "Web o'Lantern",
+
+    "block.jackocache.ghast_pumpkin": "Ghast Pumpkin",
+    "block.jackocache.scream_o_lantern": "Scream o'Lantern"
 }

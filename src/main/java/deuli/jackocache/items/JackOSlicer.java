@@ -40,6 +40,9 @@ public class JackOSlicer extends SwordItem {
         put("minecraft:skeleton", new PumpkinDrop(ModBlocks.SKELETON_PUMPKIN.get()));
         put("minecraft:zombie", new PumpkinDrop(ModBlocks.ROTTEN_PUMPKIN.get()));
         put("minecraft:villager", new PumpkinDrop(ModBlocks.VILLAGER_PUMPKIN.get(), 0.95F));
+        put("minecraft:pig", new PumpkinDrop(ModBlocks.PIG_PUMPKIN.get(), 0.35F));
+        put("minecraft:spider", new PumpkinDrop(ModBlocks.SPIDER_PUMPKIN.get()));
+        put("minecraft:ghast", new PumpkinDrop(ModBlocks.GHAST_PUMPKIN.get(), 0.80F));
     }};
 
     private ArrayList<PumpkinTransformation> pumpkinTransformations = new ArrayList<>() {{

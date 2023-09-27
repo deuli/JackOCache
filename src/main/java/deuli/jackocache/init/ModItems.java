@@ -57,4 +57,19 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.UWU_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> UWU_O_LANTERN = ITEMS.register("uwu_o_lantern",
             () -> new BlockItem(ModBlocks.UWU_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PIG_PUMPKIN = ITEMS.register("pig_pumpkin",
+            () -> new BlockItem(ModBlocks.PIG_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> OINK_O_LANTERN = ITEMS.register("oink_o_lantern",
+            () -> new BlockItem(ModBlocks.OINK_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SPIDER_PUMPKIN = ITEMS.register("spider_pumpkin",
+            () -> new BlockItem(ModBlocks.SPIDER_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WEB_O_LANTERN = ITEMS.register("web_o_lantern",
+            () -> new BlockItem(ModBlocks.WEB_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> GHAST_PUMPKIN = ITEMS.register("ghast_pumpkin",
+            () -> new BlockItem(ModBlocks.GHAST_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SCREAM_O_LANTERN = ITEMS.register("scream_o_lantern",
+            () -> new BlockItem(ModBlocks.SCREAM_O_LANTERN.get(), new Item.Properties()));
 }

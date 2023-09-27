@@ -15,6 +15,12 @@
     "jackocache:villager_pumpkin",
     "jackocache:hmm_o_lantern",
     "jackocache:uwu_pumpkin",
-    "jackocache:uwu_o_lantern"
+    "jackocache:uwu_o_lantern",
+    "jackocache:pig_pumpkin",
+    "jackocache:oink_o_lantern",
+    "jackocache:spider_pumpkin",
+    "jackocache:web_o_lantern",
+    "jackocache:ghast_pumpkin",
+    "jackocache:scream_o_lantern"
   ]
 }
