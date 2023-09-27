@@ -62,7 +62,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
-        registerHorizontalBlock(pumpkin,
+        registerHorizontalBlock(jackolantern,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + jackolanternID),
                 modLoc("block/" + pumpkinID + "_top"));
