@@ -31,6 +31,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         jackOLantern(ModBlocks.PIG_PUMPKIN.get(), ModBlocks.OINK_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.SPIDER_PUMPKIN.get(), ModBlocks.WEB_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.GHAST_PUMPKIN.get(), ModBlocks.SCREAM_O_LANTERN.get(), pWriter);
+        jackOLantern(ModBlocks.SLIME_PUMPKIN.get(), ModBlocks.GOO_O_LANTERN.get(), pWriter);
+        jackOLantern(ModBlocks.NICE_PUMPKIN.get(), ModBlocks.NICE_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.WITHER_PUMPKIN.get(), ModBlocks.WITHERING_O_LANTERN.get(), pWriter);
     }
 

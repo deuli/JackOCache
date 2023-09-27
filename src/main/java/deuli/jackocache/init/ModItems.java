@@ -73,6 +73,16 @@ public class ModItems {
     public static final RegistryObject<Item> SCREAM_O_LANTERN = ITEMS.register("scream_o_lantern",
             () -> new BlockItem(ModBlocks.SCREAM_O_LANTERN.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> SLIME_PUMPKIN = ITEMS.register("slime_pumpkin",
+            () -> new BlockItem(ModBlocks.SLIME_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GOO_O_LANTERN = ITEMS.register("goo_o_lantern",
+            () -> new BlockItem(ModBlocks.GOO_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> NICE_PUMPKIN = ITEMS.register("nice_pumpkin",
+            () -> new BlockItem(ModBlocks.NICE_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NICE_O_LANTERN = ITEMS.register("nice_o_lantern",
+            () -> new BlockItem(ModBlocks.NICE_O_LANTERN.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> WITHER_PUMPKIN = ITEMS.register("wither_pumpkin",
             () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",

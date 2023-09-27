@@ -53,6 +53,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.GHAST_PUMPKIN.get(),
                         ModBlocks.SCREAM_O_LANTERN.get(),
 
+                        ModBlocks.SLIME_PUMPKIN.get(),
+                        ModBlocks.GOO_O_LANTERN.get(),
+
+                        ModBlocks.NICE_PUMPKIN.get(),
+                        ModBlocks.NICE_O_LANTERN.get(),
+
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
                 );
@@ -91,6 +97,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.GHAST_PUMPKIN.get(),
                         ModBlocks.SCREAM_O_LANTERN.get(),
 
+                        ModBlocks.SLIME_PUMPKIN.get(),
+                        ModBlocks.GOO_O_LANTERN.get(),
+
+                        ModBlocks.NICE_PUMPKIN.get(),
+                        ModBlocks.NICE_O_LANTERN.get(),
+
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
                 );
@@ -107,6 +119,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.PIG_PUMPKIN.get(),
                         ModBlocks.SPIDER_PUMPKIN.get(),
                         ModBlocks.GHAST_PUMPKIN.get(),
+                        ModBlocks.SLIME_PUMPKIN.get(),
+                        ModBlocks.NICE_PUMPKIN.get(),
                         ModBlocks.WITHER_PUMPKIN.get()
                 );
     }

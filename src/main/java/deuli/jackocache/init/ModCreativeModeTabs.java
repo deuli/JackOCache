@@ -55,5 +55,8 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModBlocks.WITHER_PUMPKIN.get());
                 output.accept(ModBlocks.WITHERING_O_LANTERN.get());
+
+                output.accept(ModBlocks.SLIME_PUMPKIN.get());
+                output.accept(ModBlocks.GOO_O_LANTERN.get());
             }).build());
 }

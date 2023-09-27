@@ -43,6 +43,7 @@ public class JackOSlicer extends SwordItem {
         put("minecraft:pig", new PumpkinDrop(ModBlocks.PIG_PUMPKIN.get(), 0.35F));
         put("minecraft:spider", new PumpkinDrop(ModBlocks.SPIDER_PUMPKIN.get()));
         put("minecraft:ghast", new PumpkinDrop(ModBlocks.GHAST_PUMPKIN.get(), 0.80F));
+        put("minecraft:slime", new PumpkinDrop(ModBlocks.SLIME_PUMPKIN.get(), 0.40F));
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
     }};
 
@@ -51,7 +52,7 @@ public class JackOSlicer extends SwordItem {
                 new DimensionCondition(Level.NETHER),
                 new HeightCondition(-64, 35)
         )));
-        add(new PumpkinTransformation(Blocks.ACACIA_LOG, TransformConditions.link(
+        add(new PumpkinTransformation(ModBlocks.NICE_PUMPKIN.get(), TransformConditions.link(
                 new TagCondition(0, -1, 0, BlockTags.LOGS)
         )));
         add(new PumpkinTransformation(Blocks.DEEPSLATE_GOLD_ORE, TransformConditions.link(
