@@ -79,13 +79,23 @@ public class ModItems {
     public static final RegistryObject<Item> NICE_O_LANTERN = ITEMS.register("nice_o_lantern",
             () -> new BlockItem(ModBlocks.NICE_O_LANTERN.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> EMOTE_PUMPKIN = ITEMS.register("emote_pumpkin",
+            () -> new BlockItem(ModBlocks.EMOTE_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> EMOTE_O_LANTERN = ITEMS.register("emote_o_lantern",
+            () -> new BlockItem(ModBlocks.EMOTE_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> DOG_PUMPKIN = ITEMS.register("dog_pumpkin",
+            () -> new BlockItem(ModBlocks.DOG_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BARK_O_LANTERN = ITEMS.register("bark_o_lantern",
+            () -> new BlockItem(ModBlocks.BARK_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> CAT_PUMPKIN = ITEMS.register("cat_pumpkin",
+            () -> new BlockItem(ModBlocks.CAT_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MEOW_O_LANTERN = ITEMS.register("meow_o_lantern",
+            () -> new BlockItem(ModBlocks.MEOW_O_LANTERN.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> WITHER_PUMPKIN = ITEMS.register("wither_pumpkin",
             () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",
             () -> new BlockItem(ModBlocks.WITHERING_O_LANTERN.get(), new Item.Properties()));
-
-    public static final RegistryObject<Item> EMOTE_PUMPKIN = ITEMS.register("emote_pumpkin",
-            () -> new BlockItem(ModBlocks.EMOTE_PUMPKIN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> EMOTE_O_LANTERN = ITEMS.register("emote_o_lantern",
-                () -> new BlockItem(ModBlocks.EMOTE_O_LANTERN.get(), new Item.Properties()));
 }

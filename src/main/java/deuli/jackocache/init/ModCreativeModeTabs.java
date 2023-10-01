@@ -62,6 +62,12 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.EMOTE_PUMPKIN.get());
                 output.accept(ModBlocks.EMOTE_O_LANTERN.get());
 
+                output.accept(ModBlocks.DOG_PUMPKIN.get());
+                output.accept(ModBlocks.BARK_O_LANTERN.get());
+
+                output.accept(ModBlocks.CAT_PUMPKIN.get());
+                output.accept(ModBlocks.MEOW_O_LANTERN.get());
+
                 output.accept(ModBlocks.WITHER_PUMPKIN.get());
                 output.accept(ModBlocks.WITHERING_O_LANTERN.get());
             }).build());

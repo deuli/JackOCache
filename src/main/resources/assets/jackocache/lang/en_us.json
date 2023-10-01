@@ -43,6 +43,12 @@
     "block.jackocache.emote_pumpkin": ":^) Pumpkin",
     "block.jackocache.emote_o_lantern": ":^) o'Lantern",
 
+    "block.jackocache.dog_pumpkin": "Dog Pumpkin",
+    "block.jackocache.bark_o_lantern": "Bark o'Lantern",
+
+    "block.jackocache.cat_pumpkin": "Cat Pumpkin",
+    "block.jackocache.meow_o_lantern": "Meow o'Lantern",
+
     "block.jackocache.wither_pumpkin": "Wither Pumpkin",
     "block.jackocache.withering_o_lantern": "Withering o'Lantern"
 }

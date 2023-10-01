@@ -78,13 +78,23 @@ public class ModBlocks {
     public static final RegistryObject<Block> NICE_O_LANTERN = BLOCKS.register("nice_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
-    public static final RegistryObject<Block> WITHER_PUMPKIN = BLOCKS.register("wither_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
-    public static final RegistryObject<Block> WITHERING_O_LANTERN = BLOCKS.register("withering_o_lantern",
-            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
-
     public static final RegistryObject<Block> EMOTE_PUMPKIN = BLOCKS.register("emote_pumpkin",
             () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
     public static final RegistryObject<Block> EMOTE_O_LANTERN = BLOCKS.register("emote_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> DOG_PUMPKIN = BLOCKS.register("dog_pumpkin",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> BARK_O_LANTERN = BLOCKS.register("bark_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> CAT_PUMPKIN = BLOCKS.register("cat_pumpkin",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> MEOW_O_LANTERN = BLOCKS.register("meow_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> WITHER_PUMPKIN = BLOCKS.register("wither_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+    public static final RegistryObject<Block> WITHERING_O_LANTERN = BLOCKS.register("withering_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }

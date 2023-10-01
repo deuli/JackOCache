@@ -62,6 +62,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.EMOTE_PUMPKIN.get(),
                         ModBlocks.EMOTE_O_LANTERN.get(),
 
+                        ModBlocks.DOG_PUMPKIN.get(),
+                        ModBlocks.BARK_O_LANTERN.get(),
+
+                        ModBlocks.CAT_PUMPKIN.get(),
+                        ModBlocks.MEOW_O_LANTERN.get(),
+
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
                 );
@@ -108,6 +114,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                         ModBlocks.EMOTE_PUMPKIN.get(),
                         ModBlocks.EMOTE_O_LANTERN.get(),
+
+                        ModBlocks.DOG_PUMPKIN.get(),
+                        ModBlocks.BARK_O_LANTERN.get(),
+
+                        ModBlocks.CAT_PUMPKIN.get(),
+                        ModBlocks.MEOW_O_LANTERN.get(),
 
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
