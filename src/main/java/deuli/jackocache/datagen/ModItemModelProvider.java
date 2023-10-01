@@ -62,6 +62,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         blockItem(ModBlocks.NICE_PUMPKIN);
         blockItem(ModBlocks.NICE_O_LANTERN);
 
+        blockItem(ModBlocks.EMOTE_PUMPKIN);
+        blockItem(ModBlocks.EMOTE_O_LANTERN);
+
         blockItem(ModBlocks.WITHER_PUMPKIN);
         blockItem(ModBlocks.WITHERING_O_LANTERN);
     }

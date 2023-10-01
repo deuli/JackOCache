@@ -4,10 +4,6 @@ import deuli.jackocache.JackOCache;
 import deuli.jackocache.items.JackOSlicer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarvedPumpkinBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -87,4 +83,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",
             () -> new BlockItem(ModBlocks.WITHERING_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> EMOTE_PUMPKIN = ITEMS.register("emote_pumpkin",
+            () -> new BlockItem(ModBlocks.EMOTE_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> EMOTE_O_LANTERN = ITEMS.register("emote_o_lantern",
+                () -> new BlockItem(ModBlocks.EMOTE_O_LANTERN.get(), new Item.Properties()));
 }

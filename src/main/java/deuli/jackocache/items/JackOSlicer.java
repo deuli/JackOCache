@@ -55,8 +55,8 @@ public class JackOSlicer extends SwordItem {
         add(new PumpkinTransformation(ModBlocks.NICE_PUMPKIN.get(), TransformConditions.link(
                 new TagCondition(0, -1, 0, BlockTags.LOGS)
         )));
-        add(new PumpkinTransformation(Blocks.DEEPSLATE_GOLD_ORE, TransformConditions.link(
-                new BlockCondition(0, 1, 0, Blocks.GOLD_BLOCK)
+        add(new PumpkinTransformation(ModBlocks.EMOTE_PUMPKIN.get(), TransformConditions.link(
+                new SignCondition("", ":^)")
         )));
         add(new PumpkinTransformation(Blocks.BEDROCK, TransformConditions.link(
                 new BiomeCondition(Biomes.DARK_FOREST)

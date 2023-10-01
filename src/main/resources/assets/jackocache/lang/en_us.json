@@ -40,6 +40,9 @@
     "block.jackocache.nice_pumpkin": "nice Pumpkin",
     "block.jackocache.nice_o_lantern": "nice o'Lantern",
 
+    "block.jackocache.emote_pumpkin": ":^) Pumpkin",
+    "block.jackocache.emote_o_lantern": ":^) o'Lantern",
+
     "block.jackocache.wither_pumpkin": "Wither Pumpkin",
     "block.jackocache.withering_o_lantern": "Withering o'Lantern"
 }
