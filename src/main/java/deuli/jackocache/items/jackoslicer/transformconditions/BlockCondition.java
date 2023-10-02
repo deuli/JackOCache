@@ -1,4 +1,4 @@
-package deuli.jackocache.items.jackoslicer;
+package deuli.jackocache.items.jackoslicer.transformconditions;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;

@@ -1,4 +1,4 @@
-package deuli.jackocache.items;
+package deuli.jackocache.items.jackoslicer;
 
 import deuli.jackocache.init.ModBlocks;
 import net.minecraft.world.level.block.Block;
