@@ -4,9 +4,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 
 public class HeightCondition extends TransformConditions {
-
-    private int minHeight;
-    private int maxHeight;
+    private final int minHeight;
+    private final int maxHeight;
 
     public HeightCondition(int minHeight, int maxHeight) {
         this.minHeight = minHeight;
@@ -15,7 +14,7 @@ public class HeightCondition extends TransformConditions {
 
     @Override
     public boolean check(Level level, BlockPos blockPos) {
-        if(blockPos.getY() >= minHeight && blockPos.getY() <= maxHeight)
+        if (blockPos.getY() >= minHeight && blockPos.getY() <= maxHeight)
             return checkNext(level, blockPos);
 
         return false;

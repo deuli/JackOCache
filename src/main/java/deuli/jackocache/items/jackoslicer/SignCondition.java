@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.entity.SignBlockEntity;
 
 public class SignCondition extends TransformConditions {
-
     private String[] signContents = new String[4];
 
     public SignCondition(String[] signContents) {
@@ -39,9 +38,9 @@ public class SignCondition extends TransformConditions {
     @Override
     public boolean check(Level level, BlockPos blockPos) {
         return checkSign(level, blockPos.north(), Direction.NORTH) ||
-               checkSign(level, blockPos.east(), Direction.EAST) ||
-               checkSign(level, blockPos.south(), Direction.SOUTH) ||
-               checkSign(level, blockPos.west(), Direction.WEST);
+                checkSign(level, blockPos.east(), Direction.EAST) ||
+                checkSign(level, blockPos.south(), Direction.SOUTH) ||
+                checkSign(level, blockPos.west(), Direction.WEST);
     }
 
     private boolean checkSign(Level level, BlockPos blockPos, Direction direction) {
@@ -52,8 +51,7 @@ public class SignCondition extends TransformConditions {
             for (int i = 0; i < message.length; i++)
                 if (!message[i].getString().equals(signContents[i]))
                     return false;
-        }
-        else
+        } else
             return false;
 
         level.destroyBlock(blockPos, false); //Block isn't updated!

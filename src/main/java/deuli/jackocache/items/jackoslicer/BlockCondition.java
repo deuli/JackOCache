@@ -4,13 +4,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
 
 public class BlockCondition extends TransformConditions {
-
-    private Vec3i offset;
-    private Block block;
+    private final Vec3i offset;
+    private final Block block;
     public boolean destroyBlock;
 
     public BlockCondition(Vec3i offset, Block block, boolean destroyBlock) {
@@ -33,11 +30,10 @@ public class BlockCondition extends TransformConditions {
 
     @Override
     public boolean check(Level level, BlockPos blockPos) {
-        if(level.getBlockState(blockPos.offset(offset)).is(block))
-        {
+        if (level.getBlockState(blockPos.offset(offset)).is(block)) {
             boolean result = checkNext(level, blockPos);
 
-            if(result && destroyBlock)
+            if (result && destroyBlock)
                 level.destroyBlock(blockPos.offset(offset), false); //Block isn't updated!
 
             return result;

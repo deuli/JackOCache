@@ -1,7 +1,6 @@
 package deuli.jackocache.items;
 
 import deuli.jackocache.init.ModBlocks;
-import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
 import deuli.jackocache.items.jackoslicer.*;
 import net.minecraft.sounds.SoundEvents;
@@ -17,24 +16,15 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.BiomeManager;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
-import net.minecraft.world.level.dimension.DimensionType;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class JackOSlicer extends SwordItem {
-
-    private HashMap<String, PumpkinDrop> pumpkinDrops = new HashMap<>(){{
+    private final HashMap<String, PumpkinDrop> pumpkinDrops = new HashMap<>() {{
         put("minecraft:creeper", new PumpkinDrop(ModBlocks.CREEPER_PUMPKIN.get()));
         put("minecraft:enderman", new PumpkinDrop(ModBlocks.ENDERMAN_PUMPKIN.get()));
         put("minecraft:skeleton", new PumpkinDrop(ModBlocks.SKELETON_PUMPKIN.get()));
@@ -49,7 +39,7 @@ public class JackOSlicer extends SwordItem {
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
     }};
 
-    private ArrayList<PumpkinTransformation> pumpkinTransformations = new ArrayList<>() {{
+    private final ArrayList<PumpkinTransformation> pumpkinTransformations = new ArrayList<>() {{
         add(new PumpkinTransformation(ModBlocks.UWU_PUMPKIN.get(), TransformConditions.link(
                 new DimensionCondition(Level.NETHER),
                 new HeightCondition(-64, 35)
@@ -70,19 +60,16 @@ public class JackOSlicer extends SwordItem {
     }
 
     @Override
-    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker)
-    {
+    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
 //        if(pAttacker instanceof Player player)
 //            player.displayClientMessage(Component.literal(pTarget.getEncodeId()), true);
 
         ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
 
-        if(pAttacker instanceof Player player && player.getInventory().contains(pumpkin) && pTarget.getHealth() <= 0)
-        {
+        if (pAttacker instanceof Player player && player.getInventory().contains(pumpkin) && pTarget.getHealth() <= 0) {
             PumpkinDrop pumpkinDrop = pumpkinDrops.getOrDefault(pTarget.getEncodeId(), new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
 
-            if(player.getRandom().nextFloat() <= pumpkinDrop.chance)
-            {
+            if (player.getRandom().nextFloat() <= pumpkinDrop.chance) {
                 pTarget.spawnAtLocation(pumpkinDrop.pumpkin);
 
                 int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
@@ -98,13 +85,10 @@ public class JackOSlicer extends SwordItem {
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Level level = pContext.getLevel();
-        if(pContext.getLevel().getBlockState(pContext.getClickedPos()).getBlock() == Blocks.PUMPKIN)
-        {
+        if (pContext.getLevel().getBlockState(pContext.getClickedPos()).getBlock() == Blocks.PUMPKIN) {
             Block pumpkin = ModBlocks.GENERIC_PUMPKIN.get();
-            for(PumpkinTransformation transformation : pumpkinTransformations)
-            {
-                if(transformation.check(level, pContext.getClickedPos()))
-                {
+            for (PumpkinTransformation transformation : pumpkinTransformations) {
+                if (transformation.check(level, pContext.getClickedPos())) {
                     pumpkin = transformation.getResult();
                     break;
                 }
@@ -123,7 +107,6 @@ public class JackOSlicer extends SwordItem {
     }
 
     private class PumpkinDrop {
-
         private final Block pumpkin;
         private float chance = 0.5F;
 

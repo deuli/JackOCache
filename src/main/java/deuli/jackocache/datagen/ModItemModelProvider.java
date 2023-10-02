@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItemModelProvider extends ItemModelProvider {
-
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, JackOCache.MOD_ID, existingFileHelper);
     }
@@ -81,8 +80,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(JackOCache.MOD_ID, "item/" + item.getId().getPath()));
     }
 
-    private void blockItem(RegistryObject<Block> block)
-    {
+    private void blockItem(RegistryObject<Block> block) {
         this.withExistingParent(JackOCache.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }

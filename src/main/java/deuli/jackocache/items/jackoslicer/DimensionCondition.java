@@ -5,8 +5,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 
 public class DimensionCondition extends TransformConditions {
-
-    private ResourceKey<Level> dimension;
+    private final ResourceKey<Level> dimension;
 
     public DimensionCondition(ResourceKey<Level> dimension) {
         this.dimension = dimension;
@@ -14,7 +13,7 @@ public class DimensionCondition extends TransformConditions {
 
     @Override
     public boolean check(Level level, BlockPos blockPos) {
-        if(level.dimension() == dimension)
+        if (level.dimension() == dimension)
             return checkNext(level, blockPos);
 
         return false;

@@ -11,8 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
-
-    private ExistingFileHelper exFileHelper;
+    private final ExistingFileHelper exFileHelper;
 
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, JackOCache.MOD_ID, exFileHelper);
@@ -73,8 +72,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         registerHorizontalBlockWithModel(ModBlocks.WITHERING_O_LANTERN);
     }
 
-    private void registerPumpkin(RegistryObject<Block> pumpkin)
-    {
+    private void registerPumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
         registerHorizontalBlock(pumpkin,
                 mcLoc("block/pumpkin_side"),
@@ -82,8 +80,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 mcLoc("block/pumpkin_top"));
     }
 
-    private void registerEntirePumpkin(RegistryObject<Block> pumpkin)
-    {
+    private void registerEntirePumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
         registerHorizontalBlock(pumpkin,
                 modLoc("block/" + pumpkinID + "_side"),
@@ -91,8 +88,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
-    private void registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin)
-    {
+    private void registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
         registerHorizontalBlock(jackolantern,
@@ -101,14 +97,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
-    private void registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top)
-    {
+    private void registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
         BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
         horizontalBlock(block.get(), orientable);
     }
 
-    private void registerHorizontalBlockWithModel(RegistryObject<Block> block)
-    {
+    private void registerHorizontalBlockWithModel(RegistryObject<Block> block) {
         horizontalBlock(block.get(), models().getExistingFile(modLoc("block/" + block.getId().getPath())));
     }
 }

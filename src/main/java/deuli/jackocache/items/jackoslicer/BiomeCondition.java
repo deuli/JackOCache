@@ -6,8 +6,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 
 public class BiomeCondition extends TransformConditions {
-
-    private ResourceKey<Biome> biome;
+    private final ResourceKey<Biome> biome;
 
     public BiomeCondition(ResourceKey<Biome> biome) {
         this.biome = biome;
@@ -15,7 +14,7 @@ public class BiomeCondition extends TransformConditions {
 
     @Override
     public boolean check(Level level, BlockPos blockPos) {
-        if(level.getBiome(blockPos).unwrapKey().get() == biome)
+        if (level.getBiome(blockPos).unwrapKey().get() == biome)
             return checkNext(level, blockPos);
 
         return false;

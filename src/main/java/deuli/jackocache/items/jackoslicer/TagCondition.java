@@ -7,9 +7,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
 public class TagCondition extends TransformConditions {
-
-    private Vec3i offset;
-    private TagKey<Block> tag;
+    private final Vec3i offset;
+    private final TagKey<Block> tag;
     public boolean destroyBlock;
 
     public TagCondition(Vec3i offset, TagKey<Block> tag, boolean destroyBlock) {
@@ -32,11 +31,10 @@ public class TagCondition extends TransformConditions {
 
     @Override
     public boolean check(Level level, BlockPos blockPos) {
-        if(level.getBlockState(blockPos.offset(offset)).getTags().anyMatch(e -> e.equals(tag)))
-        {
+        if (level.getBlockState(blockPos.offset(offset)).getTags().anyMatch(e -> e.equals(tag))) {
             boolean result = checkNext(level, blockPos);
 
-            if(result && destroyBlock)
+            if (result && destroyBlock)
                 level.destroyBlock(blockPos.offset(offset), false); //Block isn't updated!
 
             return result;

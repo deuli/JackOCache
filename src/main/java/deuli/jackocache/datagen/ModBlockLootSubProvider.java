@@ -9,7 +9,6 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class ModBlockLootSubProvider extends BlockLootSubProvider {
-
     protected ModBlockLootSubProvider() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
