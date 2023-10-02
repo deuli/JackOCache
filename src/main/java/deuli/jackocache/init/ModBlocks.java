@@ -1,10 +1,7 @@
 package deuli.jackocache.init;
 
 import deuli.jackocache.JackOCache;
-import deuli.jackocache.blocks.ChickenPumpkinBlock;
-import deuli.jackocache.blocks.EquipableChickenPumpkinBlock;
-import deuli.jackocache.blocks.EquipableWitherPumpkinBlock;
-import deuli.jackocache.blocks.WitherPumpkinBlock;
+import deuli.jackocache.blocks.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
@@ -101,6 +98,11 @@ public class ModBlocks {
             () -> new EquipableChickenPumpkinBlock());
     public static final RegistryObject<Block> CLUCK_O_LANTERN = BLOCKS.register("cluck_o_lantern",
             () -> new ChickenPumpkinBlock());
+
+    public static final RegistryObject<Block> DRAGON_PUMPKIN = BLOCKS.register("dragon_pumpkin",
+            () -> new EquipableDragonPumpkinBlock());
+    public static final RegistryObject<Block> THE_END_O_LANTERN = BLOCKS.register("the_end_o_lantern",
+            () -> new DragonPumpkinBlock());
 
     public static final RegistryObject<Block> WITHER_PUMPKIN = BLOCKS.register("wither_pumpkin",
             () -> new EquipableWitherPumpkinBlock());

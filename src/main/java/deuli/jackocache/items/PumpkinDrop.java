@@ -19,6 +19,7 @@ public class PumpkinDrop {
         put("minecraft:wolf", new PumpkinDrop(ModBlocks.DOG_PUMPKIN.get(), 0.65F));
         put("minecraft:cat", new PumpkinDrop(ModBlocks.CAT_PUMPKIN.get(), 0.75F));
         put("minecraft:chicken", new PumpkinDrop(ModBlocks.CHICKEN_PUMPKIN.get()));
+        put("minecraft:ender_dragon", new PumpkinDrop(ModBlocks.DRAGON_PUMPKIN.get(), 1.00F));
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
     }};
 

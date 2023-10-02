@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jackolanterns",
+  "key": {
+    "A": {
+      "item": "jackocache:dragon_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "jackocache:the_end_o_lantern"
+  },
+  "show_notification": true
+}

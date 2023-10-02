@@ -70,6 +70,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.CHICKEN_PUMPKIN.get(),
                         ModBlocks.CLUCK_O_LANTERN.get(),
 
+                        ModBlocks.DRAGON_PUMPKIN.get(),
+                        ModBlocks.THE_END_O_LANTERN.get(),
+
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
                 );
@@ -126,6 +129,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.CHICKEN_PUMPKIN.get(),
                         ModBlocks.CLUCK_O_LANTERN.get(),
 
+                        ModBlocks.DRAGON_PUMPKIN.get(),
+                        ModBlocks.THE_END_O_LANTERN.get(),
+
                         ModBlocks.WITHER_PUMPKIN.get(),
                         ModBlocks.WITHERING_O_LANTERN.get()
                 );
@@ -146,6 +152,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.NICE_PUMPKIN.get(),
                         ModBlocks.EMOTE_PUMPKIN.get(),
                         ModBlocks.CHICKEN_PUMPKIN.get(),
+                        ModBlocks.DRAGON_PUMPKIN.get(),
                         ModBlocks.WITHER_PUMPKIN.get()
                 );
     }

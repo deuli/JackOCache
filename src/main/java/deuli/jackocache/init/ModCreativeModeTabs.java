@@ -70,6 +70,9 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.CHICKEN_PUMPKIN.get());
                 output.accept(ModBlocks.CLUCK_O_LANTERN.get());
 
+                output.accept(ModBlocks.DRAGON_PUMPKIN.get());
+                output.accept(ModBlocks.THE_END_O_LANTERN.get());
+
                 output.accept(ModBlocks.WITHER_PUMPKIN.get());
                 output.accept(ModBlocks.WITHERING_O_LANTERN.get());
             }).build());
