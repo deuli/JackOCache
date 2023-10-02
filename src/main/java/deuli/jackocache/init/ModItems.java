@@ -93,6 +93,11 @@ public class ModItems {
     public static final RegistryObject<Item> MEOW_O_LANTERN = ITEMS.register("meow_o_lantern",
             () -> new BlockItem(ModBlocks.MEOW_O_LANTERN.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> CHICKEN_PUMPKIN = ITEMS.register("chicken_pumpkin",
+            () -> new BlockItem(ModBlocks.CHICKEN_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CLUCK_O_LANTERN = ITEMS.register("cluck_o_lantern",
+            () -> new BlockItem(ModBlocks.CLUCK_O_LANTERN.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> WITHER_PUMPKIN = ITEMS.register("wither_pumpkin",
             () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",

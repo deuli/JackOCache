@@ -36,6 +36,7 @@ public class JackOSlicer extends SwordItem {
         put("minecraft:slime", new PumpkinDrop(ModBlocks.SLIME_PUMPKIN.get(), 0.40F));
         put("minecraft:wolf", new PumpkinDrop(ModBlocks.DOG_PUMPKIN.get(), 0.65F));
         put("minecraft:cat", new PumpkinDrop(ModBlocks.CAT_PUMPKIN.get(), 0.75F));
+        put("minecraft:chicken", new PumpkinDrop(ModBlocks.CHICKEN_PUMPKIN.get()));
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
     }};
 
