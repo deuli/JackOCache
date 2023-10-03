@@ -79,6 +79,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerPumpkin(ModBlocks.PLAYER_PUMPKIN);
         registerPumpkin(ModBlocks.UUH_O_LANTERN);
+
+        registerHorizontalBlockWithModel(ModBlocks.SHEEP_PUMPKIN);
+        registerHorizontalBlockWithModel(ModBlocks.BAH_O_LANTERN);
     }
 
     private void registerPumpkin(RegistryObject<Block> pumpkin) {

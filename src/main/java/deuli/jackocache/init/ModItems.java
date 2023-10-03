@@ -117,4 +117,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.PLAYER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> UUH_O_LANTERN = ITEMS.register("uuh_o_lantern",
             () -> new BlockItem(ModBlocks.UUH_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SHEEP_PUMPKIN = ITEMS.register("sheep_pumpkin",
+            () -> new BlockItem(ModBlocks.SHEEP_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAH_O_LANTERN = ITEMS.register("bah_o_lantern",
+            () -> new BlockItem(ModBlocks.BAH_O_LANTERN.get(), new Item.Properties()));
 }
