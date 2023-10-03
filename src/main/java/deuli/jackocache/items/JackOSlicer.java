@@ -2,8 +2,10 @@ package deuli.jackocache.items;
 
 import deuli.jackocache.JackOCache;
 import deuli.jackocache.init.ModBlocks;
+import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
-import deuli.jackocache.items.jackoslicer.*;
+import deuli.jackocache.items.jackoslicer.PumpkinDrop;
+import deuli.jackocache.items.jackoslicer.PumpkinTransformation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -29,29 +31,29 @@ public class JackOSlicer extends SwordItem {
         super(ModTiers.PUMPKIN, 3, -2.4F, new Item.Properties());
     }
 
-    @Override
-    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        return super.hurtEnemy(pStack, pTarget, pAttacker);
-    }
-
     @SubscribeEvent
     public static void livingEntityDeath(LivingDeathEvent event) {
-        ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
-        LivingEntity target = event.getEntity();
+        if (event.getSource().getEntity() != null) {
+            LivingEntity attacker = (LivingEntity) event.getSource().getEntity();
+            if (attacker.getMainHandItem().is(ModItems.JACK_O_SLICER.get())) {
+                ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
+                LivingEntity target = event.getEntity();
 
-        if (event.getSource().getEntity() instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
-            String encodeId = target.getEncodeId();
-            if(target instanceof Player)
-                encodeId = "minecraft:player";
+                if (attacker instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
+                    String encodeId = target.getEncodeId();
+                    if (target instanceof Player)
+                        encodeId = "minecraft:player";
 
-            PumpkinDrop pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(encodeId, new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
-            if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
-                target.spawnAtLocation(pumpkinDrop.getPumpkin());
+                    PumpkinDrop pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(encodeId, new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
+                    if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
+                        target.spawnAtLocation(pumpkinDrop.getPumpkin());
 
-                int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
-                player.getInventory().removeItem(pumpkinSlot, 1);
+                        int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
+                        player.getInventory().removeItem(pumpkinSlot, 1);
 
-                player.level().playSound(null, target.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+                        player.level().playSound(null, target.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+                    }
+                }
             }
         }
     }
