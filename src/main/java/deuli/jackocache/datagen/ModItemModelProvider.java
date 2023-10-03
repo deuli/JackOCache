@@ -81,6 +81,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.PUMPKING);
         blockItem(ModBlocks.ROYAL_O_LANTERN);
+
+        blockItem(ModBlocks.PLAYER_PUMPKIN);
+        blockItem(ModBlocks.UUH_O_LANTERN);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

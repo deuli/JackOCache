@@ -36,13 +36,15 @@ public class JackOSlicer extends SwordItem {
 
     @SubscribeEvent
     public static void livingEntityDeath(LivingDeathEvent event) {
-        System.out.println("Death");
         ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
-
         LivingEntity target = event.getEntity();
-        if (event.getSource().getEntity() instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
-            PumpkinDrop pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(target.getEncodeId(), new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
 
+        if (event.getSource().getEntity() instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
+            String encodeId = target.getEncodeId();
+            if(target instanceof Player)
+                encodeId = "minecraft:player";
+
+            PumpkinDrop pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(encodeId, new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
             if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
                 target.spawnAtLocation(pumpkinDrop.getPumpkin());
 

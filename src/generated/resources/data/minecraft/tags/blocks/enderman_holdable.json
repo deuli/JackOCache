@@ -17,6 +17,7 @@
     "jackocache:chicken_pumpkin",
     "jackocache:dragon_pumpkin",
     "jackocache:wither_pumpkin",
-    "jackocache:pumpking"
+    "jackocache:pumpking",
+    "jackocache:player_pumpkin"
   ]
 }

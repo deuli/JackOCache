@@ -21,6 +21,7 @@ public class PumpkinDrop {
         put("minecraft:chicken", new PumpkinDrop(ModBlocks.CHICKEN_PUMPKIN.get()));
         put("minecraft:ender_dragon", new PumpkinDrop(ModBlocks.DRAGON_PUMPKIN.get(), 1.00F));
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
+        put("minecraft:player", new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get(), 0.70F));
     }};
 
     private final Block pumpkin;
