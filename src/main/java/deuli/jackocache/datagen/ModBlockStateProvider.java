@@ -11,11 +11,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
-    private final ExistingFileHelper exFileHelper;
-
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, JackOCache.MOD_ID, exFileHelper);
-        this.exFileHelper = exFileHelper;
     }
 
     @Override
