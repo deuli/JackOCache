@@ -87,6 +87,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.SHEEP_PUMPKIN);
         blockItem(ModBlocks.BAH_O_LANTERN);
+
+        blockItem(ModBlocks.GHOST_PUMPKIN);
+        blockItem(ModBlocks.SPOOK_O_LANTERN);
+
+        blockItem(ModBlocks.SNOW_PUMPKIN);
+        blockItem(ModBlocks.FROST_O_LANTERN);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

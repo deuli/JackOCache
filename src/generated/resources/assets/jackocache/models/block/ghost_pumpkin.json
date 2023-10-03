@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "front": "jackocache:block/ghost_pumpkin",
+    "side": "jackocache:block/ghost_pumpkin_side",
+    "top": "jackocache:block/ghost_pumpkin_top"
+  }
+}

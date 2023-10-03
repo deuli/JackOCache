@@ -2,11 +2,13 @@ package deuli.jackocache.init;
 
 import deuli.jackocache.JackOCache;
 import deuli.jackocache.blocks.*;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.EquipableCarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -123,4 +125,24 @@ public class ModBlocks {
             () -> new EquipableSheepPumpkinBlock());
     public static final RegistryObject<Block> BAH_O_LANTERN = BLOCKS.register("bah_o_lantern",
             () -> new SheepPumpkinBlock());
+
+    public static final RegistryObject<Block> GHOST_PUMPKIN = BLOCKS.register("ghost_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN).noOcclusion()) {
+                @Override
+                public boolean skipRendering(BlockState pState, BlockState pAdjacentState, Direction pDirection) {
+                    return pAdjacentState.is(this) ? true : super.skipRendering(pState, pAdjacentState, pDirection);
+                }
+            });
+    public static final RegistryObject<Block> SPOOK_O_LANTERN = BLOCKS.register("spook_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN).noOcclusion()) {
+                @Override
+                public boolean skipRendering(BlockState pState, BlockState pAdjacentState, Direction pDirection) {
+                    return pAdjacentState.is(this) ? true : super.skipRendering(pState, pAdjacentState, pDirection);
+                }
+            });
+
+    public static final RegistryObject<Block> SNOW_PUMPKIN = BLOCKS.register("snow_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+    public static final RegistryObject<Block> FROST_O_LANTERN = BLOCKS.register("frost_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }

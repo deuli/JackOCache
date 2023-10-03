@@ -43,6 +43,10 @@
     "jackocache:player_pumpkin",
     "jackocache:uuh_o_lantern",
     "jackocache:sheep_pumpkin",
-    "jackocache:bah_o_lantern"
+    "jackocache:bah_o_lantern",
+    "jackocache:ghost_pumpkin",
+    "jackocache:spook_o_lantern",
+    "jackocache:snow_pumpkin",
+    "jackocache:frost_o_lantern"
   ]
 }

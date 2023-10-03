@@ -65,5 +65,11 @@
     "block.jackocache.uuh_o_lantern": "UUH o'Lantern",
 
     "block.jackocache.sheep_pumpkin": "Sheep Pumpkin",
-    "block.jackocache.bah_o_lantern": "Bah o'Lantern"
+    "block.jackocache.bah_o_lantern": "Bah o'Lantern",
+
+    "block.jackocache.ghost_pumpkin": "Ghost Pumpkin",
+    "block.jackocache.spook_o_lantern": "Spook o'Lantern",
+
+    "block.jackocache.snow_pumpkin": "Snow Pumpkin",
+    "block.jackocache.frost_o_lantern": "Frost o'Lantern"
 }

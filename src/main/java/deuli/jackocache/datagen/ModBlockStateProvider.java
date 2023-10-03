@@ -82,36 +82,44 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerHorizontalBlockWithModel(ModBlocks.SHEEP_PUMPKIN);
         registerHorizontalBlockWithModel(ModBlocks.BAH_O_LANTERN);
+
+        registerEntirePumpkin(ModBlocks.GHOST_PUMPKIN).renderType("translucent");
+        registerJackOLantern(ModBlocks.SPOOK_O_LANTERN, ModBlocks.GHOST_PUMPKIN).renderType("translucent");
+
+        registerEntirePumpkin(ModBlocks.SNOW_PUMPKIN);
+        registerJackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
     }
 
-    private void registerPumpkin(RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder registerPumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
-        registerHorizontalBlock(pumpkin,
+        return registerHorizontalBlock(pumpkin,
                 mcLoc("block/pumpkin_side"),
                 modLoc("block/" + pumpkinID),
                 mcLoc("block/pumpkin_top"));
     }
 
-    private void registerEntirePumpkin(RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder registerEntirePumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
-        registerHorizontalBlock(pumpkin,
+        return registerHorizontalBlock(pumpkin,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + pumpkinID),
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
-    private void registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
-        registerHorizontalBlock(jackolantern,
+        return registerHorizontalBlock(jackolantern,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + jackolanternID),
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
-    private void registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
+    private BlockModelBuilder registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
         BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
         horizontalBlock(block.get(), orientable);
+
+        return orientable;
     }
 
     private void registerHorizontalBlockWithModel(RegistryObject<Block> block) {

@@ -122,4 +122,14 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.SHEEP_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> BAH_O_LANTERN = ITEMS.register("bah_o_lantern",
             () -> new BlockItem(ModBlocks.BAH_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> GHOST_PUMPKIN = ITEMS.register("ghost_pumpkin",
+            () -> new BlockItem(ModBlocks.GHOST_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPOOK_O_LANTERN = ITEMS.register("spook_o_lantern",
+            () -> new BlockItem(ModBlocks.SPOOK_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SNOW_PUMPKIN = ITEMS.register("snow_pumpkin",
+            () -> new BlockItem(ModBlocks.SNOW_PUMPKIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> FROST_O_LANTERN = ITEMS.register("frost_o_lantern",
+            () -> new BlockItem(ModBlocks.FROST_O_LANTERN.get(), new Item.Properties()));
 }

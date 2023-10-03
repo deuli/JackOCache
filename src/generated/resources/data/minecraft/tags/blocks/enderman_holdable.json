@@ -19,6 +19,8 @@
     "jackocache:wither_pumpkin",
     "jackocache:pumpking",
     "jackocache:player_pumpkin",
-    "jackocache:sheep_pumpkin"
+    "jackocache:sheep_pumpkin",
+    "jackocache:ghost_pumpkin",
+    "jackocache:snow_pumpkin"
   ]
 }
