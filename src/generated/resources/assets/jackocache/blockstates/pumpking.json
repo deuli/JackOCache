@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jackocache:block/pumpking",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "jackocache:block/pumpking"
+    },
+    "facing=south": {
+      "model": "jackocache:block/pumpking",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jackocache:block/pumpking",
+      "y": 270
+    }
+  }
+}

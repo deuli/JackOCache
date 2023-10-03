@@ -107,4 +107,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.WITHER_PUMPKIN.get(), new Item.Properties()));
     public static final RegistryObject<Item> WITHERING_O_LANTERN = ITEMS.register("withering_o_lantern",
             () -> new BlockItem(ModBlocks.WITHERING_O_LANTERN.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PUMPKING = ITEMS.register("pumpking",
+            () -> new BlockItem(ModBlocks.PUMPKING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ROYAL_O_LANTERN = ITEMS.register("royal_o_lantern",
+            () -> new BlockItem(ModBlocks.ROYAL_O_LANTERN.get(), new Item.Properties()));
 }

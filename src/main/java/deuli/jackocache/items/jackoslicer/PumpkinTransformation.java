@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.ArrayList;
 
@@ -20,6 +21,9 @@ public class PumpkinTransformation {
         )));
         add(new PumpkinTransformation(ModBlocks.EMOTE_PUMPKIN.get(), TransformConditions.link(
                 new SignCondition("", ":^)")
+        )));
+        add(new PumpkinTransformation(ModBlocks.PUMPKING.get(), TransformConditions.link(
+                new BlockCondition(0, 1, 0, Blocks.GOLD_BLOCK, true)
         )));
     }};
 

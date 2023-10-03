@@ -108,4 +108,9 @@ public class ModBlocks {
             () -> new EquipableWitherPumpkinBlock());
     public static final RegistryObject<Block> WITHERING_O_LANTERN = BLOCKS.register("withering_o_lantern",
             () -> new WitherPumpkinBlock());
+
+    public static final RegistryObject<Block> PUMPKING = BLOCKS.register("pumpking",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+    public static final RegistryObject<Block> ROYAL_O_LANTERN = BLOCKS.register("royal_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 }
