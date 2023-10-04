@@ -17,6 +17,7 @@ import org.slf4j.Logger;
 @Mod(JackOCache.MOD_ID)
 public class JackOCache {
     public static final String MOD_ID = "jackocache";
+    public static final String MOD_NAME = "Jack o'Cache";
 
     public static final Logger LOGGER = LogUtils.getLogger();
 
