@@ -1,6 +1,7 @@
 package deuli.jackocache.datagen;
 
 import deuli.jackocache.init.ModBlocks;
+import deuli.jackocache.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -8,6 +9,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -19,6 +21,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.JACK_O_SLICER.get())
+                .pattern(" P ")
+                .pattern("GSG")
+                .pattern(" L ")
+                .define('P', Blocks.CARVED_PUMPKIN)
+                .define('G', Items.GOLD_INGOT)
+                .define('S', Items.IRON_SWORD)
+                .define('L', Blocks.JACK_O_LANTERN)
+                .unlockedBy(getHasName(Blocks.JACK_O_LANTERN), has(Blocks.JACK_O_LANTERN))
+                .save(pWriter);
+
         jackOLantern(ModBlocks.SINISTER_PUMPKIN.get(), ModBlocks.SINISTER_JACK_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.GENERIC_PUMPKIN.get(), ModBlocks.GENERIC_JACK_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.CREEPER_PUMPKIN.get(), ModBlocks.CREEP_O_LANTERN.get(), pWriter);
