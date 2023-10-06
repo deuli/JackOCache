@@ -58,6 +58,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         jackOLantern(ModBlocks.SNOW_PUMPKIN.get(), ModBlocks.FROST_O_LANTERN.get(), pWriter);
     }
 
+    /**
+     * Generates a crafting recipe based on the jack o'lantern crafting recipe.
+     * <table>
+     *     <tr>
+     *         <td>A</td>
+     *         <td>X</td>
+     *     </tr>
+     *     <tr>
+     *         <td>B</td>
+     *         <td>X</td>
+     *     </tr>
+     * </table>
+     * A = {@code pumpkin} <br>
+     * B = Torch <br>
+     * X = Empty <br>
+     * Result = {@code jackOLantern}
+     *
+     * @param pumpkin
+     * @param jackOLantern
+     * @param pWriter
+     */
     private void jackOLantern(Block pumpkin, Block jackOLantern, Consumer<FinishedRecipe> pWriter) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, jackOLantern)
                 .pattern("A")

@@ -4,6 +4,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 
+/**
+ * Checks if the block is in a certain dimension.
+ */
 public class DimensionCondition extends TransformConditions {
     private final ResourceKey<Level> dimension;
 

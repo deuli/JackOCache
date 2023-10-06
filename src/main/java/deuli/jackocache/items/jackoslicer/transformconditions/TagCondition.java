@@ -6,6 +6,9 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
+/**
+ * Checks if the block has a certain tag.
+ */
 public class TagCondition extends TransformConditions {
     private final Vec3i offset;
     private final TagKey<Block> tag;

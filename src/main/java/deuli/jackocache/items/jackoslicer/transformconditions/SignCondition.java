@@ -9,6 +9,9 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.entity.SignBlockEntity;
 
+/**
+ * Checks if the pumpkin has a sign placed on it with matching contents.
+ */
 public class SignCondition extends TransformConditions {
     private String[] signContents = new String[4];
 

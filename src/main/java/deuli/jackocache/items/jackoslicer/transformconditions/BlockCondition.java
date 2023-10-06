@@ -5,9 +5,15 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
+/**
+ * Checks if the block in a certain position offset from the pumpkin matches given block.
+ */
 public class BlockCondition extends TransformConditions {
     private final Vec3i offset;
     private final Block block;
+    /**
+     * If the block should be destroyed if the condition matches.
+     */
     public boolean destroyBlock;
 
     public BlockCondition(Vec3i offset, Block block, boolean destroyBlock) {

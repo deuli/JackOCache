@@ -5,7 +5,15 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.HashMap;
 
+/**
+ * Class used to determine what pumpkins are dropped by mobs and the chance.
+ */
 public class PumpkinDrop {
+    /**
+     * HashMap containing the possible pumpkin drops. <br>
+     * The key is a string which references the mob's encode ID. <br>
+     * The value is a {@code PumpkinDrop} instance with the block and its chance.
+     */
     public static final HashMap<String, PumpkinDrop> PUMPKIN_DROPS = new HashMap<>() {{
         put("minecraft:creeper", new PumpkinDrop(ModBlocks.CREEPER_PUMPKIN.get()));
         put("minecraft:enderman", new PumpkinDrop(ModBlocks.ENDERMAN_PUMPKIN.get()));
@@ -25,8 +33,15 @@ public class PumpkinDrop {
         put("minecraft:sheep", new PumpkinDrop(ModBlocks.SHEEP_PUMPKIN.get()));
     }};
 
+    /**
+     * The dropped pumpkin.
+     */
     private final Block pumpkin;
 
+    /**
+     * The chance for the pumpkin to drop.
+     * @default 0.5
+     */
     private float chance = 0.5F;
 
     public PumpkinDrop(Block pumpkin, float chance) {

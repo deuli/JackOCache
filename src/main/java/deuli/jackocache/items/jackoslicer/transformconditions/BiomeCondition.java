@@ -5,6 +5,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 
+/**
+ * Checks if the position of the block is in a certain biome.
+ */
 public class BiomeCondition extends TransformConditions {
     private final ResourceKey<Biome> biome;
 

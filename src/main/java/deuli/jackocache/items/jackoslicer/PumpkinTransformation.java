@@ -10,7 +10,16 @@ import net.minecraft.world.level.block.Blocks;
 
 import java.util.ArrayList;
 
+/**
+ * Class used to determine if the conditions for a pumpkin transformation is correct.
+ * Uses the <a href="https://refactoring.guru/design-patterns/chain-of-responsibility">Chain of Responsibility</a>
+ * design pattern.
+ */
 public class PumpkinTransformation {
+    /**
+     * An ArrayList containing every possible transformation. <br>
+     * When transforming, it cycles through every single entry until one chain return true completely.
+     */
     public static final ArrayList<PumpkinTransformation> PUMPKIN_TRANSFORMATIONS = new ArrayList<>() {{
         add(new PumpkinTransformation(ModBlocks.UWU_PUMPKIN.get(), TransformConditions.link(
                 new DimensionCondition(Level.NETHER),
@@ -34,17 +43,30 @@ public class PumpkinTransformation {
         )));
     }};
 
+    /**
+     * The pumpkin it transforms into.
+     */
     private final Block result;
 
-    private final TransformConditions conditions;
+    /**
+     * The first condition evaluated.
+     */
+    private final TransformConditions first;
 
-    public PumpkinTransformation(Block result, TransformConditions conditions) {
+    public PumpkinTransformation(Block result, TransformConditions first) {
         this.result = result;
-        this.conditions = conditions;
+        this.first = first;
     }
 
+    /**
+     * Starts evaluating the chain.
+     *
+     * @param level the world
+     * @param blockPos the block position of the pumpkin
+     * @return {@code true} if every condition is met, otherwise {@code false}
+     */
     public boolean check(Level level, BlockPos blockPos) {
-        return conditions.check(level, blockPos);
+        return first.check(level, blockPos);
     }
 
     public Block getResult() {

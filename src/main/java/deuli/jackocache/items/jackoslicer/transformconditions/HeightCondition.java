@@ -3,6 +3,9 @@ package deuli.jackocache.items.jackoslicer.transformconditions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 
+/**
+ * Checks if the block is between a certain Y level.
+ */
 public class HeightCondition extends TransformConditions {
     private final int minHeight;
     private final int maxHeight;

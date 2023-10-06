@@ -90,6 +90,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         registerJackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
     }
 
+    /**
+     * Generates an orientable model and north, east, south and west block states for a pumpkin block using vanilla
+     * pumpkin's side and top textures. The texture name is "$PUMPKINRESOURCEID$.png".
+     *
+     * @param pumpkin
+     * @return the new orientable model
+     * @see #registerEntirePumpkin(RegistryObject)
+     * @see #registerJackOLantern(RegistryObject, RegistryObject)
+     */
     private BlockModelBuilder registerPumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
         return registerHorizontalBlock(pumpkin,
@@ -98,6 +107,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 mcLoc("block/pumpkin_top"));
     }
 
+    /**
+     * Generates an orientable model and north, east, south and west block states for a pumpkin block.
+     * The texture names are "$PUMPKINRESOURCEID$.png", "$PUMPKINRESOURCEID$_side.png" and "$PUMPKINRESOURCEID$_top.png".
+     *
+     * @param pumpkin
+     * @return the new orientable model
+     * @see #registerPumpkin(RegistryObject)
+     * @see #registerJackOLantern(RegistryObject, RegistryObject)
+     */
     private BlockModelBuilder registerEntirePumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
         return registerHorizontalBlock(pumpkin,
@@ -106,6 +124,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
+    /**
+     * Generates an orientable model and north, east, south and west block states for a jack o'lantern block using the
+     * block's unlit counterpart's side and top textures.  The texture names are "$PJACKOLANTERNRESOURCEID$.png",
+     * "$PUMPKINRESOURCEID$_side.png" and "$PUMPKINRESOURCEID$_top.png".
+     *
+     * @param jackolantern
+     * @param pumpkin
+     * @return the new orientable model
+     * @see #registerPumpkin(RegistryObject)
+     * @see #registerEntirePumpkin(RegistryObject)
+     */
     private BlockModelBuilder registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
@@ -115,6 +144,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/" + pumpkinID + "_top"));
     }
 
+    /**
+     * Generates an orientable model and north, east, south and west block states for a block using the specified
+     * textures for the side, front and top of the block.
+     *
+     * @param block
+     * @param side the texture for the side of the block
+     * @param front the texture for the front of the block
+     * @param top the texture for the top of the block
+     * @return the new orientable model
+     */
     private BlockModelBuilder registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
         BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
         horizontalBlock(block.get(), orientable);
@@ -122,6 +161,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return orientable;
     }
 
+    /**
+     * Generates north, east, south and west block states for a block that already has a model.
+     *
+     * @param block
+     */
     private void registerHorizontalBlockWithModel(RegistryObject<Block> block) {
         horizontalBlock(block.get(), models().getExistingFile(modLoc("block/" + block.getId().getPath())));
     }

@@ -95,12 +95,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         blockItem(ModBlocks.FROST_O_LANTERN);
     }
 
+    /**
+     * Generates an handheld item model.
+     *
+     * @param item
+     * @return ItemModelBuilder
+     */
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(JackOCache.MOD_ID, "item/" + item.getId().getPath()));
     }
 
+    /**
+     * Generates a block item model.
+     *
+     * @param block
+     */
     private void blockItem(RegistryObject<Block> block) {
         this.withExistingParent(JackOCache.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
