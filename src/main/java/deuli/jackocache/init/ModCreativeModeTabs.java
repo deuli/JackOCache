@@ -37,6 +37,9 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.ROTTEN_PUMPKIN.get());
                 output.accept(ModBlocks.ROT_O_LANTERN.get());
 
+                output.accept(ModBlocks.SYNTH_PUMPKIN.get());
+                output.accept(ModBlocks.SYNTH_O_LANTERN.get());
+
                 output.accept(ModBlocks.VILLAGER_PUMPKIN.get());
                 output.accept(ModBlocks.HMM_O_LANTERN.get());
 

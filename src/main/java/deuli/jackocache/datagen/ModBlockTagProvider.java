@@ -37,6 +37,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ROTTEN_PUMPKIN.get(),
                         ModBlocks.ROT_O_LANTERN.get(),
 
+                        ModBlocks.SYNTH_PUMPKIN.get(),
+                        ModBlocks.SYNTH_O_LANTERN.get(),
+
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.HMM_O_LANTERN.get(),
 
@@ -111,6 +114,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ROTTEN_PUMPKIN.get(),
                         ModBlocks.ROT_O_LANTERN.get(),
 
+                        ModBlocks.SYNTH_PUMPKIN.get(),
+                        ModBlocks.SYNTH_O_LANTERN.get(),
+
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.HMM_O_LANTERN.get(),
 
@@ -173,6 +179,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ENDERMAN_PUMPKIN.get(),
                         ModBlocks.SKELETON_PUMPKIN.get(),
                         ModBlocks.ROTTEN_PUMPKIN.get(),
+                        ModBlocks.SYNTH_PUMPKIN.get(),
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.UWU_PUMPKIN.get(),
                         ModBlocks.PIG_PUMPKIN.get(),

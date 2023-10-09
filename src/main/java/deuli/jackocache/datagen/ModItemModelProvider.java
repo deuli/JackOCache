@@ -40,6 +40,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         blockItem(ModBlocks.ROTTEN_PUMPKIN);
         blockItem(ModBlocks.ROT_O_LANTERN);
 
+        blockItem(ModBlocks.SYNTH_PUMPKIN);
+        blockItem(ModBlocks.SYNTH_O_LANTERN);
+
         blockItem(ModBlocks.VILLAGER_PUMPKIN);
         blockItem(ModBlocks.HMM_O_LANTERN);
 

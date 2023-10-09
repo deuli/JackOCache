@@ -8,9 +8,11 @@ import deuli.jackocache.items.jackoslicer.PumpkinDrop;
 import deuli.jackocache.items.jackoslicer.PumpkinTransformation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -40,11 +42,14 @@ public class JackOSlicer extends SwordItem {
                 LivingEntity target = event.getEntity();
 
                 if (attacker instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
-                    String encodeId = target.getEncodeId();
-                    if (target instanceof Player)
-                        encodeId = "minecraft:player";
+                    PumpkinDrop pumpkinDrop;
+                    if (target instanceof Player playerTarget)
+                        pumpkinDrop = PumpkinDrop.PLAYER_PUMPKIN_DROPS.getOrDefault(playerTarget.getDisplayName().getString(),
+                                new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get(), 0.70F));
+                    else
+                        pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(target.getEncodeId(),
+                                new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
 
-                    PumpkinDrop pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(encodeId, new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
                     if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
                         target.spawnAtLocation(pumpkinDrop.getPumpkin());
 
@@ -79,6 +84,33 @@ public class JackOSlicer extends SwordItem {
             });
 
             return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+        return InteractionResult.PASS;
+    }
+
+    @Override
+    public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity interactionTarget, InteractionHand hand) {
+        if (interactionTarget instanceof Player playerTarget && playerTarget.getInventory().getArmor(3).is(Blocks.CARVED_PUMPKIN.asItem())) {
+            Block pumpkin = PumpkinDrop.PLAYER_PUMPKIN_DROPS.getOrDefault(playerTarget.getDisplayName().getString(),
+                    new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get())).getPumpkin();
+            Level level = interactionTarget.level();
+
+            playerTarget.getInventory().getArmor(3).shrink(1);
+
+            ItemEntity itemEntity = new ItemEntity(level, interactionTarget.getX(), interactionTarget.getY() + 1, interactionTarget.getZ(), new ItemStack(pumpkin));
+            itemEntity.setPickUpDelay(20);
+            final double MULTIPLIER = 0.05;
+            itemEntity.setDeltaMovement((player.getX() - interactionTarget.getX()) * MULTIPLIER, 0.4, (player.getZ() - interactionTarget.getZ()) * MULTIPLIER);
+            level.addFreshEntity(itemEntity);
+
+            level.playSound(null, interactionTarget.blockPosition(), SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.PLAYERS, 1, 1);
+            level.playSound(null, interactionTarget.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+
+            player.getItemInHand(hand).hurtAndBreak(1, player, (playerBreak) -> {
+                playerBreak.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+            });
+
+            return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
     }

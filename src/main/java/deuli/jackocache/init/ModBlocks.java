@@ -50,6 +50,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROT_O_LANTERN = registerWithItem("rot_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
+    public static final RegistryObject<Block> SYNTH_PUMPKIN = registerWithItem("synth_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)
+                    .lightLevel((value -> 3)).emissiveRendering((s, l, p) -> true)));
+    public static final RegistryObject<Block> SYNTH_O_LANTERN = registerWithItem("synth_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)
+                    .emissiveRendering((s, l, p) -> true)));
+
     public static final RegistryObject<Block> VILLAGER_PUMPKIN = registerWithItem("villager_pumpkin",
             () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
     public static final RegistryObject<Block> HMM_O_LANTERN = registerWithItem("hmm_o_lantern",
