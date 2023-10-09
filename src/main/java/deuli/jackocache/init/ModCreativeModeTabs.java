@@ -12,7 +12,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JackOCache.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> PUMPKIN_TAB = CREATIVE_MODE_TABS.register("pumpkin_tab", () -> CreativeModeTab.builder()
-            .icon(() -> ModItems.SINISTER_PUMPKIN.get().getDefaultInstance())
+            .icon(() -> ModBlocks.SINISTER_PUMPKIN.get().asItem().getDefaultInstance())
             .title(Component.translatable("itemGroup.pumpkins").append(" (" + JackOCache.MOD_NAME + ")"))
             .displayItems((parameters, output) -> {
                 output.accept(Blocks.PUMPKIN);
