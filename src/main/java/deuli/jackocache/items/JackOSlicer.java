@@ -61,7 +61,7 @@ public class JackOSlicer extends SwordItem {
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Level level = pContext.getLevel();
-        if (pContext.getLevel().getBlockState(pContext.getClickedPos()).getBlock() == Blocks.PUMPKIN) {
+        if (!level.isClientSide() && level.getBlockState(pContext.getClickedPos()).is(Blocks.PUMPKIN)) {
             Block pumpkin = ModBlocks.GENERIC_PUMPKIN.get();
             for (PumpkinTransformation transformation : PumpkinTransformation.PUMPKIN_TRANSFORMATIONS) {
                 if (transformation.check(level, pContext.getClickedPos())) {
@@ -77,8 +77,9 @@ public class JackOSlicer extends SwordItem {
             pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), (player) -> {
                 player.broadcastBreakEvent(EquipmentSlot.MAINHAND);
             });
-        }
 
-        return super.useOn(pContext);
+            return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+        return InteractionResult.PASS;
     }
 }

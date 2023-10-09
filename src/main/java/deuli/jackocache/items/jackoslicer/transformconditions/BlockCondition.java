@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Checks if the block in a certain position offset from the pumpkin matches given block.
@@ -40,7 +41,7 @@ public class BlockCondition extends TransformConditions {
             boolean result = checkNext(level, blockPos);
 
             if (result && destroyBlock)
-                level.destroyBlock(blockPos.offset(offset), false); //Block isn't updated!
+                level.destroyBlock(blockPos.offset(offset), false);
 
             return result;
         }

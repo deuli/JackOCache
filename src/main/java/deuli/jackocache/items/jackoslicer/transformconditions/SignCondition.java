@@ -4,10 +4,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.entity.SignBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Checks if the pumpkin has a sign placed on it with matching contents.
@@ -47,9 +47,9 @@ public class SignCondition extends TransformConditions {
     }
 
     private boolean checkSign(Level level, BlockPos blockPos, Direction direction) {
-        Block block = level.getBlockState(blockPos).getBlock();
-        if (block instanceof WallSignBlock && level.getExistingBlockEntity(blockPos) instanceof SignBlockEntity signBlockEntity &&
-                level.getBlockState(blockPos).getValue(HorizontalDirectionalBlock.FACING) == direction) {
+        BlockState blockState = level.getBlockState(blockPos);
+        if (blockState.getBlock() instanceof WallSignBlock && level.getExistingBlockEntity(blockPos) instanceof SignBlockEntity signBlockEntity &&
+                blockState.getValue(HorizontalDirectionalBlock.FACING) == direction) {
             Component[] message = signBlockEntity.getText(true).getMessages(true);
             for (int i = 0; i < message.length; i++)
                 if (!message[i].getString().equals(signContents[i]))
@@ -57,7 +57,7 @@ public class SignCondition extends TransformConditions {
         } else
             return false;
 
-        level.destroyBlock(blockPos, false); //Block isn't updated!
+        level.destroyBlock(blockPos, false);
         return true;
     }
 

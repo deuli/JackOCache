@@ -5,6 +5,7 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Checks if the block has a certain tag.
@@ -38,7 +39,7 @@ public class TagCondition extends TransformConditions {
             boolean result = checkNext(level, blockPos);
 
             if (result && destroyBlock)
-                level.destroyBlock(blockPos.offset(offset), false); //Block isn't updated!
+                level.destroyBlock(blockPos.offset(offset), false);
 
             return result;
         }
