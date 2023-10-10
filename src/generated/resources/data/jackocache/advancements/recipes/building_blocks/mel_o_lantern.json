@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_melon_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:melon_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jackocache:mel_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_melon_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jackocache:mel_o_lantern"
+    ]
+  },
+  "sends_telemetry_event": false
+}

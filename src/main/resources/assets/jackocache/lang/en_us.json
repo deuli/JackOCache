@@ -76,5 +76,8 @@
     "block.jackocache.snow_pumpkin": "Snow Pumpkin",
     "block.jackocache.frost_o_lantern": "Frost o'Lantern",
 
+    "block.jackocache.melon_pumpkin": "Melon Pumpkin",
+    "block.jackocache.mel_o_lantern": "Mel o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }

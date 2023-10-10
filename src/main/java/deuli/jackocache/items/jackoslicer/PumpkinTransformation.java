@@ -41,6 +41,12 @@ public class PumpkinTransformation {
                 new BlockCondition(0, 1, 0, Blocks.SNOW, true),
                 new BlockCondition(0, -1, 0, Blocks.SNOW_BLOCK, true)
         )));
+        add(new PumpkinTransformation(ModBlocks.MELON_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(0, 1, 0, Blocks.MELON, true)
+        )));
+        add(new PumpkinTransformation(ModBlocks.MELON_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(0, -1, 0, Blocks.MELON, true)
+        )));
     }};
 
     /**

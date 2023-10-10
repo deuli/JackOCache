@@ -89,6 +89,9 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.SNOW_PUMPKIN.get());
         this.dropSelf(ModBlocks.FROST_O_LANTERN.get());
+
+        this.dropSelf(ModBlocks.MELON_PUMPKIN.get());
+        this.dropSelf(ModBlocks.MEL_O_LANTERN.get());
     }
 
     @Override

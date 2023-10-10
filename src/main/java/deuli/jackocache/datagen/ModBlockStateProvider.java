@@ -91,6 +91,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerEntirePumpkin(ModBlocks.SNOW_PUMPKIN);
         registerJackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
+
+        registerHorizontalBlock(ModBlocks.MELON_PUMPKIN,
+                new ResourceLocation("block/melon_side"),
+                new ResourceLocation(JackOCache.MOD_ID, "block/melon_pumpkin"),
+                new ResourceLocation("block/melon_top"));
+        registerHorizontalBlock(ModBlocks.MEL_O_LANTERN,
+                new ResourceLocation("block/melon_side"),
+                new ResourceLocation(JackOCache.MOD_ID, "block/mel_o_lantern"),
+                new ResourceLocation("block/melon_top"));
     }
 
     /**

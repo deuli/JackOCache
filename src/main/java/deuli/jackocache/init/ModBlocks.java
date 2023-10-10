@@ -157,10 +157,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> FROST_O_LANTERN = registerWithItem("frost_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
+    public static final RegistryObject<Block> MELON_PUMPKIN = registerWithItem("melon_pumpkin",
+            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+    public static final RegistryObject<Block> MEL_O_LANTERN = registerWithItem("mel_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
     public static <T extends Block> RegistryObject<T> registerWithItem(String name, Supplier<T> block) {
         RegistryObject<T> registryObject = BLOCKS.register(name, block);
         ModItems.ITEMS.register(name, () -> new BlockItem(registryObject.get(), new Item.Properties()));
         return registryObject;
     }
-
 }

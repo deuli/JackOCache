@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jackocache:block/melon_pumpkin",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "jackocache:block/melon_pumpkin"
+    },
+    "facing=south": {
+      "model": "jackocache:block/melon_pumpkin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jackocache:block/melon_pumpkin",
+      "y": 270
+    }
+  }
+}
