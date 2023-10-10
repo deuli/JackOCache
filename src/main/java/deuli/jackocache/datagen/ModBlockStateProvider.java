@@ -35,9 +35,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         registerEntirePumpkin(ModBlocks.ROTTEN_PUMPKIN);
         registerJackOLantern(ModBlocks.ROT_O_LANTERN, ModBlocks.ROTTEN_PUMPKIN);
 
-        registerEntirePumpkin(ModBlocks.SYNTH_PUMPKIN);
-        registerJackOLantern(ModBlocks.SYNTH_O_LANTERN, ModBlocks.SYNTH_PUMPKIN);
-
         registerHorizontalBlockWithModel(ModBlocks.VILLAGER_PUMPKIN);
         registerHorizontalBlockWithModel(ModBlocks.HMM_O_LANTERN);
 
@@ -91,6 +88,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerEntirePumpkin(ModBlocks.SNOW_PUMPKIN);
         registerJackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
+
+        registerEntirePumpkin(ModBlocks.SYNTH_PUMPKIN);
+        registerJackOLantern(ModBlocks.SYNTH_O_LANTERN, ModBlocks.SYNTH_PUMPKIN);
 
         registerHorizontalBlock(ModBlocks.MELON_PUMPKIN,
                 new ResourceLocation("block/melon_side"),

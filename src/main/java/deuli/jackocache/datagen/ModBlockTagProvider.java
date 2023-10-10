@@ -37,9 +37,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ROTTEN_PUMPKIN.get(),
                         ModBlocks.ROT_O_LANTERN.get(),
 
-                        ModBlocks.SYNTH_PUMPKIN.get(),
-                        ModBlocks.SYNTH_O_LANTERN.get(),
-
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.HMM_O_LANTERN.get(),
 
@@ -93,6 +90,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                         ModBlocks.SNOW_PUMPKIN.get(),
                         ModBlocks.FROST_O_LANTERN.get(),
+
+                        ModBlocks.SYNTH_PUMPKIN.get(),
+                        ModBlocks.SYNTH_O_LANTERN.get(),
 
                         ModBlocks.MELON_PUMPKIN.get(),
                         ModBlocks.MEL_O_LANTERN.get()
@@ -117,9 +117,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ROTTEN_PUMPKIN.get(),
                         ModBlocks.ROT_O_LANTERN.get(),
 
-                        ModBlocks.SYNTH_PUMPKIN.get(),
-                        ModBlocks.SYNTH_O_LANTERN.get(),
-
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.HMM_O_LANTERN.get(),
 
@@ -174,6 +171,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.SNOW_PUMPKIN.get(),
                         ModBlocks.FROST_O_LANTERN.get(),
 
+                        ModBlocks.SYNTH_PUMPKIN.get(),
+                        ModBlocks.SYNTH_O_LANTERN.get(),
+
                         ModBlocks.MELON_PUMPKIN.get(),
                         ModBlocks.MEL_O_LANTERN.get()
                 );
@@ -185,7 +185,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.ENDERMAN_PUMPKIN.get(),
                         ModBlocks.SKELETON_PUMPKIN.get(),
                         ModBlocks.ROTTEN_PUMPKIN.get(),
-                        ModBlocks.SYNTH_PUMPKIN.get(),
                         ModBlocks.VILLAGER_PUMPKIN.get(),
                         ModBlocks.UWU_PUMPKIN.get(),
                         ModBlocks.PIG_PUMPKIN.get(),
@@ -202,6 +201,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.SHEEP_PUMPKIN.get(),
                         ModBlocks.GHOST_PUMPKIN.get(),
                         ModBlocks.SNOW_PUMPKIN.get(),
+                        ModBlocks.SYNTH_PUMPKIN.get(),
                         ModBlocks.MELON_PUMPKIN.get()
                 );
     }

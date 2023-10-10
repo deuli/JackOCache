@@ -37,9 +37,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         blockItem(ModBlocks.SKELETON_PUMPKIN);
         blockItem(ModBlocks.BONE_O_LANTERN);
 
-        blockItem(ModBlocks.ROTTEN_PUMPKIN);
-        blockItem(ModBlocks.ROT_O_LANTERN);
-
         blockItem(ModBlocks.SYNTH_PUMPKIN);
         blockItem(ModBlocks.SYNTH_O_LANTERN);
 
@@ -96,6 +93,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.SNOW_PUMPKIN);
         blockItem(ModBlocks.FROST_O_LANTERN);
+
+        blockItem(ModBlocks.ROTTEN_PUMPKIN);
+        blockItem(ModBlocks.ROT_O_LANTERN);
 
         blockItem(ModBlocks.MELON_PUMPKIN);
         blockItem(ModBlocks.MEL_O_LANTERN);

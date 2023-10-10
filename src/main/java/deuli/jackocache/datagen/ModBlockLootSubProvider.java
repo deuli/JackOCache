@@ -33,9 +33,6 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROTTEN_PUMPKIN.get());
         this.dropSelf(ModBlocks.ROT_O_LANTERN.get());
 
-        this.dropSelf(ModBlocks.SYNTH_PUMPKIN.get());
-        this.dropSelf(ModBlocks.SYNTH_O_LANTERN.get());
-
         this.dropSelf(ModBlocks.VILLAGER_PUMPKIN.get());
         this.dropSelf(ModBlocks.HMM_O_LANTERN.get());
 
@@ -89,6 +86,9 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.SNOW_PUMPKIN.get());
         this.dropSelf(ModBlocks.FROST_O_LANTERN.get());
+
+        this.dropSelf(ModBlocks.SYNTH_PUMPKIN.get());
+        this.dropSelf(ModBlocks.SYNTH_O_LANTERN.get());
 
         this.dropSelf(ModBlocks.MELON_PUMPKIN.get());
         this.dropSelf(ModBlocks.MEL_O_LANTERN.get());
