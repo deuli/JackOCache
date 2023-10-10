@@ -19,9 +19,6 @@
     "block.jackocache.rotten_pumpkin": "Rotten Pumpkin",
     "block.jackocache.rot_o_lantern": "Rot o'Lantern",
 
-    "block.jackocache.synth_pumpkin": "Synth Pumpkin",
-    "block.jackocache.synth_o_lantern": "Synth o'Lantern",
-
     "block.jackocache.villager_pumpkin": "Villager Pumpkin",
     "block.jackocache.hmm_o_lantern": "Hmm o'Lantern",
 
@@ -76,8 +73,14 @@
     "block.jackocache.snow_pumpkin": "Snow Pumpkin",
     "block.jackocache.frost_o_lantern": "Frost o'Lantern",
 
+    "block.jackocache.synth_pumpkin": "Synth Pumpkin",
+    "block.jackocache.synth_o_lantern": "Synth o'Lantern",
+
     "block.jackocache.melon_pumpkin": "Melon Pumpkin",
     "block.jackocache.mel_o_lantern": "Mel o'Lantern",
+
+    "block.jackocache.alpha_pumpkin": "Alpha Pumpkin",
+    "block.jackocache.alpha_jack_o_lantern": "Alpha Jack o'Lantern",
 
     "itemGroup.pumpkins": "Pumpkins"
 }

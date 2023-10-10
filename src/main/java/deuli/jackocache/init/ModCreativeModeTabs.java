@@ -96,5 +96,8 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModBlocks.MELON_PUMPKIN.get());
                 output.accept(ModBlocks.MEL_O_LANTERN.get());
+
+                output.accept(ModBlocks.ALPHA_PUMPKIN.get());
+                output.accept(ModBlocks.ALPHA_JACK_O_LANTERN.get());
             }).build());
 }

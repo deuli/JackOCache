@@ -99,6 +99,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.MELON_PUMPKIN);
         blockItem(ModBlocks.MEL_O_LANTERN);
+
+        blockItem(ModBlocks.ALPHA_PUMPKIN);
+        blockItem(ModBlocks.ALPHA_JACK_O_LANTERN);
     }
 
     /**

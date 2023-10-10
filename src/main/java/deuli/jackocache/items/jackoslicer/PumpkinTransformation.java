@@ -47,6 +47,12 @@ public class PumpkinTransformation {
         add(new PumpkinTransformation(ModBlocks.MELON_PUMPKIN.get(), TransformConditions.link(
                 new BlockCondition(0, -1, 0, Blocks.MELON, true)
         )));
+        add(new PumpkinTransformation(ModBlocks.ALPHA_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(0, 3, 0, Blocks.NETHERRACK, true),
+                new BlockCondition(0, 2, 0, Blocks.SOUL_SAND, true),
+                new BlockCondition(0, 1, 0, Blocks.GLOWSTONE, true),
+                new BlockCondition(0, -1, 0, Blocks.JACK_O_LANTERN, true)
+        )));
     }};
 
     /**
