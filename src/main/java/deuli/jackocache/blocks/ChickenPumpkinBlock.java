@@ -1,6 +1,5 @@
 package deuli.jackocache.blocks;
 
-import com.google.common.collect.ImmutableMap;
 import deuli.jackocache.utils.VoxelShapeUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -8,13 +7,10 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-
-import java.util.function.Function;
 
 public class ChickenPumpkinBlock extends CarvedPumpkinBlock {
     private static final VoxelShape CHICKEN = Block.box(4.0D, 0.0D, 5.0D, 12.0D, 12.0D, 11.0D);
@@ -23,7 +19,7 @@ public class ChickenPumpkinBlock extends CarvedPumpkinBlock {
     private static final VoxelShape CHICKEN_PUMPKIN = Shapes.or(CHICKEN, BEAK, WATTLE);
 
     public ChickenPumpkinBlock() {
-        super(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN));
+        super(Properties.copy(Blocks.JACK_O_LANTERN));
     }
 
     public ChickenPumpkinBlock(Properties pProperties) {

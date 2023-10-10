@@ -8,7 +8,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
-import net.minecraft.world.level.block.EquipableCarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,82 +20,82 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, JackOCache.MOD_ID);
 
     public static final RegistryObject<Block> SINISTER_PUMPKIN = registerWithItem("sinister_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("sinister"));
     public static final RegistryObject<Block> SINISTER_JACK_O_LANTERN = registerWithItem("sinister_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> GENERIC_PUMPKIN = registerWithItem("generic_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("generic"));
     public static final RegistryObject<Block> GENERIC_JACK_O_LANTERN = registerWithItem("generic_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> CREEPER_PUMPKIN = registerWithItem("creeper_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("creeper"));
     public static final RegistryObject<Block> CREEP_O_LANTERN = registerWithItem("creep_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> ENDERMAN_PUMPKIN = registerWithItem("enderman_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("enderman"));
     public static final RegistryObject<Block> END_O_LANTERN = registerWithItem("end_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SKELETON_PUMPKIN = registerWithItem("skeleton_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("skeleton"));
     public static final RegistryObject<Block> BONE_O_LANTERN = registerWithItem("bone_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> ROTTEN_PUMPKIN = registerWithItem("rotten_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("rotten"));
     public static final RegistryObject<Block> ROT_O_LANTERN = registerWithItem("rot_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> VILLAGER_PUMPKIN = registerWithItem("villager_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("villager"));
     public static final RegistryObject<Block> HMM_O_LANTERN = registerWithItem("hmm_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> UWU_PUMPKIN = registerWithItem("uwu_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("uwu"));
     public static final RegistryObject<Block> UWU_O_LANTERN = registerWithItem("uwu_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> PIG_PUMPKIN = registerWithItem("pig_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("pig"));
     public static final RegistryObject<Block> OINK_O_LANTERN = registerWithItem("oink_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SPIDER_PUMPKIN = registerWithItem("spider_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("spider"));
     public static final RegistryObject<Block> WEB_O_LANTERN = registerWithItem("web_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> GHAST_PUMPKIN = registerWithItem("ghast_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("ghast"));
     public static final RegistryObject<Block> SCREAM_O_LANTERN = registerWithItem("scream_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SLIME_PUMPKIN = registerWithItem("slime_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("slime"));
     public static final RegistryObject<Block> GOO_O_LANTERN = registerWithItem("goo_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> NICE_PUMPKIN = registerWithItem("nice_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("nice"));
     public static final RegistryObject<Block> NICE_O_LANTERN = registerWithItem("nice_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> EMOTE_PUMPKIN = registerWithItem("emote_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("emote"));
     public static final RegistryObject<Block> EMOTE_O_LANTERN = registerWithItem("emote_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> DOG_PUMPKIN = registerWithItem("dog_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("dog"));
     public static final RegistryObject<Block> BARK_O_LANTERN = registerWithItem("bark_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> CAT_PUMPKIN = registerWithItem("cat_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("cat"));
     public static final RegistryObject<Block> MEOW_O_LANTERN = registerWithItem("meow_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
@@ -116,12 +115,12 @@ public class ModBlocks {
             () -> new WitherPumpkinBlock());
 
     public static final RegistryObject<Block> PUMPKING = registerWithItem("pumpking",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("pumpking"));
     public static final RegistryObject<Block> ROYAL_O_LANTERN = registerWithItem("royal_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> PLAYER_PUMPKIN = registerWithItem("player_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("player"));
     public static final RegistryObject<Block> UUH_O_LANTERN = registerWithItem("uuh_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
@@ -131,7 +130,7 @@ public class ModBlocks {
             () -> new SheepPumpkinBlock());
 
     public static final RegistryObject<Block> GHOST_PUMPKIN = registerWithItem("ghost_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN).noOcclusion()) {
+            () -> new EquipablePumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN).noOcclusion(), "ghost") {
                 @Override
                 public boolean skipRendering(BlockState pState, BlockState pAdjacentState, Direction pDirection) {
                     return pAdjacentState.is(this) ? true : super.skipRendering(pState, pAdjacentState, pDirection);
@@ -146,29 +145,29 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> SNOW_PUMPKIN = registerWithItem("snow_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("snow"));
     public static final RegistryObject<Block> FROST_O_LANTERN = registerWithItem("frost_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SYNTH_PUMPKIN = registerWithItem("synth_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)
-                    .lightLevel((value -> 3)).emissiveRendering((s, l, p) -> true)));
+            () -> new EquipablePumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)
+                    .lightLevel((value -> 3)).emissiveRendering((s, l, p) -> true), "synth"));
     public static final RegistryObject<Block> SYNTH_O_LANTERN = registerWithItem("synth_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)
                     .emissiveRendering((s, l, p) -> true)));
 
     public static final RegistryObject<Block> MELON_PUMPKIN = registerWithItem("melon_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("melon"));
     public static final RegistryObject<Block> MEL_O_LANTERN = registerWithItem("mel_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> ALPHA_PUMPKIN = registerWithItem("alpha_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("alpha"));
     public static final RegistryObject<Block> ALPHA_JACK_O_LANTERN = registerWithItem("alpha_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
     public static final RegistryObject<Block> SPOOKYJAM_PUMPKIN = registerWithItem("spookyjam_pumpkin",
-            () -> new EquipableCarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.CARVED_PUMPKIN)));
+            () -> new EquipablePumpkinBlock("spookyjam"));
     public static final RegistryObject<Block> SPOOKYJAM_JACK_O_LANTERN = registerWithItem("spookyjam_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 

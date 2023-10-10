@@ -4,7 +4,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Equipable;
 import net.minecraft.world.level.block.Blocks;
 
-public class EquipableDragonPumpkinBlock extends DragonPumpkinBlock implements Equipable {
+public class EquipableDragonPumpkinBlock extends DragonPumpkinBlock implements Equipable, PumpkinBlur {
     public EquipableDragonPumpkinBlock() {
         super(Properties.copy(Blocks.CARVED_PUMPKIN));
     }
@@ -12,5 +12,10 @@ public class EquipableDragonPumpkinBlock extends DragonPumpkinBlock implements E
     @Override
     public EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.HEAD;
+    }
+
+    @Override
+    public String getBlur() {
+        return "dragon";
     }
 }
