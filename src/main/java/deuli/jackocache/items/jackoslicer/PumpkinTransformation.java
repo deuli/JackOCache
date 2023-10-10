@@ -26,32 +26,32 @@ public class PumpkinTransformation {
                 new HeightCondition(-64, 35)
         )));
         add(new PumpkinTransformation(ModBlocks.NICE_PUMPKIN.get(), TransformConditions.link(
-                new TagCondition(0, -1, 0, BlockTags.LOGS)
+                new TagCondition(-1, BlockTags.LOGS)
         )));
         add(new PumpkinTransformation(ModBlocks.EMOTE_PUMPKIN.get(), TransformConditions.link(
                 new SignCondition("", ":^)")
         )));
         add(new PumpkinTransformation(ModBlocks.PUMPKING.get(), TransformConditions.link(
-                new BlockCondition(0, 1, 0, Blocks.GOLD_BLOCK, true)
+                new BlockCondition(1, Blocks.GOLD_BLOCK, true)
         )));
         add(new PumpkinTransformation(ModBlocks.GHOST_PUMPKIN.get(), TransformConditions.link(
-                new BlockCondition(0, -1, 0, Blocks.SOUL_SAND, true)
+                new BlockCondition(-1, Blocks.SOUL_SAND, true)
         )));
         add(new PumpkinTransformation(ModBlocks.SNOW_PUMPKIN.get(), TransformConditions.link(
-                new BlockCondition(0, 1, 0, Blocks.SNOW, true),
-                new BlockCondition(0, -1, 0, Blocks.SNOW_BLOCK, true)
+                new BlockCondition(1, Blocks.SNOW, true),
+                new BlockCondition(-1, Blocks.SNOW_BLOCK, true)
         )));
         add(new PumpkinTransformation(ModBlocks.MELON_PUMPKIN.get(), TransformConditions.link(
-                new BlockCondition(0, 1, 0, Blocks.MELON, true)
+                new BlockCondition(1, Blocks.MELON, true)
         )));
         add(new PumpkinTransformation(ModBlocks.MELON_PUMPKIN.get(), TransformConditions.link(
-                new BlockCondition(0, -1, 0, Blocks.MELON, true)
+                new BlockCondition(-1, Blocks.MELON, true)
         )));
         add(new PumpkinTransformation(ModBlocks.ALPHA_PUMPKIN.get(), TransformConditions.link(
-                new BlockCondition(0, 3, 0, Blocks.NETHERRACK, true),
-                new BlockCondition(0, 2, 0, Blocks.SOUL_SAND, true),
-                new BlockCondition(0, 1, 0, Blocks.GLOWSTONE, true),
-                new BlockCondition(0, -1, 0, Blocks.JACK_O_LANTERN, true)
+                new BlockCondition(3, Blocks.NETHERRACK, true),
+                new BlockCondition(2, Blocks.SOUL_SAND, true),
+                new BlockCondition(1, Blocks.GLOWSTONE, true),
+                new BlockCondition(-1, Blocks.JACK_O_LANTERN, true)
         )));
     }};
 

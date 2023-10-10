@@ -33,6 +33,10 @@ public class TagCondition extends TransformConditions {
         this(new Vec3i(x, y, z), tag, true);
     }
 
+    public TagCondition(int y, TagKey<Block> tag) {
+        this(new Vec3i(0, y, 0), tag, true);
+    }
+
     @Override
     public boolean check(Level level, BlockPos blockPos) {
         if (level.getBlockState(blockPos.offset(offset)).getTags().anyMatch(e -> e.equals(tag))) {

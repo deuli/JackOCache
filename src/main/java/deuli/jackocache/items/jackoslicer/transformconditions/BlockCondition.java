@@ -23,16 +23,24 @@ public class BlockCondition extends TransformConditions {
         this.destroyBlock = destroyBlock;
     }
 
-    public BlockCondition(int x, int y, int z, Block block, boolean destroyBlock) {
-        this(new Vec3i(x, y, z), block, destroyBlock);
-    }
-
     public BlockCondition(Vec3i offset, Block block) {
         this(offset, block, true);
     }
 
+    public BlockCondition(int x, int y, int z, Block block, boolean destroyBlock) {
+        this(new Vec3i(x, y, z), block, destroyBlock);
+    }
+
     public BlockCondition(int x, int y, int z, Block block) {
         this(new Vec3i(x, y, z), block, true);
+    }
+
+    public BlockCondition(int y, Block block, boolean destroyBlock) {
+        this(new Vec3i(0, y, 0), block, destroyBlock);
+    }
+
+    public BlockCondition(int y, Block block) {
+        this(new Vec3i(0, y, 0), block, true);
     }
 
     @Override
