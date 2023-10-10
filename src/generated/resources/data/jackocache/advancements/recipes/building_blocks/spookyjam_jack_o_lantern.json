@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spookyjam_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:spookyjam_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jackocache:spookyjam_jack_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_spookyjam_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jackocache:spookyjam_jack_o_lantern"
+    ]
+  },
+  "sends_telemetry_event": false
+}

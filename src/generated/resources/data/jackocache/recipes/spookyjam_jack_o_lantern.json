@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jackolanterns",
+  "key": {
+    "A": {
+      "item": "jackocache:spookyjam_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "jackocache:spookyjam_jack_o_lantern"
+  },
+  "show_notification": true
+}
