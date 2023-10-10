@@ -109,6 +109,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_side"),
                 new ResourceLocation(JackOCache.MOD_ID, "block/alpha_jack_o_lantern"),
                 new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_top"));
+
+        registerPumpkin(ModBlocks.SPOOKYJAM_PUMPKIN);
+        registerPumpkin(ModBlocks.SPOOKYJAM_JACK_O_LANTERN);
     }
 
     /**

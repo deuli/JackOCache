@@ -102,6 +102,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         blockItem(ModBlocks.ALPHA_PUMPKIN);
         blockItem(ModBlocks.ALPHA_JACK_O_LANTERN);
+
+        blockItem(ModBlocks.SPOOKYJAM_PUMPKIN);
+        blockItem(ModBlocks.SPOOKYJAM_JACK_O_LANTERN);
     }
 
     /**

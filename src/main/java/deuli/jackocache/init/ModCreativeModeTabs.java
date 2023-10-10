@@ -99,5 +99,8 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModBlocks.ALPHA_PUMPKIN.get());
                 output.accept(ModBlocks.ALPHA_JACK_O_LANTERN.get());
+
+                output.accept(ModBlocks.SPOOKYJAM_PUMPKIN.get());
+                output.accept(ModBlocks.SPOOKYJAM_JACK_O_LANTERN.get());
             }).build());
 }

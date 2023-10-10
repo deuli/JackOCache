@@ -82,5 +82,8 @@
     "block.jackocache.alpha_pumpkin": "Alpha Pumpkin",
     "block.jackocache.alpha_jack_o_lantern": "Alpha Jack o'Lantern",
 
+    "block.jackocache.spookyjam_pumpkin": "SpookyJam Pumpkin",
+    "block.jackocache.spookyjam_jack_o_lantern": "SpookyJam Jack o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }

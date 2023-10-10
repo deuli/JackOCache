@@ -53,6 +53,9 @@ public class PumpkinTransformation {
                 new BlockCondition(1, Blocks.GLOWSTONE, true),
                 new BlockCondition(-1, Blocks.JACK_O_LANTERN, true)
         )));
+        add(new PumpkinTransformation(ModBlocks.SPOOKYJAM_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(-1, Blocks.WHITE_STAINED_GLASS, true)
+        )));
     }};
 
     /**
