@@ -55,6 +55,10 @@
     "jackocache:alpha_pumpkin",
     "jackocache:alpha_jack_o_lantern",
     "jackocache:spookyjam_pumpkin",
-    "jackocache:spookyjam_jack_o_lantern"
+    "jackocache:spookyjam_jack_o_lantern",
+    "jackocache:cool_pumpkin",
+    "jackocache:cool_jack_o_lantern",
+    "jackocache:angry_pumpkin",
+    "jackocache:angry_jack_o_lantern"
   ]
 }

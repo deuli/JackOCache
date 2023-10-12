@@ -5,8 +5,10 @@ import deuli.jackocache.items.jackoslicer.transformconditions.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 
 import java.util.ArrayList;
 
@@ -55,6 +57,12 @@ public class PumpkinTransformation {
         )));
         add(new PumpkinTransformation(ModBlocks.SPOOKYJAM_PUMPKIN.get(), TransformConditions.link(
                 new BlockCondition(-1, Blocks.WHITE_STAINED_GLASS, true)
+        )));
+        add(new PumpkinTransformation(ModBlocks.COOL_PUMPKIN.get(), TransformConditions.link(
+                new BiomeCondition(Biomes.BEACH)
+        )));
+        add(new PumpkinTransformation(ModBlocks.ANGRY_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(1, Blocks.FIRE, true)
         )));
     }};
 

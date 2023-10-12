@@ -101,17 +101,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(JackOCache.MOD_ID, "block/mel_o_lantern"),
                 new ResourceLocation("block/melon_top"));
 
-        registerHorizontalBlock(ModBlocks.ALPHA_PUMPKIN,
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_side"),
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin"),
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_top"));
-        registerHorizontalBlock(ModBlocks.ALPHA_JACK_O_LANTERN,
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_side"),
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_jack_o_lantern"),
-                new ResourceLocation(JackOCache.MOD_ID, "block/alpha_pumpkin_top"));
+        registerEntirePumpkin(ModBlocks.ALPHA_PUMPKIN);
+        registerJackOLantern(ModBlocks.ALPHA_JACK_O_LANTERN, ModBlocks.ALPHA_PUMPKIN);
 
         registerPumpkin(ModBlocks.SPOOKYJAM_PUMPKIN);
         registerPumpkin(ModBlocks.SPOOKYJAM_JACK_O_LANTERN);
+
+        registerPumpkin(ModBlocks.COOL_PUMPKIN);
+        registerPumpkin(ModBlocks.COOL_JACK_O_LANTERN);
+
+        registerEntirePumpkin(ModBlocks.ANGRY_PUMPKIN);
+        registerJackOLantern(ModBlocks.ANGRY_JACK_O_LANTERN, ModBlocks.ANGRY_PUMPKIN);
     }
 
     /**

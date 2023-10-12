@@ -85,5 +85,11 @@
     "block.jackocache.spookyjam_pumpkin": "SpookyJam Pumpkin",
     "block.jackocache.spookyjam_jack_o_lantern": "SpookyJam Jack o'Lantern",
 
+    "block.jackocache.cool_pumpkin": "Cool Pumpkin",
+    "block.jackocache.cool_jack_o_lantern": "Cool Jack o'Lantern",
+
+    "block.jackocache.angry_pumpkin": "Angry Pumpkin",
+    "block.jackocache.angry_jack_o_lantern": "Angry Jack o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }

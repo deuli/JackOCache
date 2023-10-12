@@ -27,6 +27,8 @@
     "jackocache:synth_o_lantern",
     "jackocache:mel_o_lantern",
     "jackocache:alpha_jack_o_lantern",
-    "jackocache:spookyjam_jack_o_lantern"
+    "jackocache:spookyjam_jack_o_lantern",
+    "jackocache:cool_jack_o_lantern",
+    "jackocache:angry_jack_o_lantern"
   ]
 }

@@ -176,6 +176,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPOOKYJAM_JACK_O_LANTERN = jackOLantern("spookyjam_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
+    public static final RegistryObject<Block> COOL_PUMPKIN = pumpkin("cool_pumpkin",
+            () -> new EquipablePumpkinBlock("cool"));
+    public static final RegistryObject<Block> COOL_JACK_O_LANTERN = jackOLantern("cool_jack_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
+    public static final RegistryObject<Block> ANGRY_PUMPKIN = pumpkin("angry_pumpkin",
+            () -> new EquipablePumpkinBlock("angry"));
+    public static final RegistryObject<Block> ANGRY_JACK_O_LANTERN = jackOLantern("angry_jack_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
+
     public static <T extends Block> RegistryObject<Block> registerWithItem(String name, Supplier<T> block) {
         RegistryObject<Block> registryObject = BLOCKS.register(name, block);
         ModItems.ITEMS.register(name, () -> new BlockItem(registryObject.get(), new Item.Properties()));
