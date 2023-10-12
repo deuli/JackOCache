@@ -37,7 +37,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         jackOLantern(ModBlocks.CREEPER_PUMPKIN.get(), ModBlocks.CREEP_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.ENDERMAN_PUMPKIN.get(), ModBlocks.END_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.SKELETON_PUMPKIN.get(), ModBlocks.BONE_O_LANTERN.get(), pWriter);
-        jackOLantern(ModBlocks.SYNTH_PUMPKIN.get(), ModBlocks.SYNTH_O_LANTERN.get(), pWriter);
+        jackOLantern(ModBlocks.ROTTEN_PUMPKIN.get(), ModBlocks.ROT_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.VILLAGER_PUMPKIN.get(), ModBlocks.HMM_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.UWU_PUMPKIN.get(), ModBlocks.UWU_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.PIG_PUMPKIN.get(), ModBlocks.OINK_O_LANTERN.get(), pWriter);
@@ -56,7 +56,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         jackOLantern(ModBlocks.SHEEP_PUMPKIN.get(), ModBlocks.BAH_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.GHOST_PUMPKIN.get(), ModBlocks.SPOOK_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.SNOW_PUMPKIN.get(), ModBlocks.FROST_O_LANTERN.get(), pWriter);
-        jackOLantern(ModBlocks.ROTTEN_PUMPKIN.get(), ModBlocks.ROT_O_LANTERN.get(), pWriter);
+        jackOLantern(ModBlocks.SYNTH_PUMPKIN.get(), ModBlocks.SYNTH_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.MELON_PUMPKIN.get(), ModBlocks.MEL_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.ALPHA_PUMPKIN.get(), ModBlocks.ALPHA_JACK_O_LANTERN.get(), pWriter);
         jackOLantern(ModBlocks.SPOOKYJAM_PUMPKIN.get(), ModBlocks.SPOOKYJAM_JACK_O_LANTERN.get(), pWriter);
