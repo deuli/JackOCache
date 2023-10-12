@@ -205,6 +205,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                         ModBlocks.SLIME_PUMPKIN.get(),
                         ModBlocks.NICE_PUMPKIN.get(),
                         ModBlocks.EMOTE_PUMPKIN.get(),
+                        ModBlocks.DOG_PUMPKIN.get(),
+                        ModBlocks.CAT_PUMPKIN.get(),
                         ModBlocks.CHICKEN_PUMPKIN.get(),
                         ModBlocks.DRAGON_PUMPKIN.get(),
                         ModBlocks.WITHER_PUMPKIN.get(),
