@@ -2,7 +2,7 @@
 
 [![Available on CurseForge](https://raw.githubusercontent.com/deuli/JackOCache/master/platformsrc/images/badges/Available%20on%20CurseForge.svg)](https://legacy.curseforge.com/minecraft/mc-mods/jackocache)
 [![Requires Forge](https://raw.githubusercontent.com/deuli/JackOCache/master/platformsrc/images/badges/Requires%20Forge.svg)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
-[![SpookyJam 2023](https://raw.githubusercontent.com/deuli/JackOCache/master/platformsrc/images/badges/SpookyJam%202023.png)](https://spooky-jam.com/events/2023/)
+[![SpookyJam 2023](https://raw.githubusercontent.com/deuli/JackOCache/master/platformsrc/images/badges/SpookyJam%202023.svg)](https://spooky-jam.com/events/2023/)
 
 ---
 
