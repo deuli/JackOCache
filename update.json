@@ -1,0 +1,17 @@
+{
+	"homepage": "https://modrinth.com/mod/jackocache",
+	"promos": {
+		"1.20.2-latest": "0.2.0",
+		"1.20.2-recommended": "0.2.0",
+		"1.20.1-latest": "0.2.0",
+		"1.20.1-recommended": "0.2.0"
+	},
+	"1.20.2": {
+		"0.2.0": "6 new pumpkins and pumpkin blur overlays",
+		"0.1.0": "Initial Release"
+	},
+	"1.20.1": {
+		"0.2.0": "6 new pumpkins and pumpkin blur overlays",
+		"0.1.0": "Initial Release"
+	}
+}
