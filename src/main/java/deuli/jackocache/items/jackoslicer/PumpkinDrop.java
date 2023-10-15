@@ -1,6 +1,7 @@
 package deuli.jackocache.items.jackoslicer;
 
 import deuli.jackocache.init.ModBlocks;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 import java.util.HashMap;
@@ -34,6 +35,13 @@ public class PumpkinDrop {
 
     public static final HashMap<String, PumpkinDrop> PLAYER_PUMPKIN_DROPS = new HashMap<>() {{
         put("deuli", new PumpkinDrop(ModBlocks.SYNTH_PUMPKIN.get(), 0.70F));
+    }};
+
+    public final static HashMap<Item, Float> PUMPKIN_DROP_CHANCES = new HashMap<>() {{
+        put(ModBlocks.PLAYER_PUMPKIN.get().asItem(), 0.5F);
+        put(ModBlocks.UUH_O_LANTERN.get().asItem(), 0.5F);
+        put(ModBlocks.SYNTH_PUMPKIN.get().asItem(), 0.2F);
+        put(ModBlocks.SYNTH_O_LANTERN.get().asItem(), 0.2F);
     }};
 
     /**
