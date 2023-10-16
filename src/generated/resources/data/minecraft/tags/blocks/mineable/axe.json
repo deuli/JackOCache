@@ -63,6 +63,8 @@
     "jackocache:snow_golem_pumpkin",
     "jackocache:snowball_o_lantern",
     "jackocache:illager_pumpkin",
-    "jackocache:hrngh_o_lantern"
+    "jackocache:hrngh_o_lantern",
+    "jackocache:guardian_pumpkin",
+    "jackocache:laser_o_lantern"
   ]
 }

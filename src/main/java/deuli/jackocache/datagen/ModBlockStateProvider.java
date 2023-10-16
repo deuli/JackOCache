@@ -118,6 +118,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerHorizontalBlockWithModel(ModBlocks.ILLAGER_PUMPKIN);
         registerHorizontalBlockWithModel(ModBlocks.HRNGH_O_LANTERN);
+
+        registerEntirePumpkin(ModBlocks.GUARDIAN_PUMPKIN);
+        registerJackOLantern(ModBlocks.LASER_O_LANTERN, ModBlocks.GUARDIAN_PUMPKIN);
     }
 
     /**

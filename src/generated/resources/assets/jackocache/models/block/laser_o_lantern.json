@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "jackocache:block/laser_o_lantern",
+    "side": "jackocache:block/guardian_pumpkin_side",
+    "top": "jackocache:block/guardian_pumpkin_top"
+  }
+}

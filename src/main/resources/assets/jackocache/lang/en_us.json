@@ -97,5 +97,8 @@
     "block.jackocache.illager_pumpkin": "Illager Pumpkin",
     "block.jackocache.hrngh_o_lantern": "Hrngh o'Lantern",
 
+    "block.jackocache.guardian_pumpkin": "Guardian Pumpkin",
+    "block.jackocache.laser_o_lantern": "Laser o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }
