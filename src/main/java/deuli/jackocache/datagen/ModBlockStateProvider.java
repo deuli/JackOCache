@@ -121,6 +121,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerEntirePumpkin(ModBlocks.GUARDIAN_PUMPKIN);
         registerJackOLantern(ModBlocks.LASER_O_LANTERN, ModBlocks.GUARDIAN_PUMPKIN);
+
+        registerPumpkin(ModBlocks.PUKING_PUMPKIN);
+        registerPumpkin(ModBlocks.PUKING_JACK_O_LANTERN);
     }
 
     /**

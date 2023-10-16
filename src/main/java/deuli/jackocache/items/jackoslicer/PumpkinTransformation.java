@@ -64,6 +64,12 @@ public class PumpkinTransformation {
         add(new PumpkinTransformation(ModBlocks.ANGRY_PUMPKIN.get(), TransformConditions.link(
                 new BlockCondition(1, Blocks.FIRE, true)
         )));
+        add(new PumpkinTransformation(ModBlocks.PUKING_PUMPKIN.get(), TransformConditions.link(
+                new BlockCondition(1, 0, 0, Blocks.PUMPKIN_STEM, true),
+                new BlockCondition(0, 0, 1, Blocks.PUMPKIN_STEM, true),
+                new BlockCondition(-1, 0, 0, Blocks.PUMPKIN_STEM, true),
+                new BlockCondition(0, 0, -1, Blocks.PUMPKIN_STEM, true)
+        )));
     }};
 
     /**
