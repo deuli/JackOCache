@@ -31,6 +31,7 @@ public class PumpkinDrop {
         put("minecraft:ender_dragon", new PumpkinDrop(ModBlocks.DRAGON_PUMPKIN.get(), 1.00F));
         put("minecraft:wither", new PumpkinDrop(ModBlocks.WITHER_PUMPKIN.get(), 1.00F));
         put("minecraft:sheep", new PumpkinDrop(ModBlocks.SHEEP_PUMPKIN.get(), 0.35F));
+        put("minecraft:snow_golem", new PumpkinDrop(ModBlocks.SNOW_GOLEM_PUMPKIN.get()));
     }};
 
     public static final HashMap<String, PumpkinDrop> PLAYER_PUMPKIN_DROPS = new HashMap<>() {{

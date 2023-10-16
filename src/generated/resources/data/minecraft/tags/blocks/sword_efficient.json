@@ -59,6 +59,8 @@
     "jackocache:cool_pumpkin",
     "jackocache:cool_jack_o_lantern",
     "jackocache:angry_pumpkin",
-    "jackocache:angry_jack_o_lantern"
+    "jackocache:angry_jack_o_lantern",
+    "jackocache:snow_golem_pumpkin",
+    "jackocache:snowball_o_lantern"
   ]
 }

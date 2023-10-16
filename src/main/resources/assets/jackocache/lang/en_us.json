@@ -91,5 +91,8 @@
     "block.jackocache.angry_pumpkin": "Angry Pumpkin",
     "block.jackocache.angry_jack_o_lantern": "Angry Jack o'Lantern",
 
+    "block.jackocache.snow_golem_pumpkin": "Snow Golem Pumpkin",
+    "block.jackocache.snowball_o_lantern": "Snowball o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }
