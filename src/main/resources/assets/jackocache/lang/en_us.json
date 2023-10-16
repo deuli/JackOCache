@@ -94,5 +94,8 @@
     "block.jackocache.snow_golem_pumpkin": "Snow Golem Pumpkin",
     "block.jackocache.snowball_o_lantern": "Snowball o'Lantern",
 
+    "block.jackocache.illager_pumpkin": "Illager Pumpkin",
+    "block.jackocache.hrngh_o_lantern": "Hrngh o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }
