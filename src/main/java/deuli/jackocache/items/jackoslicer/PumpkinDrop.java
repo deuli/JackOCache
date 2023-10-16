@@ -37,6 +37,7 @@ public class PumpkinDrop {
         put("minecraft:vindicator", new PumpkinDrop(ModBlocks.ILLAGER_PUMPKIN.get()));
         put("minecraft:guardian", new PumpkinDrop(ModBlocks.GUARDIAN_PUMPKIN.get()));
         put("minecraft:elder_guardian", new PumpkinDrop(ModBlocks.GUARDIAN_PUMPKIN.get(), 0.8F));
+        put("minecraft:bat", new PumpkinDrop(ModBlocks.BAT_PUMPKIN.get(), 0.75F));
     }};
 
     public static final HashMap<String, PumpkinDrop> PLAYER_PUMPKIN_DROPS = new HashMap<>() {{

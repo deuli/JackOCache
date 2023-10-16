@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bat_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:bat_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jackocache:squeak_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bat_pumpkin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jackocache:squeak_o_lantern"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -103,5 +103,8 @@
     "block.jackocache.puking_pumpkin": "Puking Pumpkin",
     "block.jackocache.puking_jack_o_lantern": "Puking Jack o'Lantern",
 
+    "block.jackocache.bat_pumpkin": "Bat Pumpkin",
+    "block.jackocache.squeak_o_lantern": "Squeak o'Lantern",
+
     "itemGroup.pumpkins": "Pumpkins"
 }
