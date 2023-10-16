@@ -2,14 +2,14 @@ package deuli.jackocache.other;
 
 import deuli.jackocache.JackOCache;
 import deuli.jackocache.init.ModBlocks;
+import deuli.jackocache.init.ModEntityTypeTags;
 import deuli.jackocache.init.ModItems;
 import deuli.jackocache.items.jackoslicer.PumpkinDrop;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.monster.AbstractSkeleton;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -28,7 +28,7 @@ public class PumpkinEvents {
         Random random = new Random();
         Entity entity = event.getEntity();
 //        LocalDate localdate = LocalDate.now();
-        if ((entity instanceof Zombie || entity instanceof AbstractSkeleton) &&
+        if (entity.getType().is(ModEntityTypeTags.HALLOWEEN_MOBS) &&
 //                localdate.getMonth() == Month.OCTOBER && localdate.getDayOfMonth() == 31 &&
                 random.nextFloat() <= (1 - (1.0 / (ModBlocks.PUMPKINS.size() + 1)))) {
             ItemStack helmet = ((Monster) entity).getItemBySlot(EquipmentSlot.HEAD);
@@ -52,7 +52,8 @@ public class PumpkinEvents {
     public static void giveJackOSlicer(EntityJoinLevelEvent event) {
         Random random = new Random();
         Entity entity = event.getEntity();
-        if (entity instanceof Zombie && ((Zombie) entity).getMainHandItem().isEmpty() &&
+        if (entity.getType().is(ModEntityTypeTags.JACK_O_SLICER_MOBS) &&
+                entity instanceof LivingEntity livingEntity && livingEntity.getMainHandItem().isEmpty() &&
                 random.nextFloat() <= (event.getLevel().getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
             ItemStack jackOSlicer = new ItemStack(ModItems.JACK_O_SLICER.get());
             jackOSlicer.setDamageValue(random.nextInt(jackOSlicer.getMaxDamage()));
