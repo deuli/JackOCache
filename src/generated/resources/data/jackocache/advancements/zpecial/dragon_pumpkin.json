@@ -17,12 +17,12 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "extra": [
+      "translate": "advancement.jackocache.obtain",
+      "with": [
         {
           "translate": "block.jackocache.dragon_pumpkin"
         }
-      ],
-      "text": "Obtain a "
+      ]
     },
     "frame": "goal",
     "hidden": false,

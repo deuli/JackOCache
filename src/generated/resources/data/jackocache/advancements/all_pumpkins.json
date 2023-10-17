@@ -425,7 +425,10 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Collect every pumpkin offered by Jack o'Cache"
+      "translate": "advancement.jackocache.all_pumpkins.description",
+      "with": [
+        "Jack o'Cache"
+      ]
     },
     "frame": "challenge",
     "hidden": false,
@@ -435,7 +438,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "King of Halloween"
+      "translate": "advancement.jackocache.all_pumpkins.title"
     }
   },
   "requirements": [

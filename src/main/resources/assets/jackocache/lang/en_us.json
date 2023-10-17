@@ -106,5 +106,18 @@
     "block.jackocache.bat_pumpkin": "Bat Pumpkin",
     "block.jackocache.squeak_o_lantern": "Squeak o'Lantern",
 
-    "itemGroup.pumpkins": "Pumpkins"
+
+    "itemGroup.pumpkins": "Pumpkins",
+
+
+    "advancement.jackocache.root.description": "Time to collect some pumpkins",
+    "advancement.jackocache.carved_pumpkin.title": "Carved",
+    "advancement.jackocache.carved_pumpkin.description": "Carve a pumpkin with shears",
+    "advancement.jackocache.jack_o_lantern.title": "Spooky Lamp",
+    "advancement.jackocache.jack_o_lantern.description": "Add a torch to a carved pumpkin",
+    "advancement.jackocache.jack_o_slicer.title": "Spooky Sword",
+    "advancement.jackocache.jack_o_slicer.description": "Construct the weapon of Halloween",
+    "advancement.jackocache.all_pumpkins.title": "King of Halloween",
+    "advancement.jackocache.all_pumpkins.description": "Collect every pumpkin offered by %s",
+    "advancement.jackocache.obtain": "Obtain a %s"
 }

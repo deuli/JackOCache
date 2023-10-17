@@ -17,12 +17,12 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "extra": [
+      "translate": "advancement.jackocache.obtain",
+      "with": [
         {
           "translate": "block.jackocache.enderman_pumpkin"
         }
-      ],
-      "text": "Obtain a "
+      ]
     },
     "frame": "task",
     "hidden": false,

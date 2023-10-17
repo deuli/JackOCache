@@ -9,6 +9,7 @@ import net.minecraft.advancements.critereon.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -77,7 +78,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement root = Advancement.Builder.advancement().display(
                             ModBlocks.SINISTER_PUMPKIN.get().asItem(),
                             Component.literal(JackOCache.MOD_NAME),
-                            Component.literal("Time to collect some pumpkins"),
+                            getTranslatableDescription("root"),
                             new ResourceLocation("textures/block/pumpkin_side.png"),
                             FrameType.TASK, true, false, false)
                     .addCriterion("has_pumpkin",
@@ -86,8 +87,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
 
             Advancement carved = Advancement.Builder.advancement().parent(root).display(
                             Blocks.CARVED_PUMPKIN.asItem(),
-                            Component.literal("Carved"),
-                            Component.literal("Carve a pumpkin with shears"),
+                            getTranslatableName("carved_pumpkin"),
+                            getTranslatableDescription("carved_pumpkin"),
                             null, FrameType.TASK, true, false, false)
                     .addCriterion("carved_pumpkin",
                             ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
@@ -97,8 +98,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
 
             Advancement jackOLantern = Advancement.Builder.advancement().parent(carved).display(
                             Blocks.JACK_O_LANTERN.asItem(),
-                            Component.literal("Spooky Lamp"),
-                            Component.literal("Add a torch to a carved pumpkin"),
+                            getTranslatableName("jack_o_lantern"),
+                            getTranslatableDescription("jack_o_lantern"),
                             null, FrameType.TASK, true, false, false)
                     .addCriterion("has_jack_o_lantern",
                             InventoryChangeTrigger.TriggerInstance.hasItems(Blocks.JACK_O_LANTERN))
@@ -106,8 +107,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
 
             Advancement jackOSlicer = Advancement.Builder.advancement().parent(jackOLantern).display(
                             ModItems.JACK_O_SLICER.get(),
-                            Component.literal("Spooky Sword"),
-                            Component.literal("Construct the weapon of Halloween"),
+                            getTranslatableName("jack_o_slicer"),
+                            getTranslatableDescription("jack_o_slicer"),
                             null, FrameType.TASK, true, true, false)
                     .addCriterion("has_jack_o_slicer",
                             InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.JACK_O_SLICER.get()))
@@ -117,8 +118,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             enchantedSinisterPumpkin.enchant(Enchantments.BINDING_CURSE, 0);
             Advancement.Builder allPumpkinsBuilder = Advancement.Builder.advancement().parent(jackOSlicer).display(
                     enchantedSinisterPumpkin,
-                    Component.literal("King of Halloween"),
-                    Component.literal("Collect every pumpkin offered by " + JackOCache.MOD_NAME),
+                    getTranslatableName("all_pumpkins"),
+                    getTranslatableDescription("all_pumpkins", JackOCache.MOD_NAME),
                     null, FrameType.CHALLENGE, true, true, false);
             for (RegistryObject<Block> carvedPumpkin : ModBlocks.CARVED_PUMPKINS)
                 allPumpkinsBuilder.addCriterion("has_" + carvedPumpkin.getId().getPath(),
@@ -128,7 +129,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement sinisterPumpkin = Advancement.Builder.advancement().parent(allPumpkins).display(
                             ModBlocks.SINISTER_PUMPKIN.get(),
                             ModBlocks.SINISTER_PUMPKIN.get().getName(),
-                            Component.literal("Obtain a ").append(ModBlocks.SINISTER_PUMPKIN.get().getName()),
+                            getTranslatableObtainText(ModBlocks.SINISTER_PUMPKIN),
                             null, FrameType.TASK, true, true, false)
                     .addCriterion("has_" + ModBlocks.SINISTER_PUMPKIN.getId().getPath(),
                             InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.SINISTER_PUMPKIN.get()))
@@ -140,7 +141,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 last = Advancement.Builder.advancement().parent(last).display(
                                 block,
                                 block.getName(),
-                                Component.literal("Obtain a ").append(block.getName()),
+                                getTranslatableObtainText(object),
                                 null, FrameType.TASK, true, true, false)
                         .addCriterion("has_" + object.getId().getPath(),
                                 InventoryChangeTrigger.TriggerInstance.hasItems(block))
@@ -153,7 +154,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 last = Advancement.Builder.advancement().parent(last).display(
                                 block,
                                 block.getName(),
-                                Component.literal("Obtain a ").append(block.getName()),
+                                getTranslatableObtainText(object),
                                 null, FrameType.TASK, true, true, false)
                         .addCriterion("has_" + object.getId().getPath(),
                                 InventoryChangeTrigger.TriggerInstance.hasItems(block))
@@ -166,7 +167,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 last = Advancement.Builder.advancement().parent(last).display(
                                 block,
                                 block.getName(),
-                                Component.literal("Obtain a ").append(block.getName()),
+                                getTranslatableObtainText(object),
                                 null, FrameType.TASK, true, true, false)
                         .addCriterion("has_" + object.getId().getPath(),
                                 InventoryChangeTrigger.TriggerInstance.hasItems(block))
@@ -179,12 +180,28 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 last = Advancement.Builder.advancement().parent(last).display(
                                 block,
                                 block.getName(),
-                                Component.literal("Obtain a ").append(block.getName()),
+                                getTranslatableObtainText(object),
                                 null, FrameType.GOAL, true, true, false)
                         .addCriterion("has_" + object.getId().getPath(),
                                 InventoryChangeTrigger.TriggerInstance.hasItems(block))
                         .save(saver, object.getId().withPrefix("zpecial/"), existingFileHelper); //With Z so it load below transform pumpkins
             }
+        }
+
+        private MutableComponent getTranslatableName(String name) {
+            return Component.translatable("advancement." + JackOCache.MOD_ID + "." + name + ".title");
+        }
+
+        private MutableComponent getTranslatableDescription(String name) {
+            return Component.translatable("advancement." + JackOCache.MOD_ID + "." + name + ".description");
+        }
+
+        private MutableComponent getTranslatableDescription(String name, Object... args) {
+            return Component.translatable("advancement." + JackOCache.MOD_ID + "." + name + ".description", args);
+        }
+
+        private MutableComponent getTranslatableObtainText(RegistryObject<Block> pumpkin) {
+            return Component.translatable("advancement." + JackOCache.MOD_ID + ".obtain", pumpkin.get().getName());
         }
     }
 }

@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Construct the weapon of Halloween"
+      "translate": "advancement.jackocache.jack_o_slicer.description"
     },
     "frame": "task",
     "hidden": false,
@@ -27,7 +27,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Spooky Sword"
+      "translate": "advancement.jackocache.jack_o_slicer.title"
     }
   },
   "requirements": [

@@ -30,7 +30,7 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "text": "Carve a pumpkin with shears"
+      "translate": "advancement.jackocache.carved_pumpkin.description"
     },
     "frame": "task",
     "hidden": false,
@@ -39,7 +39,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Carved"
+      "translate": "advancement.jackocache.carved_pumpkin.title"
     }
   },
   "requirements": [

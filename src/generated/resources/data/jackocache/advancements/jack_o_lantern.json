@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "text": "Add a torch to a carved pumpkin"
+      "translate": "advancement.jackocache.jack_o_lantern.description"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Spooky Lamp"
+      "translate": "advancement.jackocache.jack_o_lantern.title"
     }
   },
   "requirements": [
