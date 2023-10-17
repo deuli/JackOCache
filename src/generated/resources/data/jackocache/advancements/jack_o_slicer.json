@@ -1,0 +1,39 @@
+{
+  "parent": "jackocache:jack_o_lantern",
+  "criteria": {
+    "has_jack_o_slicer": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:jack_o_slicer"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Construct the weapon of Halloween"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:jack_o_slicer",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Spooky Sword"
+    }
+  },
+  "requirements": [
+    [
+      "has_jack_o_slicer"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

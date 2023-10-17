@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/illager_pumpkin",
+  "criteria": {
+    "has_guardian_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:guardian_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.guardian_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:guardian_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.guardian_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_guardian_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

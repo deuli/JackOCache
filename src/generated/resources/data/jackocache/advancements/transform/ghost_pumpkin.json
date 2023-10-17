@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/pumpking",
+  "criteria": {
+    "has_ghost_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:ghost_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.ghost_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:ghost_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.ghost_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_ghost_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

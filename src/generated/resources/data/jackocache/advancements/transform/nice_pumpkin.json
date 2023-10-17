@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/uwu_pumpkin",
+  "criteria": {
+    "has_nice_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:nice_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.nice_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:nice_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.nice_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_nice_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

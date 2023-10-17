@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:friendly/chicken_pumpkin",
+  "criteria": {
+    "has_sheep_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:sheep_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.sheep_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:sheep_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.sheep_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_sheep_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

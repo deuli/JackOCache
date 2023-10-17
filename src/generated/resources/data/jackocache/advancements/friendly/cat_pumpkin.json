@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:friendly/dog_pumpkin",
+  "criteria": {
+    "has_cat_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:cat_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.cat_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:cat_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.cat_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_cat_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

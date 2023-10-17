@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/slime_pumpkin",
+  "criteria": {
+    "has_illager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:illager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.illager_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:illager_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.illager_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_illager_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

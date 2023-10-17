@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:zpecial/dragon_pumpkin",
+  "criteria": {
+    "has_wither_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:wither_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.wither_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:wither_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.wither_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_wither_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

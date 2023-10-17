@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:all_pumpkins",
+  "criteria": {
+    "has_dragon_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:dragon_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.dragon_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:dragon_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.dragon_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_dragon_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:sinister_pumpkin",
+  "criteria": {
+    "has_villager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:villager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.villager_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:villager_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.villager_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_villager_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

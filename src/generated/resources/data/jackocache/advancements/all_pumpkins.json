@@ -1,0 +1,549 @@
+{
+  "parent": "jackocache:jack_o_slicer",
+  "criteria": {
+    "has_alpha_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:alpha_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_angry_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:angry_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bat_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:bat_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cat_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:cat_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_chicken_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:chicken_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cool_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:cool_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_creeper_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:creeper_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dog_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:dog_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dragon_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:dragon_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_emote_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:emote_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_enderman_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:enderman_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_generic_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:generic_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ghast_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:ghast_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ghost_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:ghost_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_guardian_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:guardian_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_illager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:illager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_melon_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:melon_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nice_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:nice_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pig_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:pig_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_player_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:player_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_puking_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:puking_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pumpking": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:pumpking"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rotten_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:rotten_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sheep_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:sheep_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sinister_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:sinister_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_skeleton_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:skeleton_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_slime_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:slime_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_snow_golem_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:snow_golem_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_snow_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:snow_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_spider_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:spider_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_spookyjam_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:spookyjam_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_synth_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:synth_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_uwu_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:uwu_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_villager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:villager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_wither_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:wither_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Collect every pumpkin offered by Jack o'Cache"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:pumpking",
+      "nbt": "{Enchantments:[{id:\"minecraft:binding_curse\",lvl:0s}]}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "King of Halloween"
+    }
+  },
+  "requirements": [
+    [
+      "has_sinister_pumpkin"
+    ],
+    [
+      "has_generic_pumpkin"
+    ],
+    [
+      "has_creeper_pumpkin"
+    ],
+    [
+      "has_enderman_pumpkin"
+    ],
+    [
+      "has_skeleton_pumpkin"
+    ],
+    [
+      "has_rotten_pumpkin"
+    ],
+    [
+      "has_villager_pumpkin"
+    ],
+    [
+      "has_uwu_pumpkin"
+    ],
+    [
+      "has_pig_pumpkin"
+    ],
+    [
+      "has_spider_pumpkin"
+    ],
+    [
+      "has_ghast_pumpkin"
+    ],
+    [
+      "has_slime_pumpkin"
+    ],
+    [
+      "has_nice_pumpkin"
+    ],
+    [
+      "has_emote_pumpkin"
+    ],
+    [
+      "has_dog_pumpkin"
+    ],
+    [
+      "has_cat_pumpkin"
+    ],
+    [
+      "has_chicken_pumpkin"
+    ],
+    [
+      "has_dragon_pumpkin"
+    ],
+    [
+      "has_wither_pumpkin"
+    ],
+    [
+      "has_pumpking"
+    ],
+    [
+      "has_player_pumpkin"
+    ],
+    [
+      "has_sheep_pumpkin"
+    ],
+    [
+      "has_ghost_pumpkin"
+    ],
+    [
+      "has_snow_pumpkin"
+    ],
+    [
+      "has_synth_pumpkin"
+    ],
+    [
+      "has_melon_pumpkin"
+    ],
+    [
+      "has_alpha_pumpkin"
+    ],
+    [
+      "has_spookyjam_pumpkin"
+    ],
+    [
+      "has_cool_pumpkin"
+    ],
+    [
+      "has_angry_pumpkin"
+    ],
+    [
+      "has_snow_golem_pumpkin"
+    ],
+    [
+      "has_illager_pumpkin"
+    ],
+    [
+      "has_guardian_pumpkin"
+    ],
+    [
+      "has_puking_pumpkin"
+    ],
+    [
+      "has_bat_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/snow_pumpkin",
+  "criteria": {
+    "has_melon_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:melon_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.melon_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:melon_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.melon_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_melon_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

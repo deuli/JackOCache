@@ -1,0 +1,51 @@
+{
+  "parent": "jackocache:root",
+  "criteria": {
+    "carved_pumpkin": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:carved_pumpkin"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:shears"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "text": "Carve a pumpkin with shears"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Carved"
+    }
+  },
+  "requirements": [
+    [
+      "carved_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

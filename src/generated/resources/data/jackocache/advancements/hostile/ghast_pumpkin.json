@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/spider_pumpkin",
+  "criteria": {
+    "has_ghast_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:ghast_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.ghast_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:ghast_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.ghast_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_ghast_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

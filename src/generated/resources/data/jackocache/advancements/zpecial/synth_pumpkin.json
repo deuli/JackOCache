@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:zpecial/player_pumpkin",
+  "criteria": {
+    "has_synth_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:synth_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.synth_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:synth_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.synth_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_synth_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

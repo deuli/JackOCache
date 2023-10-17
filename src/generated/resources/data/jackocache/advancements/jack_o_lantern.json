@@ -1,0 +1,38 @@
+{
+  "parent": "jackocache:carved_pumpkin",
+  "criteria": {
+    "has_jack_o_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jack_o_lantern"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "text": "Add a torch to a carved pumpkin"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:jack_o_lantern"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Spooky Lamp"
+    }
+  },
+  "requirements": [
+    [
+      "has_jack_o_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

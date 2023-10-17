@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/nice_pumpkin",
+  "criteria": {
+    "has_emote_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:emote_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.emote_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:emote_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.emote_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_emote_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:zpecial/wither_pumpkin",
+  "criteria": {
+    "has_player_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:player_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.player_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:player_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.player_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_player_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

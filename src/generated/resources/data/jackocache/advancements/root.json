@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/pumpkin_side.png",
+    "description": {
+      "text": "Time to collect some pumpkins"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:sinister_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Jack o'Cache"
+    }
+  },
+  "requirements": [
+    [
+      "has_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

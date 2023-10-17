@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:friendly/villager_pumpkin",
+  "criteria": {
+    "has_pig_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:pig_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.pig_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:pig_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.pig_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_pig_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/rotten_pumpkin",
+  "criteria": {
+    "has_spider_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:spider_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "extra": [
+        {
+          "translate": "block.jackocache.spider_pumpkin"
+        }
+      ],
+      "text": "Obtain a "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:spider_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.spider_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_spider_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
