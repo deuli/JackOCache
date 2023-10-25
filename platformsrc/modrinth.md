@@ -61,6 +61,10 @@ Of course, every pumpkin is able to be crafted into a jack o'lantern variant usi
 - Player Pumpkin: 70% of dropping from Players
 - Sheep Pumpkin: 35% of dropping from Sheeps
 - Synth Pumpkin: 70% of dropping from deuli
+- Snow Golem Pumpkin: 50% of dropping from Snow Golem
+- Illager Pumpkin: 50% of dropping from Evokers, Pillagers and Vindicators
+- Guardian Pumpkin: 50% of dropping from Guardians or 80% from Elder Guardians
+- Bat Pumpkin: 75% of dropping from Bats
 
 </details>
 
@@ -78,5 +82,6 @@ Of course, every pumpkin is able to be crafted into a jack o'lantern variant usi
 - SpookyJam Pumpkin: A white stained glass block under the pumpkin
 - Cool Pumpkin: In a beach biome
 - Angry Pumpkin: Fire on top of the pumpkin
+- Puking Pumpkin: Pumpkin seeds around the pumpkin
 
 </details>
