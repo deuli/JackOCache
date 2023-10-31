@@ -2,9 +2,12 @@ package deuli.jackocache.other;
 
 import deuli.jackocache.JackOCache;
 import deuli.jackocache.init.ModBlocks;
+import deuli.jackocache.init.ModItems;
 import deuli.jackocache.items.jackoslicer.PumpkinDrop;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.monster.AbstractSkeleton;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Zombie;
@@ -15,6 +18,7 @@ import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Map;
 import java.util.Random;
 
 @Mod.EventBusSubscriber(modid = JackOCache.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -24,7 +28,7 @@ public class PumpkinEvents {
         Random random = new Random();
         Entity entity = event.getEntity();
 //        LocalDate localdate = LocalDate.now();
-        if ((entity instanceof Zombie || entity instanceof Skeleton) &&
+        if ((entity instanceof Zombie || entity instanceof AbstractSkeleton) &&
 //                localdate.getMonth() == Month.OCTOBER && localdate.getDayOfMonth() == 31 &&
                 random.nextFloat() <= (1 - (1.0 / (ModBlocks.PUMPKINS.size() + 1)))) {
             ItemStack helmet = ((Monster) entity).getItemBySlot(EquipmentSlot.HEAD);
@@ -41,6 +45,25 @@ public class PumpkinEvents {
             Item pumpkinItem = pumpkin.getItem();
             if (PumpkinDrop.PUMPKIN_DROP_CHANCES.containsKey(pumpkinItem))
                 ((Monster) entity).setDropChance(EquipmentSlot.HEAD, PumpkinDrop.PUMPKIN_DROP_CHANCES.get(pumpkinItem));
+        }
+    }
+
+    @SubscribeEvent
+    public static void giveJackOSlicer(EntityJoinLevelEvent event) {
+        Random random = new Random();
+        Entity entity = event.getEntity();
+        if (entity instanceof Zombie && ((Zombie) entity).getMainHandItem().isEmpty() &&
+                random.nextFloat() <= (event.getLevel().getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
+            ItemStack jackOSlicer = new ItemStack(ModItems.JACK_O_SLICER.get());
+            jackOSlicer.setDamageValue(random.nextInt(jackOSlicer.getMaxDamage()));
+            entity.setItemSlot(EquipmentSlot.MAINHAND, jackOSlicer);
+            ((Zombie) entity).setDropChance(EquipmentSlot.MAINHAND, 0.1F);
+
+            if (((Zombie) entity).getItemBySlot(EquipmentSlot.HEAD).isEmpty() && random.nextFloat() <= 0.25F) {
+                Map.Entry<Item, Float> dropChance = PumpkinDrop.PUMPKIN_DROP_CHANCES.entrySet().stream().toList().get(random.nextInt(PumpkinDrop.PUMPKIN_DROP_CHANCES.size()));
+                entity.setItemSlot(EquipmentSlot.HEAD, new ItemStack(dropChance.getKey()));
+                ((Zombie) entity).setDropChance(EquipmentSlot.HEAD, dropChance.getValue());
+            }
         }
     }
 }
