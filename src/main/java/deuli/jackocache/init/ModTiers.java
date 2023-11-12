@@ -1,7 +1,7 @@
 package deuli.jackocache.init;
 
+import deuli.jackocache.Config;
 import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -9,9 +9,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
-    PUMPKIN(2, Tiers.IRON.getUses() * 2, 6.0F, 2.0F, 14, () -> {
-        return Ingredient.of(Items.PUMPKIN);
-    });
+    PUMPKIN(2, Tiers.IRON.getUses() * 2, 6.0F, 2.0F, 14,
+            () -> Ingredient.of(Config.jackOSlicerRepairItem));
 
     private final int level;
     private final int uses;
