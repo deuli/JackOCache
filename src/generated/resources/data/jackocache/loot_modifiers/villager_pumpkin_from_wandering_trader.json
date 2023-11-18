@@ -5,14 +5,14 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:slime"
+        "type": "minecraft:wandering_trader"
       }
     },
     {
-      "chance": 0.3,
+      "chance": 0.75,
       "condition": "minecraft:random_chance"
     }
   ],
-  "entity": "minecraft:slime",
-  "pumpkin": "jackocache:slime_pumpkin"
+  "entity": "minecraft:wandering_trader",
+  "pumpkin": "jackocache:villager_pumpkin"
 }
