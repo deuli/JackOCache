@@ -1,0 +1,18 @@
+{
+  "type": "jackocache:add_pumpkin",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:snow_golem"
+      }
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "entity": "minecraft:snow_golem",
+  "pumpkin": "jackocache:snow_golem_pumpkin"
+}

@@ -6,6 +6,7 @@ import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
 import deuli.jackocache.items.jackoslicer.PumpkinDrop;
 import deuli.jackocache.items.jackoslicer.PumpkinTransformation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -35,20 +36,22 @@ public class JackOSlicer extends SwordItem {
 
     @SubscribeEvent
     public static void livingEntityDeath(LivingDeathEvent event) {
-        if (event.getSource().getEntity() != null) {
+        LivingEntity target = event.getEntity();
+        if (!PumpkinDrop.PUMPKIN_DROPS.contains(target.getEncodeId()) && event.getSource().getEntity() != null) {
             LivingEntity attacker = (LivingEntity) event.getSource().getEntity();
             if (attacker.getMainHandItem().is(ModItems.JACK_O_SLICER.get())) {
                 ItemStack pumpkin = new ItemStack(Items.PUMPKIN);
-                LivingEntity target = event.getEntity();
 
                 if (attacker instanceof Player player && player.getInventory().contains(pumpkin) && target.getHealth() <= 0) {
                     PumpkinDrop pumpkinDrop;
-                    if (target instanceof Player playerTarget)
-                        pumpkinDrop = PumpkinDrop.PLAYER_PUMPKIN_DROPS.getOrDefault(playerTarget.getDisplayName().getString(),
-                                new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get(), 0.70F));
+                    if (target instanceof Player playerTarget) {
+                        if (!PumpkinDrop.PLAYER_PUMPKIN_DROPS.containsKey(playerTarget.getDisplayName().getString()))
+                            pumpkinDrop = new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get(), 0.70F);
+                        else
+                            return;
+                    }
                     else
-                        pumpkinDrop = PumpkinDrop.PUMPKIN_DROPS.getOrDefault(target.getEncodeId(),
-                                new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get()));
+                        pumpkinDrop = new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get());
 
                     if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
                         target.spawnAtLocation(pumpkinDrop.getPumpkin());
@@ -91,8 +94,7 @@ public class JackOSlicer extends SwordItem {
     @Override
     public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity interactionTarget, InteractionHand hand) {
         if (interactionTarget instanceof Player playerTarget && playerTarget.getInventory().getArmor(3).is(Blocks.CARVED_PUMPKIN.asItem())) {
-            Block pumpkin = PumpkinDrop.PLAYER_PUMPKIN_DROPS.getOrDefault(playerTarget.getDisplayName().getString(),
-                    new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get())).getPumpkin();
+            Item pumpkin = PumpkinDrop.PLAYER_PUMPKIN_DROPS.getOrDefault(playerTarget.getDisplayName().getString(), ModBlocks.PLAYER_PUMPKIN.get().asItem());
             Level level = interactionTarget.level();
 
             playerTarget.getInventory().getArmor(3).shrink(1);

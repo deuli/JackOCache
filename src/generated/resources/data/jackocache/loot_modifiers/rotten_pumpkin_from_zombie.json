@@ -1,0 +1,18 @@
+{
+  "type": "jackocache:add_pumpkin",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:zombie"
+      }
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "entity": "minecraft:zombie",
+  "pumpkin": "jackocache:rotten_pumpkin"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "jackocache:add_player_pumpkin",
+  "conditions": [
+    {
+      "chance": 0.7,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "playerName": "deuli",
+  "pumpkin": "jackocache:synth_pumpkin"
+}

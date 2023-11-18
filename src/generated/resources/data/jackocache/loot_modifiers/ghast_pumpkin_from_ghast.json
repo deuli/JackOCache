@@ -1,0 +1,18 @@
+{
+  "type": "jackocache:add_pumpkin",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:ghast"
+      }
+    },
+    {
+      "chance": 0.8,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "entity": "minecraft:ghast",
+  "pumpkin": "jackocache:ghast_pumpkin"
+}

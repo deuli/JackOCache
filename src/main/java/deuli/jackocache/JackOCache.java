@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.init.ModCreativeModeTabs;
 import deuli.jackocache.init.ModItems;
+import deuli.jackocache.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +28,7 @@ public class JackOCache {
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

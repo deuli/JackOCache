@@ -1,0 +1,28 @@
+{
+  "entries": [
+    "jackocache:villager_pumpkin_from_villager",
+    "jackocache:snow_golem_pumpkin_from_snow_golem",
+    "jackocache:guardian_pumpkin_from_guardian",
+    "jackocache:creeper_pumpkin_from_creeper",
+    "jackocache:chicken_pumpkin_from_chicken",
+    "jackocache:rotten_pumpkin_from_zombie",
+    "jackocache:slime_pumpkin_from_slime",
+    "jackocache:illager_pumpkin_from_pillager",
+    "jackocache:ghast_pumpkin_from_ghast",
+    "jackocache:guardian_pumpkin_from_elder_guardian",
+    "jackocache:dog_pumpkin_from_wolf",
+    "jackocache:skeleton_pumpkin_from_skeleton",
+    "jackocache:enderman_pumpkin_from_enderman",
+    "jackocache:illager_pumpkin_from_evoker",
+    "jackocache:bat_pumpkin_from_bat",
+    "jackocache:spider_pumpkin_from_spider",
+    "jackocache:illager_pumpkin_from_vindicator",
+    "jackocache:cat_pumpkin_from_cat",
+    "jackocache:sheep_pumpkin_from_sheep",
+    "jackocache:pig_pumpkin_from_pig",
+    "jackocache:wither_pumpkin_from_wither",
+    "jackocache:dragon_pumpkin_from_ender_dragon",
+    "jackocache:synth_pumpkin_from_deuli"
+  ],
+  "replace": false
+}
