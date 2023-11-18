@@ -6,7 +6,6 @@ import deuli.jackocache.init.ModItems;
 import deuli.jackocache.init.ModTiers;
 import deuli.jackocache.items.jackoslicer.PumpkinDrop;
 import deuli.jackocache.items.jackoslicer.PumpkinTransformation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -49,17 +48,13 @@ public class JackOSlicer extends SwordItem {
                             pumpkinDrop = new PumpkinDrop(ModBlocks.PLAYER_PUMPKIN.get(), 0.70F);
                         else
                             return;
-                    }
-                    else
+                    } else
                         pumpkinDrop = new PumpkinDrop(ModBlocks.SINISTER_PUMPKIN.get());
 
                     if (player.getRandom().nextFloat() <= pumpkinDrop.getChance()) {
                         target.spawnAtLocation(pumpkinDrop.getPumpkin());
 
-                        int pumpkinSlot = player.getInventory().findSlotMatchingItem(pumpkin);
-                        player.getInventory().removeItem(pumpkinSlot, 1);
-
-                        player.level().playSound(null, target.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
+                        pumpkinDropEffects(player, target);
                     }
                 }
             }
@@ -115,5 +110,12 @@ public class JackOSlicer extends SwordItem {
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
+    }
+
+    public static void pumpkinDropEffects(Player player, LivingEntity target) {
+        int pumpkinSlot = player.getInventory().findSlotMatchingItem(new ItemStack(Items.PUMPKIN));
+        player.getInventory().removeItem(pumpkinSlot, 1);
+
+        player.level().playSound(null, target.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.75F, 0);
     }
 }

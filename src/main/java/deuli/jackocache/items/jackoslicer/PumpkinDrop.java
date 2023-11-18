@@ -1,9 +1,17 @@
 package deuli.jackocache.items.jackoslicer;
 
 import deuli.jackocache.init.ModBlocks;
-import net.minecraft.world.entity.EntityType;
+import deuli.jackocache.init.ModItems;
+import deuli.jackocache.items.JackOSlicer;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,6 +38,7 @@ public class PumpkinDrop {
 
     /**
      * The chance for the pumpkin to drop.
+     *
      * @default 0.5
      */
     private float chance = 0.5F;
@@ -49,5 +58,27 @@ public class PumpkinDrop {
 
     public float getChance() {
         return chance;
+    }
+
+    public static ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context, Item pumpkin) {
+        return doApply(generatedLoot, context, pumpkin, null);
+    }
+
+    public static ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context, Item pumpkin, String playerName) {
+        if (context.hasParam(LootContextParams.THIS_ENTITY) && context.hasParam(LootContextParams.KILLER_ENTITY)) {
+            LivingEntity target = (LivingEntity) context.getParam(LootContextParams.THIS_ENTITY);
+            LivingEntity killer = (LivingEntity) context.getParam(LootContextParams.KILLER_ENTITY);
+            ItemStack tool = killer.getMainHandItem();
+            if ((playerName == null || (target instanceof Player && target.getDisplayName().getString().equals(playerName))) &&
+                    tool.getItem() == ModItems.JACK_O_SLICER.get() && killer.getMainHandItem().is(ModItems.JACK_O_SLICER.get())) {
+                if (killer instanceof Player player && player.getInventory().contains(new ItemStack(Items.PUMPKIN))) {
+                    generatedLoot.add(new ItemStack(pumpkin));
+
+                    JackOSlicer.pumpkinDropEffects(player, target);
+                }
+            }
+        }
+
+        return generatedLoot;
     }
 }
