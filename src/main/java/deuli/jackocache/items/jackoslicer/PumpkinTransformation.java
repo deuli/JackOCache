@@ -1,5 +1,6 @@
 package deuli.jackocache.items.jackoslicer;
 
+import deuli.jackocache.Config;
 import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.items.jackoslicer.transformconditions.*;
 import net.minecraft.core.BlockPos;
@@ -8,7 +9,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.Tags;
 
 import java.util.ArrayList;
 
@@ -90,12 +90,12 @@ public class PumpkinTransformation {
     /**
      * Starts evaluating the chain.
      *
-     * @param level the world
+     * @param level    the world
      * @param blockPos the block position of the pumpkin
      * @return {@code true} if every condition is met, otherwise {@code false}
      */
     public boolean check(Level level, BlockPos blockPos) {
-        return first.check(level, blockPos);
+        return Config.transformations.getOrDefault(result, true) && first.check(level, blockPos);
     }
 
     public Block getResult() {

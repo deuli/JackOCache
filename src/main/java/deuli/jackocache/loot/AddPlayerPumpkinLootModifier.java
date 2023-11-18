@@ -46,9 +46,7 @@ public class AddPlayerPumpkinLootModifier extends LootModifier {
         this.pumpkin = pumpkin;
         this.playerName = playerName;
 
-        System.out.println(playerName + ": " + pumpkin);
         PLAYER_PUMPKIN_DROPS.put(playerName, pumpkin);
-        System.out.println(PLAYER_PUMPKIN_DROPS.size());
     }
 
     @Override
@@ -95,6 +93,5 @@ public class AddPlayerPumpkinLootModifier extends LootModifier {
         PumpkinDrop.PLAYER_PUMPKIN_DROPS.clear();
         PumpkinDrop.PLAYER_PUMPKIN_DROPS.putAll(PLAYER_PUMPKIN_DROPS);
         PLAYER_PUMPKIN_DROPS.clear();
-        System.out.println(PumpkinDrop.PLAYER_PUMPKIN_DROPS.size());
     }
 }

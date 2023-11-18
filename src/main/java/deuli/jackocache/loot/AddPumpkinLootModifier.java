@@ -46,9 +46,7 @@ public class AddPumpkinLootModifier extends LootModifier {
         this.pumpkin = pumpkin;
         this.entityID = entityID;
 
-        System.out.println(entityID + ": " + pumpkin);
         PUMPKIN_DROPS.add(entityID);
-        System.out.println(PUMPKIN_DROPS.size());
     }
 
     @Override
@@ -94,6 +92,5 @@ public class AddPumpkinLootModifier extends LootModifier {
         PumpkinDrop.PUMPKIN_DROPS.clear();
         PumpkinDrop.PUMPKIN_DROPS.addAll(PUMPKIN_DROPS);
         PUMPKIN_DROPS.clear();
-        System.out.println(PumpkinDrop.PUMPKIN_DROPS.size());
     }
 }
