@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/guardian_pumpkin",
+  "criteria": {
+    "has_rotten_villager_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:rotten_villager_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.jackocache.obtain",
+      "with": [
+        {
+          "translate": "block.jackocache.rotten_villager_pumpkin"
+        }
+      ]
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:rotten_villager_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.rotten_villager_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_rotten_villager_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

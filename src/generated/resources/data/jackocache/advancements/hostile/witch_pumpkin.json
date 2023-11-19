@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:hostile/rotten_villager_pumpkin",
+  "criteria": {
+    "has_witch_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:witch_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.jackocache.obtain",
+      "with": [
+        {
+          "translate": "block.jackocache.witch_pumpkin"
+        }
+      ]
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:witch_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.witch_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_witch_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

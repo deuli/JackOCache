@@ -127,6 +127,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         registerPumpkin(ModBlocks.BAT_PUMPKIN);
         registerPumpkin(ModBlocks.SQUEAK_O_LANTERN);
+
+        registerHorizontalBlockWithModel(ModBlocks.ROTTEN_VILLAGER_PUMPKIN);
+        registerHorizontalBlockWithModel(ModBlocks.ROTTEN_HMM_O_LANTERN);
+
+        registerHorizontalBlockWithModel(ModBlocks.WITCH_PUMPKIN);
+        registerHorizontalBlockWithModel(ModBlocks.HEEHEEHEE_O_LANTERN);
     }
 
     /**

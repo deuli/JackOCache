@@ -50,6 +50,8 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         addPumpkin(EntityType.GUARDIAN, ModBlocks.GUARDIAN_PUMPKIN);
         addPumpkin(EntityType.ELDER_GUARDIAN, ModBlocks.GUARDIAN_PUMPKIN, 0.80F);
         addPumpkin(EntityType.BAT, ModBlocks.BAT_PUMPKIN, 0.75F);
+        addPumpkin(EntityType.ZOMBIE_VILLAGER, ModBlocks.ROTTEN_VILLAGER_PUMPKIN, 0.80F);
+        addPumpkin(EntityType.WITCH, ModBlocks.WITCH_PUMPKIN, 0.60F);
 
         addPlayerPumpkin("deuli", ModBlocks.SYNTH_PUMPKIN, 0.70F);
     }

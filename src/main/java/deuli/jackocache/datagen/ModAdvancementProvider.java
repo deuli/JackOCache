@@ -39,7 +39,9 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 ModBlocks.GHAST_PUMPKIN,
                 ModBlocks.SLIME_PUMPKIN,
                 ModBlocks.ILLAGER_PUMPKIN,
-                ModBlocks.GUARDIAN_PUMPKIN
+                ModBlocks.GUARDIAN_PUMPKIN,
+                ModBlocks.ROTTEN_VILLAGER_PUMPKIN,
+                ModBlocks.WITCH_PUMPKIN
         );
         private final List<RegistryObject<Block>> FRIENDLY_PUMPKINS = List.of(
                 ModBlocks.VILLAGER_PUMPKIN,

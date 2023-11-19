@@ -34,6 +34,8 @@
     "jackocache:illager_pumpkin",
     "jackocache:guardian_pumpkin",
     "jackocache:puking_pumpkin",
-    "jackocache:bat_pumpkin"
+    "jackocache:bat_pumpkin",
+    "jackocache:rotten_villager_pumpkin",
+    "jackocache:witch_pumpkin"
   ]
 }
