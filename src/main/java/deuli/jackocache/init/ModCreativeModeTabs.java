@@ -14,6 +14,7 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> PUMPKIN_TAB = CREATIVE_MODE_TABS.register("pumpkin_tab", () -> CreativeModeTab.builder()
             .icon(() -> ModBlocks.SINISTER_PUMPKIN.get().asItem().getDefaultInstance())
             .title(Component.translatable("itemGroup.pumpkins").append(" (" + JackOCache.MOD_NAME + ")"))
+            .withSlotColor(0x80E38A1D)
             .displayItems((parameters, output) -> {
                 output.accept(Blocks.PUMPKIN);
                 output.accept(Blocks.CARVED_PUMPKIN);
