@@ -12,30 +12,11 @@ import net.minecraft.world.level.block.state.BlockState;
 /**
  * Checks if the pumpkin has a sign placed on it with matching contents.
  */
-public class SignCondition extends TransformCondition {
-    private String[] signContents = new String[4];
+public class SignContainsOnlyCondition extends TransformCondition {
+    private String content;
 
-    public SignCondition(String[] signContents) {
-        this.signContents = signContents;
-    }
-
-    public SignCondition(String first, String second, String third, String fourth) {
-        this.signContents[0] = first;
-        this.signContents[1] = second;
-        this.signContents[2] = third;
-        this.signContents[3] = fourth;
-    }
-
-    public SignCondition(String first, String second, String third) {
-        this(first, second, third, "");
-    }
-
-    public SignCondition(String first, String second) {
-        this(first, second, "", "");
-    }
-
-    public SignCondition(String first) {
-        this(first, "", "", "");
+    public SignContainsOnlyCondition(String content) {
+        this.content = content;
     }
 
     @Override
@@ -51,14 +32,23 @@ public class SignCondition extends TransformCondition {
         if (blockState.getBlock() instanceof WallSignBlock && level.getExistingBlockEntity(blockPos) instanceof SignBlockEntity signBlockEntity &&
                 blockState.getValue(HorizontalDirectionalBlock.FACING) == direction) {
             Component[] messages = signBlockEntity.getText(true).getMessages(true);
-            for (int i = 0; i < messages.length; i++)
-                if (!messages[i].getString().equals(signContents[i]))
-                    return false;
-        } else
-            return false;
+            int empty = 0;
+            boolean containsContent = false;
+            for (Component component : messages) {
+                String message = component.getString();
+                if (message.equals(content))
+                    containsContent = true;
+                else if (message.isEmpty())
+                    empty++;
 
-        level.destroyBlock(blockPos, false);
-        return true;
+                if (empty == 3 && containsContent) {
+                    level.destroyBlock(blockPos, false);
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
 }

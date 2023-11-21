@@ -31,7 +31,7 @@ public class PumpkinTransformation {
                 new TagCondition(-1, BlockTags.LOGS)
         )));
         add(new PumpkinTransformation(ModBlocks.EMOTE_PUMPKIN.get(), TransformCondition.link(
-                new SignCondition("", ":^)")
+                new SignContainsOnlyCondition(":^)")
         )));
         add(new PumpkinTransformation(ModBlocks.PUMPKING.get(), TransformCondition.link(
                 new BlockCondition(1, Blocks.GOLD_BLOCK, true)
@@ -75,8 +75,8 @@ public class PumpkinTransformation {
         )));
         add(new PumpkinTransformation(ModBlocks.NERD_PUMPKIN.get(), TransformCondition.link(
                 new OrCondition(
-                        new SignCondition("", "Actually"),
-                        new SignCondition("", "Ackchyually")
+                        new SignContainsOnlyCondition("Actually"),
+                        new SignContainsOnlyCondition("Ackchyually")
                 )
         )));
     }};
