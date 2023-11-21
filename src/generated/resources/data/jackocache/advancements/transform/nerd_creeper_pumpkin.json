@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/nerd_pumpkin",
+  "criteria": {
+    "has_nerd_creeper_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:nerd_creeper_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.jackocache.obtain",
+      "with": [
+        {
+          "translate": "block.jackocache.nerd_creeper_pumpkin"
+        }
+      ]
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:nerd_creeper_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.nerd_creeper_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_nerd_creeper_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

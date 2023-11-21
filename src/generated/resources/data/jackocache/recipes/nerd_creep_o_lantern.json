@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jackolanterns",
+  "key": {
+    "A": {
+      "item": "jackocache:nerd_creeper_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "jackocache:nerd_creep_o_lantern"
+  },
+  "show_notification": true
+}

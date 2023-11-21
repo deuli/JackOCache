@@ -205,6 +205,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_nerd_creeper_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:nerd_creeper_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_nerd_pumpkin": {
       "conditions": {
         "items": [
@@ -591,6 +603,9 @@
     ],
     [
       "has_nerd_pumpkin"
+    ],
+    [
+      "has_nerd_creeper_pumpkin"
     ]
   ],
   "sends_telemetry_event": true

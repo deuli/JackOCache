@@ -39,6 +39,7 @@ public class Config {
     private static final ForgeConfigSpec.BooleanValue ANGRY_TRANSFORMATION;
     private static final ForgeConfigSpec.BooleanValue PUKING_TRANSFORMATION;
     private static final ForgeConfigSpec.BooleanValue NERD_TRANSFORMATION;
+    private static final ForgeConfigSpec.BooleanValue NERD_CREEPER_TRANSFORMATION;
 
     static {
         BUILDER.push("Pumpkin Heads");
@@ -148,6 +149,11 @@ public class Config {
                         "Default: true")
                 .define("nerdTransformation", true);
 
+        NERD_CREEPER_TRANSFORMATION = BUILDER
+                .comment("Enable the transformation for the Nerd Creeper Pumpkin\n" +
+                        "Default: true")
+                .define("nerdCreeperTransformation", true);
+
         BUILDER.pop();
     }
 
@@ -186,6 +192,7 @@ public class Config {
         transformations.put(ModBlocks.ANGRY_PUMPKIN.get(), ANGRY_TRANSFORMATION.get());
         transformations.put(ModBlocks.PUKING_PUMPKIN.get(), PUKING_TRANSFORMATION.get());
         transformations.put(ModBlocks.NERD_PUMPKIN.get(), NERD_TRANSFORMATION.get());
+        transformations.put(ModBlocks.NERD_CREEPER_PUMPKIN.get(), NERD_CREEPER_TRANSFORMATION.get());
     }
 
     @SubscribeEvent

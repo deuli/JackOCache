@@ -79,6 +79,18 @@ public class PumpkinTransformation {
                         new SignContainsOnlyCondition("Ackchyually")
                 )
         )));
+        add(new PumpkinTransformation(ModBlocks.NERD_CREEPER_PUMPKIN.get(), TransformCondition.link(
+                new OrCondition(
+                        TransformCondition.link(
+                                new BlockCondition(1, ModBlocks.NERD_PUMPKIN.get()),
+                                new BlockCondition(-1, ModBlocks.CREEPER_PUMPKIN.get())
+                        ),
+                        TransformCondition.link(
+                                new BlockCondition(1, ModBlocks.CREEPER_PUMPKIN.get()),
+                                new BlockCondition(-1, ModBlocks.NERD_PUMPKIN.get())
+                        )
+                )
+        )));
     }};
 
     /**

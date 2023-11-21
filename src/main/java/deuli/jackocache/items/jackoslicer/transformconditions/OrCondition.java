@@ -14,7 +14,7 @@ public class OrCondition extends TransformCondition {
     public boolean check(Level level, BlockPos blockPos) {
         for (TransformCondition condition : transformConditions)
             if (condition.check(level, blockPos))
-                return true;
+                return checkNext(level, blockPos);
 
         return false;
     }

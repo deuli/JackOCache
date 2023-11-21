@@ -39,7 +39,7 @@ public class BlockCondition extends TransformCondition {
     }
 
     public BlockCondition(int y, Block block) {
-        this(new Vec3i(0, y, 0), block, true);
+        this(new Vec3i(0, y, 0), block, false);
     }
 
     @Override
