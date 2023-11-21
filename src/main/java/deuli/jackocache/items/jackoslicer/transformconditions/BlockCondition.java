@@ -4,12 +4,11 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Checks if the block in a certain position offset from the pumpkin matches given block.
  */
-public class BlockCondition extends TransformConditions {
+public class BlockCondition extends TransformCondition {
     private final Vec3i offset;
     private final Block block;
     /**

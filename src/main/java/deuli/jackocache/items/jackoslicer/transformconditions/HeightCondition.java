@@ -6,7 +6,7 @@ import net.minecraft.world.level.Level;
 /**
  * Checks if the block is between a certain Y level.
  */
-public class HeightCondition extends TransformConditions {
+public class HeightCondition extends TransformCondition {
     private final int minHeight;
     private final int maxHeight;
 

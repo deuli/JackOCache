@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 /**
  * Checks if the pumpkin has a sign placed on it with matching contents.
  */
-public class SignCondition extends TransformConditions {
+public class SignCondition extends TransformCondition {
     private String[] signContents = new String[4];
 
     public SignCondition(String[] signContents) {

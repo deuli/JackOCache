@@ -7,7 +7,7 @@ import net.minecraft.world.level.Level;
 /**
  * Checks if the block is in a certain dimension.
  */
-public class DimensionCondition extends TransformConditions {
+public class DimensionCondition extends TransformCondition {
     private final ResourceKey<Level> dimension;
 
     public DimensionCondition(ResourceKey<Level> dimension) {

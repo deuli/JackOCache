@@ -1,9 +1,7 @@
 package deuli.jackocache.items.jackoslicer.transformconditions;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.biome.Biome;
 
 /**
  * An abstract <a href="https://refactoring.guru/design-patterns/chain-of-responsibility">Chain of Responsibility</a>.
@@ -15,11 +13,11 @@ import net.minecraft.world.level.biome.Biome;
  * @see SignCondition
  * @see TagCondition
  */
-public abstract class TransformConditions {
+public abstract class TransformCondition {
     /**
      * The next condition to be evaluated.
      */
-    private TransformConditions nextCondition;
+    private TransformCondition nextCondition;
 
     /**
      * Static method that links all the conditions together and returns the {@code first} condition.
@@ -28,9 +26,9 @@ public abstract class TransformConditions {
      * @param chain all other conditions
      * @return {@code first} - the first condition
      */
-    public static TransformConditions link(TransformConditions first, TransformConditions... chain) {
-        TransformConditions head = first;
-        for (TransformConditions next : chain) {
+    public static TransformCondition link(TransformCondition first, TransformCondition... chain) {
+        TransformCondition head = first;
+        for (TransformCondition next : chain) {
             head.nextCondition = next;
             head = next;
         }

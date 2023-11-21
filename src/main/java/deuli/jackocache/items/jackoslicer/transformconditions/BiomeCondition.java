@@ -8,7 +8,7 @@ import net.minecraft.world.level.biome.Biome;
 /**
  * Checks if the position of the block is in a certain biome.
  */
-public class BiomeCondition extends TransformConditions {
+public class BiomeCondition extends TransformCondition {
     private final ResourceKey<Biome> biome;
 
     public BiomeCondition(ResourceKey<Biome> biome) {

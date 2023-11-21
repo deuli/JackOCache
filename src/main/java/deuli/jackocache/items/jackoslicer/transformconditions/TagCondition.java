@@ -5,12 +5,11 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Checks if the block has a certain tag.
  */
-public class TagCondition extends TransformConditions {
+public class TagCondition extends TransformCondition {
     private final Vec3i offset;
     private final TagKey<Block> tag;
     public boolean destroyBlock;
