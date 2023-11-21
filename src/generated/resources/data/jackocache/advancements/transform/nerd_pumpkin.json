@@ -1,0 +1,43 @@
+{
+  "parent": "jackocache:transform/puking_pumpkin",
+  "criteria": {
+    "has_nerd_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jackocache:nerd_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.jackocache.obtain",
+      "with": [
+        {
+          "translate": "block.jackocache.nerd_pumpkin"
+        }
+      ]
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "jackocache:nerd_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "block.jackocache.nerd_pumpkin"
+    }
+  },
+  "requirements": [
+    [
+      "has_nerd_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

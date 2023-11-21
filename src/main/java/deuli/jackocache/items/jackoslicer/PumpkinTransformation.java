@@ -70,6 +70,12 @@ public class PumpkinTransformation {
                 new BlockCondition(-1, 0, 0, Blocks.PUMPKIN_STEM, true),
                 new BlockCondition(0, 0, -1, Blocks.PUMPKIN_STEM, true)
         )));
+        add(new PumpkinTransformation(ModBlocks.NERD_PUMPKIN.get(), TransformConditions.link(
+                new SignCondition("", "Actually")
+        )));
+        add(new PumpkinTransformation(ModBlocks.NERD_PUMPKIN.get(), TransformConditions.link(
+                new SignCondition("", "Ackchyually")
+        )));
     }};
 
     /**

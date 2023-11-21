@@ -38,6 +38,7 @@ public class Config {
     private static final ForgeConfigSpec.BooleanValue COOL_TRANSFORMATION;
     private static final ForgeConfigSpec.BooleanValue ANGRY_TRANSFORMATION;
     private static final ForgeConfigSpec.BooleanValue PUKING_TRANSFORMATION;
+    private static final ForgeConfigSpec.BooleanValue NERD_TRANSFORMATION;
 
     static {
         BUILDER.push("Pumpkin Heads");
@@ -48,7 +49,7 @@ public class Config {
                 .define("alwaysHalloween", false);
 
         REPLACE_CHANCE = BUILDER
-                .comment("The chance of a pumpkin on an Halloween mob's head to be replaced with one of Jack o'Cache's\n" +
+                .comment("The chance of a pumpkin on a Halloween mob's head to be replaced with one of Jack o'Cache's\n" +
                         "Default: " + (1 - (1.0 / (ModBlocks.PUMPKINS.size() + 1))))
                 .defineInRange("replaceChance", 1 - (1.0 / (ModBlocks.PUMPKINS.size() + 1)), 0, 1);
 
@@ -142,6 +143,11 @@ public class Config {
                         "Default: true")
                 .define("pukingTransformation", true);
 
+        NERD_TRANSFORMATION = BUILDER
+                .comment("Enable the transformation for the Nerd Pumpkin\n" +
+                        "Default: true")
+                .define("nerdTransformation", true);
+
         BUILDER.pop();
     }
 
@@ -179,6 +185,7 @@ public class Config {
         transformations.put(ModBlocks.COOL_PUMPKIN.get(), COOL_TRANSFORMATION.get());
         transformations.put(ModBlocks.ANGRY_PUMPKIN.get(), ANGRY_TRANSFORMATION.get());
         transformations.put(ModBlocks.PUKING_PUMPKIN.get(), PUKING_TRANSFORMATION.get());
+        transformations.put(ModBlocks.NERD_PUMPKIN.get(), NERD_TRANSFORMATION.get());
     }
 
     @SubscribeEvent

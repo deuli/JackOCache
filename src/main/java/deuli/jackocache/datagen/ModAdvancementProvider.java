@@ -66,7 +66,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                 ModBlocks.SPOOKYJAM_PUMPKIN,
                 ModBlocks.COOL_PUMPKIN,
                 ModBlocks.ANGRY_PUMPKIN,
-                ModBlocks.PUKING_PUMPKIN
+                ModBlocks.PUKING_PUMPKIN,
+                ModBlocks.NERD_PUMPKIN
         );
         private final List<RegistryObject<Block>> SPECIAL_PUMPKINS = List.of(
                 ModBlocks.DRAGON_PUMPKIN,
