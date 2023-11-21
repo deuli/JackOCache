@@ -37,7 +37,10 @@ public class PumpkinTransformation {
                 new BlockCondition(1, Blocks.GOLD_BLOCK, true)
         )));
         add(new PumpkinTransformation(ModBlocks.GHOST_PUMPKIN.get(), TransformCondition.link(
-                new BlockCondition(-1, Blocks.SOUL_SAND, true)
+                new OrCondition(
+                        new BlockCondition(-1, Blocks.SOUL_SAND, true),
+                        new BlockCondition(-1, Blocks.SOUL_SOIL, true)
+                )
         )));
         add(new PumpkinTransformation(ModBlocks.SNOW_PUMPKIN.get(), TransformCondition.link(
                 new BlockCondition(1, Blocks.SNOW, true),
