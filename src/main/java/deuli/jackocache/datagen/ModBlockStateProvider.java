@@ -139,6 +139,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         horizontalBlockWithModel(ModBlocks.NERD_CREEPER_PUMPKIN);
         horizontalBlockWithModel(ModBlocks.NERD_CREEP_O_LANTERN);
+
+        horizontalBlockWithModel(ModBlocks.WARDEN_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.SCULK_O_LANTERN);
     }
 
     /**

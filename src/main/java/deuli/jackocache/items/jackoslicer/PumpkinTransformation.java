@@ -5,10 +5,12 @@ import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.items.jackoslicer.transformconditions.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.structure.BuiltinStructures;
 
 import java.util.ArrayList;
 
@@ -90,6 +92,10 @@ public class PumpkinTransformation {
                                 new BlockCondition(-1, ModBlocks.NERD_PUMPKIN.get())
                         )
                 )
+        )));
+        add(new PumpkinTransformation(ModBlocks.WARDEN_PUMPKIN.get(), TransformCondition.link(
+                new StructureCondition(BuiltinStructures.ANCIENT_CITY),
+                new EntityNearbyCondition(EntityType.WARDEN, 10)
         )));
     }};
 

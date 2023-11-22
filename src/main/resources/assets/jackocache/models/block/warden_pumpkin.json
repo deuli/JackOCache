@@ -1,0 +1,81 @@
+{
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"1": "jackocache:block/warden_pumpkin",
+		"2": "jackocache:block/warden_pumpkin_right_tendril",
+		"3": "jackocache:block/warden_pumpkin_left_tendril",
+		"4": "jackocache:block/warden_pumpkin_side",
+		"5": "jackocache:block/warden_pumpkin_bottom",
+		"6": "jackocache:block/warden_pumpkin_top",
+		"particle": "jackocache:block/warden_pumpkin"
+	},
+	"elements": [
+		{
+			"name": "pumpkin",
+			"from": [0, 0, 3],
+			"to": [16, 16, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 10, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"west": {"uv": [6, 0, 16, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 16, 10], "texture": "#6"},
+				"down": {"uv": [0, 0, 16, 10], "texture": "#5"}
+			}
+		},
+		{
+			"name": "right_tendril",
+			"from": [16, 9, 8],
+			"to": [32, 25, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "left_tendril",
+			"from": [-16, 9, 8],
+			"to": [0, 25, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0, -1, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"translation": [0, 3.75, 0],
+			"scale": [1.45, 1.45, 1.45]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

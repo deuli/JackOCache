@@ -77,6 +77,8 @@
     "jackocache:nerd_pumpkin",
     "jackocache:nerd_jack_o_lantern",
     "jackocache:nerd_creeper_pumpkin",
-    "jackocache:nerd_creep_o_lantern"
+    "jackocache:nerd_creep_o_lantern",
+    "jackocache:warden_pumpkin",
+    "jackocache:sculk_o_lantern"
   ]
 }

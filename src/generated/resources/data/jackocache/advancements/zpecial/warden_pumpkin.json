@@ -1,12 +1,12 @@
 {
-  "parent": "jackocache:zpecial/warden_pumpkin",
+  "parent": "jackocache:zpecial/wither_pumpkin",
   "criteria": {
-    "has_player_pumpkin": {
+    "has_warden_pumpkin": {
       "conditions": {
         "items": [
           {
             "items": [
-              "jackocache:player_pumpkin"
+              "jackocache:warden_pumpkin"
             ]
           }
         ]
@@ -20,23 +20,23 @@
       "translate": "advancement.jackocache.obtain",
       "with": [
         {
-          "translate": "block.jackocache.player_pumpkin"
+          "translate": "block.jackocache.warden_pumpkin"
         }
       ]
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "jackocache:player_pumpkin"
+      "item": "jackocache:warden_pumpkin"
     },
     "show_toast": true,
     "title": {
-      "translate": "block.jackocache.player_pumpkin"
+      "translate": "block.jackocache.warden_pumpkin"
     }
   },
   "requirements": [
     [
-      "has_player_pumpkin"
+      "has_warden_pumpkin"
     ]
   ],
   "sends_telemetry_event": true
