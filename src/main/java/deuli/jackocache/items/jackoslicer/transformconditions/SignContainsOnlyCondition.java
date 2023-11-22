@@ -10,10 +10,10 @@ import net.minecraft.world.level.block.entity.SignBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 /**
- * Checks if the pumpkin has a sign placed on it with matching contents.
+ * Checks if the pumpkin has a sign placed on it with a matching line anywhere on the sign.
  */
 public class SignContainsOnlyCondition extends TransformCondition {
-    private String content;
+    private final String content;
 
     public SignContainsOnlyCondition(String content) {
         this.content = content;

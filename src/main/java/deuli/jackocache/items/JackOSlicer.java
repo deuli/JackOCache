@@ -33,6 +33,14 @@ public class JackOSlicer extends SwordItem {
         super(ModTiers.PUMPKIN, 3, -2.4F, new Item.Properties());
     }
 
+    /**
+     * Used to drop either a Sinister Pumpkin for mobs that do not have their own pumpkin or to drop a Player Pumpkin
+     * for players that do not have their own pumpkin.
+     *
+     * @param event the living death event
+     * @see PumpkinDrop#PUMPKIN_DROPS
+     * @see PumpkinDrop#PLAYER_PUMPKIN_DROPS
+     */
     @SubscribeEvent
     public static void livingEntityDeath(LivingDeathEvent event) {
         LivingEntity target = event.getEntity();
@@ -61,6 +69,11 @@ public class JackOSlicer extends SwordItem {
         }
     }
 
+    /**
+     * Used for the pumpkin transformations.
+     *
+     * @see PumpkinTransformation
+     */
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Level level = pContext.getLevel();
@@ -86,6 +99,11 @@ public class JackOSlicer extends SwordItem {
         return InteractionResult.PASS;
     }
 
+    /**
+     * Used to transform a regular vanilla carved pumpkin on a player's head to their respective pumpkin.
+     *
+     * @see PumpkinDrop#PLAYER_PUMPKIN_DROPS
+     */
     @Override
     public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity interactionTarget, InteractionHand hand) {
         if (interactionTarget instanceof Player playerTarget && playerTarget.getInventory().getArmor(3).is(Blocks.CARVED_PUMPKIN.asItem())) {
@@ -112,6 +130,12 @@ public class JackOSlicer extends SwordItem {
         return InteractionResult.PASS;
     }
 
+    /**
+     * The effects that happen whenever a pumpkin drops from a mob.
+     *
+     * @param player used to remove a pumpkin from the player's inventory
+     * @param target used to play a sound at their location
+     */
     public static void pumpkinDropEffects(Player player, LivingEntity target) {
         int pumpkinSlot = player.getInventory().findSlotMatchingItem(new ItemStack(Items.PUMPKIN));
         player.getInventory().removeItem(pumpkinSlot, 1);

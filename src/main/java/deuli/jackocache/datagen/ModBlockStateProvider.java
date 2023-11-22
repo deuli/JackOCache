@@ -17,128 +17,128 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        registerPumpkin(ModBlocks.SINISTER_PUMPKIN);
-        registerPumpkin(ModBlocks.SINISTER_JACK_O_LANTERN);
+        pumpkin(ModBlocks.SINISTER_PUMPKIN);
+        pumpkin(ModBlocks.SINISTER_JACK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.GENERIC_PUMPKIN);
-        registerPumpkin(ModBlocks.GENERIC_JACK_O_LANTERN);
+        pumpkin(ModBlocks.GENERIC_PUMPKIN);
+        pumpkin(ModBlocks.GENERIC_JACK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.CREEPER_PUMPKIN);
-        registerPumpkin(ModBlocks.CREEP_O_LANTERN);
+        pumpkin(ModBlocks.CREEPER_PUMPKIN);
+        pumpkin(ModBlocks.CREEP_O_LANTERN);
 
-        registerEntirePumpkin(ModBlocks.ENDERMAN_PUMPKIN);
-        registerJackOLantern(ModBlocks.END_O_LANTERN, ModBlocks.ENDERMAN_PUMPKIN);
+        entirePumpkin(ModBlocks.ENDERMAN_PUMPKIN);
+        jackOLantern(ModBlocks.END_O_LANTERN, ModBlocks.ENDERMAN_PUMPKIN);
 
-        registerPumpkin(ModBlocks.SKELETON_PUMPKIN);
-        registerPumpkin(ModBlocks.BONE_O_LANTERN);
+        pumpkin(ModBlocks.SKELETON_PUMPKIN);
+        pumpkin(ModBlocks.BONE_O_LANTERN);
 
-        registerEntirePumpkin(ModBlocks.ROTTEN_PUMPKIN);
-        registerJackOLantern(ModBlocks.ROT_O_LANTERN, ModBlocks.ROTTEN_PUMPKIN);
+        entirePumpkin(ModBlocks.ROTTEN_PUMPKIN);
+        jackOLantern(ModBlocks.ROT_O_LANTERN, ModBlocks.ROTTEN_PUMPKIN);
 
-        registerHorizontalBlockWithModel(ModBlocks.VILLAGER_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.HMM_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.VILLAGER_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.HMM_O_LANTERN);
 
-        registerPumpkin(ModBlocks.UWU_PUMPKIN);
-        registerPumpkin(ModBlocks.UWU_O_LANTERN);
+        pumpkin(ModBlocks.UWU_PUMPKIN);
+        pumpkin(ModBlocks.UWU_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.PIG_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.OINK_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.PIG_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.OINK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.SPIDER_PUMPKIN);
-        registerPumpkin(ModBlocks.WEB_O_LANTERN);
+        pumpkin(ModBlocks.SPIDER_PUMPKIN);
+        pumpkin(ModBlocks.WEB_O_LANTERN);
 
-        registerPumpkin(ModBlocks.GHAST_PUMPKIN);
-        registerPumpkin(ModBlocks.SCREAM_O_LANTERN);
+        pumpkin(ModBlocks.GHAST_PUMPKIN);
+        pumpkin(ModBlocks.SCREAM_O_LANTERN);
 
-        registerPumpkin(ModBlocks.SLIME_PUMPKIN);
-        registerPumpkin(ModBlocks.GOO_O_LANTERN);
+        pumpkin(ModBlocks.SLIME_PUMPKIN);
+        pumpkin(ModBlocks.GOO_O_LANTERN);
 
-        registerPumpkin(ModBlocks.NICE_PUMPKIN);
-        registerPumpkin(ModBlocks.NICE_O_LANTERN);
+        pumpkin(ModBlocks.NICE_PUMPKIN);
+        pumpkin(ModBlocks.NICE_O_LANTERN);
 
-        registerPumpkin(ModBlocks.EMOTE_PUMPKIN);
-        registerPumpkin(ModBlocks.EMOTE_O_LANTERN);
+        pumpkin(ModBlocks.EMOTE_PUMPKIN);
+        pumpkin(ModBlocks.EMOTE_O_LANTERN);
 
-        registerPumpkin(ModBlocks.DOG_PUMPKIN);
-        registerPumpkin(ModBlocks.BARK_O_LANTERN);
+        pumpkin(ModBlocks.DOG_PUMPKIN);
+        pumpkin(ModBlocks.BARK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.CAT_PUMPKIN);
-        registerPumpkin(ModBlocks.MEOW_O_LANTERN);
+        pumpkin(ModBlocks.CAT_PUMPKIN);
+        pumpkin(ModBlocks.MEOW_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.CHICKEN_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.CLUCK_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.CHICKEN_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.CLUCK_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.DRAGON_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.THE_END_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.DRAGON_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.THE_END_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.WITHER_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.WITHERING_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.WITHER_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.WITHERING_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.PUMPKING);
-        registerHorizontalBlockWithModel(ModBlocks.ROYAL_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.PUMPKING);
+        horizontalBlockWithModel(ModBlocks.ROYAL_O_LANTERN);
 
-        registerPumpkin(ModBlocks.PLAYER_PUMPKIN);
-        registerPumpkin(ModBlocks.UUH_O_LANTERN);
+        pumpkin(ModBlocks.PLAYER_PUMPKIN);
+        pumpkin(ModBlocks.UUH_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.SHEEP_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.BAH_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.SHEEP_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.BAH_O_LANTERN);
 
-        registerEntirePumpkin(ModBlocks.GHOST_PUMPKIN).renderType("translucent");
-        registerJackOLantern(ModBlocks.SPOOK_O_LANTERN, ModBlocks.GHOST_PUMPKIN).renderType("translucent");
+        entirePumpkin(ModBlocks.GHOST_PUMPKIN).renderType("translucent");
+        jackOLantern(ModBlocks.SPOOK_O_LANTERN, ModBlocks.GHOST_PUMPKIN).renderType("translucent");
 
-        registerEntirePumpkin(ModBlocks.SNOW_PUMPKIN);
-        registerJackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
+        entirePumpkin(ModBlocks.SNOW_PUMPKIN);
+        jackOLantern(ModBlocks.FROST_O_LANTERN, ModBlocks.SNOW_PUMPKIN);
 
-        registerEntirePumpkin(ModBlocks.SYNTH_PUMPKIN);
-        registerJackOLantern(ModBlocks.SYNTH_O_LANTERN, ModBlocks.SYNTH_PUMPKIN);
+        entirePumpkin(ModBlocks.SYNTH_PUMPKIN);
+        jackOLantern(ModBlocks.SYNTH_O_LANTERN, ModBlocks.SYNTH_PUMPKIN);
 
-        registerHorizontalBlock(ModBlocks.MELON_PUMPKIN,
+        horizontalBlock(ModBlocks.MELON_PUMPKIN,
                 new ResourceLocation("block/melon_side"),
                 new ResourceLocation(JackOCache.MOD_ID, "block/melon_pumpkin"),
                 new ResourceLocation("block/melon_top"));
-        registerHorizontalBlock(ModBlocks.MEL_O_LANTERN,
+        horizontalBlock(ModBlocks.MEL_O_LANTERN,
                 new ResourceLocation("block/melon_side"),
                 new ResourceLocation(JackOCache.MOD_ID, "block/mel_o_lantern"),
                 new ResourceLocation("block/melon_top"));
 
-        registerEntirePumpkin(ModBlocks.ALPHA_PUMPKIN);
-        registerJackOLantern(ModBlocks.ALPHA_JACK_O_LANTERN, ModBlocks.ALPHA_PUMPKIN);
+        entirePumpkin(ModBlocks.ALPHA_PUMPKIN);
+        jackOLantern(ModBlocks.ALPHA_JACK_O_LANTERN, ModBlocks.ALPHA_PUMPKIN);
 
-        registerPumpkin(ModBlocks.SPOOKYJAM_PUMPKIN);
-        registerPumpkin(ModBlocks.SPOOKYJAM_JACK_O_LANTERN);
+        pumpkin(ModBlocks.SPOOKYJAM_PUMPKIN);
+        pumpkin(ModBlocks.SPOOKYJAM_JACK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.COOL_PUMPKIN);
-        registerPumpkin(ModBlocks.COOL_JACK_O_LANTERN);
+        pumpkin(ModBlocks.COOL_PUMPKIN);
+        pumpkin(ModBlocks.COOL_JACK_O_LANTERN);
 
-        registerEntirePumpkin(ModBlocks.ANGRY_PUMPKIN);
-        registerJackOLantern(ModBlocks.ANGRY_JACK_O_LANTERN, ModBlocks.ANGRY_PUMPKIN);
+        entirePumpkin(ModBlocks.ANGRY_PUMPKIN);
+        jackOLantern(ModBlocks.ANGRY_JACK_O_LANTERN, ModBlocks.ANGRY_PUMPKIN);
 
-        registerPumpkin(ModBlocks.SNOW_GOLEM_PUMPKIN);
-        registerPumpkin(ModBlocks.SNOWBALL_O_LANTERN);
+        pumpkin(ModBlocks.SNOW_GOLEM_PUMPKIN);
+        pumpkin(ModBlocks.SNOWBALL_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.ILLAGER_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.HRNGH_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.ILLAGER_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.HRNGH_O_LANTERN);
 
-        registerEntirePumpkin(ModBlocks.GUARDIAN_PUMPKIN);
-        registerJackOLantern(ModBlocks.LASER_O_LANTERN, ModBlocks.GUARDIAN_PUMPKIN);
+        entirePumpkin(ModBlocks.GUARDIAN_PUMPKIN);
+        jackOLantern(ModBlocks.LASER_O_LANTERN, ModBlocks.GUARDIAN_PUMPKIN);
 
-        registerPumpkin(ModBlocks.PUKING_PUMPKIN);
-        registerPumpkin(ModBlocks.PUKING_JACK_O_LANTERN);
+        pumpkin(ModBlocks.PUKING_PUMPKIN);
+        pumpkin(ModBlocks.PUKING_JACK_O_LANTERN);
 
-        registerPumpkin(ModBlocks.BAT_PUMPKIN);
-        registerPumpkin(ModBlocks.SQUEAK_O_LANTERN);
+        pumpkin(ModBlocks.BAT_PUMPKIN);
+        pumpkin(ModBlocks.SQUEAK_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.ROTTEN_VILLAGER_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.ROTTEN_HMM_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.ROTTEN_VILLAGER_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.ROTTEN_HMM_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.WITCH_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.HEEHEEHEE_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.WITCH_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.HEEHEEHEE_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.NERD_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.NERD_JACK_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.NERD_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.NERD_JACK_O_LANTERN);
 
-        registerHorizontalBlockWithModel(ModBlocks.NERD_CREEPER_PUMPKIN);
-        registerHorizontalBlockWithModel(ModBlocks.NERD_CREEP_O_LANTERN);
+        horizontalBlockWithModel(ModBlocks.NERD_CREEPER_PUMPKIN);
+        horizontalBlockWithModel(ModBlocks.NERD_CREEP_O_LANTERN);
     }
 
     /**
@@ -147,12 +147,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
      *
      * @param pumpkin
      * @return the new orientable model
-     * @see #registerEntirePumpkin(RegistryObject)
-     * @see #registerJackOLantern(RegistryObject, RegistryObject)
+     * @see #entirePumpkin(RegistryObject)
+     * @see #jackOLantern(RegistryObject, RegistryObject)
      */
-    private BlockModelBuilder registerPumpkin(RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder pumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
-        return registerHorizontalBlock(pumpkin,
+        return horizontalBlock(pumpkin,
                 mcLoc("block/pumpkin_side"),
                 modLoc("block/" + pumpkinID),
                 mcLoc("block/pumpkin_top"));
@@ -164,12 +164,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
      *
      * @param pumpkin
      * @return the new orientable model
-     * @see #registerPumpkin(RegistryObject)
-     * @see #registerJackOLantern(RegistryObject, RegistryObject)
+     * @see #pumpkin(RegistryObject)
+     * @see #jackOLantern(RegistryObject, RegistryObject)
      */
-    private BlockModelBuilder registerEntirePumpkin(RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder entirePumpkin(RegistryObject<Block> pumpkin) {
         String pumpkinID = pumpkin.getId().getPath();
-        return registerHorizontalBlock(pumpkin,
+        return horizontalBlock(pumpkin,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + pumpkinID),
                 modLoc("block/" + pumpkinID + "_top"));
@@ -183,13 +183,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
      * @param jackolantern
      * @param pumpkin
      * @return the new orientable model
-     * @see #registerPumpkin(RegistryObject)
-     * @see #registerEntirePumpkin(RegistryObject)
+     * @see #pumpkin(RegistryObject)
+     * @see #entirePumpkin(RegistryObject)
      */
-    private BlockModelBuilder registerJackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
+    private BlockModelBuilder jackOLantern(RegistryObject<Block> jackolantern, RegistryObject<Block> pumpkin) {
         String jackolanternID = jackolantern.getId().getPath();
         String pumpkinID = pumpkin.getId().getPath();
-        return registerHorizontalBlock(jackolantern,
+        return horizontalBlock(jackolantern,
                 modLoc("block/" + pumpkinID + "_side"),
                 modLoc("block/" + jackolanternID),
                 modLoc("block/" + pumpkinID + "_top"));
@@ -200,12 +200,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
      * textures for the side, front and top of the block.
      *
      * @param block
-     * @param side the texture for the side of the block
+     * @param side  the texture for the side of the block
      * @param front the texture for the front of the block
-     * @param top the texture for the top of the block
+     * @param top   the texture for the top of the block
      * @return the new orientable model
      */
-    private BlockModelBuilder registerHorizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
+    private BlockModelBuilder horizontalBlock(RegistryObject<Block> block, ResourceLocation side, ResourceLocation front, ResourceLocation top) {
         BlockModelBuilder orientable = models().orientable(block.getId().getPath(), side, front, top);
         horizontalBlock(block.get(), orientable);
 
@@ -217,7 +217,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
      *
      * @param block
      */
-    private void registerHorizontalBlockWithModel(RegistryObject<Block> block) {
+    private void horizontalBlockWithModel(RegistryObject<Block> block) {
         horizontalBlock(block.get(), models().getExistingFile(modLoc("block/" + block.getId().getPath())));
     }
 }

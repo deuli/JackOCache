@@ -22,6 +22,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashMap;
 import java.util.function.Supplier;
 
+/**
+ * Global loot modifier that adds a pumpkin to a slain player if they were killed by a Jack o'Slicer
+ */
 @Mod.EventBusSubscriber(modid = JackOCache.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class AddPlayerPumpkinLootModifier extends LootModifier {
     public static final Supplier<Codec<AddPlayerPumpkinLootModifier>> CODEC = Suppliers.memoize(()
@@ -32,7 +35,14 @@ public class AddPlayerPumpkinLootModifier extends LootModifier {
 
     private final Item pumpkin;
     private final String playerName;
-    public static final HashMap<String, Item> PLAYER_PUMPKIN_DROPS = new HashMap<>();
+
+    /**
+     * Used to update {@code PLAYER_PUMPKIN_DROPS} inside of {@code PumpkinDrop}.
+     *
+     * @see AddPlayerPumpkinLootModifier#syncPlayerDrops()
+     * @see PumpkinDrop#PLAYER_PUMPKIN_DROPS
+     */
+    private static final HashMap<String, Item> PLAYER_PUMPKIN_DROPS = new HashMap<>();
 
     public AddPlayerPumpkinLootModifier(LootItemCondition[] conditionsIn, Item pumpkin, String playerName) {
         super(conditionsIn);
@@ -52,17 +62,30 @@ public class AddPlayerPumpkinLootModifier extends LootModifier {
         return CODEC.get();
     }
 
+    /**
+     * Make sure that the drops are synced whenever the {@code reload} command is used.
+     */
     @SubscribeEvent
     public static void onReload(OnDatapackSyncEvent event) {
         if (event.getPlayer() == null)
             syncPlayerDrops();
     }
 
+    /**
+     * Make sure that the drops are synced whenever the server is started.
+     */
     @SubscribeEvent
     public static void onServerStart(ServerStartingEvent event) {
         syncPlayerDrops();
     }
 
+    /**
+     * Adds all the registered pumpkins to {@code PLAYER_PUMPKIN_DROPS} inside of {@code PumpkinDrop}.
+     *
+     * @see AddPlayerPumpkinLootModifier#AddPlayerPumpkinLootModifier(LootItemCondition[], Item, String)
+     * @see AddPlayerPumpkinLootModifier#PLAYER_PUMPKIN_DROPS
+     * @see PumpkinDrop#PLAYER_PUMPKIN_DROPS
+     */
     private static void syncPlayerDrops() {
         PumpkinDrop.PLAYER_PUMPKIN_DROPS.clear();
         PumpkinDrop.PLAYER_PUMPKIN_DROPS.putAll(PLAYER_PUMPKIN_DROPS);

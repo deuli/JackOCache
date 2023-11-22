@@ -3,6 +3,9 @@ package deuli.jackocache.items.jackoslicer.transformconditions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 
+/**
+ * Checks if one of the conditions is fulfilled
+ */
 public class OrCondition extends TransformCondition {
     private final TransformCondition[] transformConditions;
 

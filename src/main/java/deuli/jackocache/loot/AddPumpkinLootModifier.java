@@ -22,6 +22,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.function.Supplier;
 
+/**
+ * Global loot modifier that adds a pumpkin to a slain mob if they were killed by a Jack o'Slicer
+ */
 @Mod.EventBusSubscriber(modid = JackOCache.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class AddPumpkinLootModifier extends LootModifier {
     public static final Supplier<Codec<AddPumpkinLootModifier>> CODEC = Suppliers.memoize(()
@@ -32,7 +35,14 @@ public class AddPumpkinLootModifier extends LootModifier {
 
     private final Item pumpkin;
     private final String entityID;
-    public static final ArrayList<String> PUMPKIN_DROPS = new ArrayList<>();
+
+    /**
+     * Used to update {@code PUMPKIN_DROPS} inside of {@code PumpkinDrop}.
+     *
+     * @see AddPumpkinLootModifier#syncDrops()
+     * @see PumpkinDrop#PUMPKIN_DROPS
+     */
+    private static final ArrayList<String> PUMPKIN_DROPS = new ArrayList<>();
 
     public AddPumpkinLootModifier(LootItemCondition[] conditionsIn, Item pumpkin, String entityID) {
         super(conditionsIn);
@@ -52,17 +62,30 @@ public class AddPumpkinLootModifier extends LootModifier {
         return CODEC.get();
     }
 
+    /**
+     * Make sure that the drops are synced whenever the {@code reload} command is used.
+     */
     @SubscribeEvent
     public static void onReload(OnDatapackSyncEvent event) {
         if (event.getPlayer() == null)
             syncDrops();
     }
 
+    /**
+     * Make sure that the drops are synced whenever the server is started.
+     */
     @SubscribeEvent
     public static void onServerStart(ServerStartingEvent event) {
         syncDrops();
     }
 
+    /**
+     * Adds all the registered pumpkins to {@code PUMPKIN_DROPS} inside of {@code PumpkinDrop}.
+     *
+     * @see AddPumpkinLootModifier#AddPumpkinLootModifier(LootItemCondition[], Item, String)
+     * @see AddPumpkinLootModifier#PUMPKIN_DROPS
+     * @see PumpkinDrop#PUMPKIN_DROPS
+     */
     private static void syncDrops() {
         PumpkinDrop.PUMPKIN_DROPS.clear();
         PumpkinDrop.PUMPKIN_DROPS.addAll(PUMPKIN_DROPS);

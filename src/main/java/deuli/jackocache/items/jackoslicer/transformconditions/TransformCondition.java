@@ -11,7 +11,9 @@ import net.minecraft.world.level.Level;
  * @see DimensionCondition
  * @see HeightCondition
  * @see SignCondition
+ * @see SignContainsOnlyCondition
  * @see TagCondition
+ * @see OrCondition
  */
 public abstract class TransformCondition {
     /**
@@ -39,7 +41,7 @@ public abstract class TransformCondition {
     /**
      * The method used to evaluate the condition.
      *
-     * @param level the world
+     * @param level    the world
      * @param blockPos the block position of the pumpkin
      * @return {@code true} if the condition is met, otherwise {@code false}
      */
@@ -49,7 +51,7 @@ public abstract class TransformCondition {
      * Evaluate the next condition. If the chain reaches its end, which means {@code nextCondition} is null and every
      * condition has been fulfilled, return {@code true}. Otherwise, the next condition is checked.
      *
-     * @param level the world
+     * @param level    the world
      * @param blockPos the block position of the pumpkin
      * @return
      */
