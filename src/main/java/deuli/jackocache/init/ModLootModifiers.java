@@ -1,7 +1,9 @@
-package deuli.jackocache.loot;
+package deuli.jackocache.init;
 
 import com.mojang.serialization.Codec;
 import deuli.jackocache.JackOCache;
+import deuli.jackocache.loot.AddPlayerPumpkinLootModifier;
+import deuli.jackocache.loot.AddPumpkinLootModifier;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import deuli.jackocache.init.ModBlocks;
 import deuli.jackocache.init.ModCreativeModeTabs;
 import deuli.jackocache.init.ModItems;
-import deuli.jackocache.loot.ModLootModifiers;
+import deuli.jackocache.init.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
