@@ -7,7 +7,7 @@
 
 ---
 
-Jack o'Cache is a mod all about collecting various pumpkins. There are currently ***30*** different pumpkins to collect that can be obtained by either killing a mob or by transforming a pumpkin. Some even have a unique model!
+Jack o'Cache is a mod all about collecting various pumpkins. There are currently ***40*** different pumpkins to collect that can be obtained by either killing a mob or by transforming a pumpkin. Some even have a unique model!
 
 
 # Get Started
@@ -47,13 +47,13 @@ Of course, every pumpkin is able to be crafted into a jack o'lantern variant usi
 
 - Creeper Pumpkin: 50% of dropping from Creepers
 - Enderman Pumpkin: 50% of dropping from Endermen
-- Skeleton Pumpkin: 50% of dropping from Skeletons
-- Rotten Pumpkin: 50% of dropping from Zombies
-- Villager Pumpkin: 95% of dropping from Villagers
+- Skeleton Pumpkin: 50% of dropping from Skeletons, Wither Skeletons and Strays
+- Rotten Pumpkin: 50% of dropping from Zombies, Husks and Drowneds
+- Villager Pumpkin: 95% of dropping from Villagers and 75% from Wandering Merchants
 - Pig Pumpkin: 35% of dropping from Pigs
-- Spider Pumpkin: 50% of dropping from Spiders
+- Spider Pumpkin: 50% of dropping from Spiders and Cave Spiders
 - Ghast Pumpkin: 80% of dropping from Ghasts
-- Slime Pumpkin: 40% of dropping from Slimes
+- Slime Pumpkin: 30% of dropping from Slimes
 - Dog Pumpkin: 65% of dropping from Wolves
 - Cat Pumpkin: 75% of dropping from Cats
 - Chicken Pumpkin: 35% of dropping from Chickens
@@ -66,6 +66,9 @@ Of course, every pumpkin is able to be crafted into a jack o'lantern variant usi
 - Illager Pumpkin: 50% of dropping from Evokers, Pillagers and Vindicators
 - Guardian Pumpkin: 50% of dropping from Guardians or 80% from Elder Guardians
 - Bat Pumpkin: 75% of dropping from Bats
+- Rotten Villager Pumpkin: 80% of dropping from Zombie Villagers
+- Witch Pumpkin: 60% of dropping from Witches
+- Warden Pumpkin: 100% of dropping from Wardens (Alternative method available with Transformations)
 
 </details>
 
@@ -74,15 +77,18 @@ Of course, every pumpkin is able to be crafted into a jack o'lantern variant usi
 
 - uwu Pumpkin: In the Nether between Y level 0 and 35
 - nice Pumpkin: A log below the pumpkin
-- :^) Pumpkin: A sign on the pumpkin with ":^)" on the second line
+- :^) Pumpkin: A sign on the pumpkin with ":^)" written on it
 - Pumpking: A gold block on top of the pumpkin
-- Ghost Pumpkin: Soul Sand below the pumpkin
-- Snow Pumpkin: Snow on top and a snow block below the pumpkin
+- Ghost Pumpkin: Soul Sand or Soul Soil below the pumpkin
+- Snow Pumpkin: Snow (layer) on top and a snow block below the pumpkin
 - Melon Pumpkin: A melon block on top OR below the pumpkin
 - Alpha Pumpkin: Netherrack, Soul Sand and Glowstone on top of the pumpkin and a Jack o'Lantern below
 - SpookyJam Pumpkin: A white stained glass block under the pumpkin
 - Cool Pumpkin: In a beach biome
 - Angry Pumpkin: Fire on top of the pumpkin
 - Puking Pumpkin: Pumpkin seeds around the pumpkin
+- Nerd Pumpkin: A sign on the pumpkin with "Actually" written on it
+- Nerd Creeper Pumpkin: A Nerd Pumpkin and Creeper Pumpkin above and below of the pumpkin (or vice-versa)
+- Warden Pumpkin: In an Ancient City with a Warden 10 blocks in range of the pumpkin (Alternative method available with Drops)
 
 </details>
